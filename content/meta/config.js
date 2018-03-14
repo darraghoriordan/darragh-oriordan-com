@@ -25,8 +25,8 @@ module.exports = {
   manifestDisplay: "standalone",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/darraghoriordam" },
+    { name: "github", url: "https://github.com/darraghoriordan" },
     { name: "twitter", url: "https://twitter.com/darraghor" },
-    { name: "facebook", url: "http://facebook.com/darraghoriordan" }
+    { name: "facebook", url: "http://facebook.com/darraghor" }
   ]
 };
