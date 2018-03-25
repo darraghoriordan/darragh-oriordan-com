@@ -17,10 +17,12 @@ const Contact = () => {
       <Article>
         <PageHeader title="Contact" />
         <Content>
-          Feel free to contact me by using the
-          form below.
+          <span>
+            Feel free to get in touch with me on{" "}
+            <a href="https://www.linkedin.com/in/darraghoriordan/">Linkedin</a> or{" "}
+            <a href="https://twitter.com/darraghor">twitter</a>
+          </span>
         </Content>
-        <Form />
       </Article>
     </Main>
   );
