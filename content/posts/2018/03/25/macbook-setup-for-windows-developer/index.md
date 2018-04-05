@@ -84,4 +84,6 @@ https://www.cockos.com/licecap/ - Licecap for gif recording
 https://www.spectacleapp.com/ - window management for osx
 https://www.alfredapp.com/ - an enhanced spotlight/helper
 
+You can use http://www.rubicode.com/Software/RCDefaultApp/ to change the default applications on the mac. For example the mail client can be changed from Mail without having to setup an email account in Mail.
+
 Photo by Fabian Grohs on Unsplash
