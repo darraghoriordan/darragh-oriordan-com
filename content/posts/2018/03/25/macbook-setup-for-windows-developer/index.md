@@ -79,4 +79,9 @@ jira ABC-123 m  # opens an existing issue for adding a comment
 ```
 Sweet, all done. This could be a great scripting project :D
 
+Next install the following apps
+https://www.cockos.com/licecap/ - Licecap for gif recording
+https://www.spectacleapp.com/ - window management for osx
+https://www.alfredapp.com/ - an enhanced spotlight/helper
+
 Photo by Fabian Grohs on Unsplash
