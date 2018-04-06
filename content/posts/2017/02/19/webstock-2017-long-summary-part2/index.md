@@ -14,7 +14,7 @@ Day 2
 
 Introduced [Tame vs Wicked problems][13].
 
-Some examples of wicked problems – Designing to communicate with aliens  and designing to warn people in 10,000 years [about radiation dumps][14].
+Some examples of wicked problems – Designing to communicate with aliens and designing to warn people in 10,000 years [about radiation dumps][14].
 
 We should embrace wicked problems. Thy ignite creativity and hep us to innovate.
 

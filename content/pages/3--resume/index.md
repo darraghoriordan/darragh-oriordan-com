@@ -2,7 +2,7 @@
 title: Resume
 ---
 
-Hi! Here it is, but hit me up on linkedin for more info… 
+Hi! Here it is, but hit me up on https://www.linkedin.com/in/darraghoriordan/ for more info… 
 
 ## Work History
 

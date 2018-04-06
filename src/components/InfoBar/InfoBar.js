@@ -13,7 +13,7 @@ import avatar from "../../images/jpg/avatar.jpg";
 import TopMenu from "./TopMenu";
 
 const styles = theme => ({
-  infoBar: {  
+  infoBar: {
     position: "absolute",
     background: theme.bars.colors.background,
     top: 0,
