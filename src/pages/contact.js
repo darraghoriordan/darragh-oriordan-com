@@ -1,13 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
-import Obfuscate from "react-obfuscate";
 
 import Main from "../components/Main";
 import Article from "../components/Main/Article";
 import PageHeader from "../components/Page/PageHeader";
 import Content from "../components/Main/Content";
-import Form from "../components/ContactForm";
 
 const styles = theme => ({});
 
