@@ -54,6 +54,14 @@ const styles = theme => ({
     ".moving-featured &": {
       bottom: 0
     }
+  },
+  tinyletterForm: {
+    border: "1px solid #ccc",
+    padding: "3px",
+    textAlign: "center"
+  },
+  tinyletterEmailInput: {
+    width: "140px"
   }
 });
 
@@ -64,6 +72,11 @@ class InfoBox extends React.Component {
   expandOnClick = e => {
     this.props.setNavigatorShape("closed");
   };
+
+  tinyLetterFormOnClick = () => {
+    window.open('https://tinyletter.com/darraghor', 'popupwindow', 'scrollbars=yes,width=800,height=600');
+    return true;
+  }
 
   render() {
     const { classes, parts, pages, navigatorPosition, navigatorShape } = this.props;
@@ -86,6 +99,33 @@ class InfoBox extends React.Component {
           <SocialIcons />
           {pages && <InfoMenu pages={pages} linkOnClick={this.menulinkOnClick} />}
           {/* <StackIcons /> */}
+          <h2>Monthly tech and product news!</h2>
+          <form
+            className={classes.tinyletterForm}
+            action="https://tinyletter.com/darraghor"
+            method="post"
+            target="popupwindow"
+            onSubmit={this.tinyLetterFormOnClick}
+          >
+            <p>
+              <label htmlFor="tlemail">Enter your email address</label>
+            </p>
+            <p>
+              <input
+                type="text"
+                className={classes.tinyletterEmailInput}
+                name="email"
+                id="tlemail"
+              />
+            </p>
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" />
+            <p>
+              <a href="https://tinyletter.com" rel="noopener noreferrer" target="_blank">
+                powered by TinyLetter
+              </a>
+            </p>
+          </form>
         </div>
       </aside>
     );
