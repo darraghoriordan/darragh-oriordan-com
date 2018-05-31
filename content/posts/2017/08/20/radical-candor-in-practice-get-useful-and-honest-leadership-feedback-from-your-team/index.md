@@ -1,6 +1,6 @@
 ---
 title: Radical Candor in Practice
-subTitle: Getting useful and honest feedbac from your team
+subTitle: Getting useful and honest feedback from your team
 category: "management"
 cover: header-agd.jpg
 date: "2017-08-14T17:12:33"
