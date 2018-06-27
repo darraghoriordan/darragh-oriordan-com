@@ -2,6 +2,13 @@
 title: Things I made
 menuTitle: Portfolio
 ---
+
+### New Leader List
+
+Improve your team with instant references to content from your favorite leadership books, blogs and podcasts. Monitor the happiness of your team and get ideas on how to engage them. Effectively track those tasks that surface throughout the day - on mobile and in the cloud.
+
+[More Details](/projects/newleaderlist/)
+
 ### Customer workshop course
 
 The customer workshop is a week long event for forging incredible relationships between product delivery teams and their customers. This course saves you up to 6 weeks of time planning for the event.
