@@ -83,4 +83,4 @@ Going through this process has given me clear goals to better serve my team memb
 
 Let me know if you have any techniques for getting honest feedback from your team.
 
-Doughnuts image ![designed by Freepik](http://www.freepik.com/free-photo/multi-colored-donuts_1155921.htm "designed by freepic")
+Doughnuts image ![designed by Freepik](https://www.freepik.com/free-photo/multi-colored-donuts_1155921.htm "designed by freepic")
