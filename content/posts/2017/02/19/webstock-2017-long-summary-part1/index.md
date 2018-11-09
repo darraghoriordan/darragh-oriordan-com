@@ -1,5 +1,5 @@
 ---
-title: Webstock 2017 Part 2
+title: Webstock 2017 Part 1
 subTitle: A long summary Part 1
 category: "development"
 cover: ../../../../post-default.jpg
