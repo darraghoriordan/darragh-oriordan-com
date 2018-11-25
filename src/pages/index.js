@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-
+import { graphql } from "gatsby"
 import { setNavigatorPosition, setNavigatorShape } from "../state/store";
 import { featureNavigator } from "../utils/shared";
 import Seo from "../components/Seo";

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
-require("core-js/fn/array/find");
+import 'core-js/es6/array';
 
 import asyncComponent from "../common/AsyncComponent/";
 import PostAuthor from "./PostAuthor";

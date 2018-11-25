@@ -6,24 +6,20 @@ import PropTypes from "prop-types";
 import createStore from "./src/state/store";
 
 // remove the JSS style tag generated on the server to avoid conflicts with the one added on the client
-exports.onInitialClientRender = function() {
+export const onInitialClientRender = function() {
   // eslint-disable-next-line no-undef
   var ssStyles = window.document.getElementById("server-side-jss");
   ssStyles && ssStyles.parentNode.removeChild(ssStyles);
 };
 
-exports.replaceRouterComponent = ({ history }) => {
+export const wrapRootElement = ({ element }) => {
   const store = createStore();
 
-  const ConnectedRouterWrapper = ({ children }) => (
+  const ConnectedRootElement = (
     <Provider store={store}>
-      <Router history={history}>{children}</Router>
+    {element}
     </Provider>
   );
 
-  ConnectedRouterWrapper.propTypes = {
-    children: PropTypes.object.isRequired
-  };
-
-  return ConnectedRouterWrapper;
+  return ConnectedRootElement;
 };

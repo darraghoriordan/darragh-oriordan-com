@@ -1,9 +1,10 @@
 import React from "react";
 import { JssProvider, SheetsRegistry } from "react-jss";
-import { MuiThemeProvider, createGenerateClassName } from "material-ui/styles";
+import { MuiThemeProvider, createGenerateClassName } from "@material-ui/core/styles";
 import { renderToString } from "react-dom/server";
 import { Provider } from "react-redux";
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
 import createStore from "./src/state/store";
 import theme from "./src/styles/theme";
@@ -12,7 +13,7 @@ function minifyCssString(css) {
   return css.replace(/\n/g, "").replace(/\s\s+/g, " ");
 }
 
-exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadComponents }) => {
+export const replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadComponents }) => {
   const sheetsRegistry = new SheetsRegistry();
 
   const generateClassName = createGenerateClassName();
@@ -41,12 +42,11 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadCompon
   ]);
 };
 
-exports.onRenderBody = ({ setHeadComponents }) => {
-  return setHeadComponents([]);
-};
 
-exports.onRenderBody = ({ setPostBodyComponents }) => {
-  return setPostBodyComponents([
+
+export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
+  setHeadComponents([]);
+  setPostBodyComponents([
     <div key="fb-root" id="fb-root" />,
     <link
       key={`webfontsloader-load`}

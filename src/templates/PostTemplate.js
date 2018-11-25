@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Main from "../components/Main/";
 import { connect } from "react-redux";
-require("core-js/fn/array/find");
-require("prismjs/themes/prism-okaidia.css");
-
+import "core-js/fn/array/find";
+import "prismjs/themes/prism-okaidia.css";
+import { graphql } from "gatsby"
 import { setNavigatorPosition, setNavigatorShape } from "../state/store";
 import { moveNavigatorAside } from "../utils/shared";
 import Post from "../components/Post/";
@@ -21,12 +21,12 @@ class PostTemplate extends React.Component {
   }
 
   render() {
-    const { data, pathContext } = this.props;
+    const { data, pageContext } = this.props;
     const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
 
     return (
       <Main>
-        <Post post={data.post} slug={pathContext.slug} author={data.author} />
+        <Post post={data.post} slug={pageContext.slug} author={data.author} />
         <Footer footnote={data.footnote} />
         <Seo data={data.post} facebook={facebook} />
       </Main>
@@ -36,7 +36,7 @@ class PostTemplate extends React.Component {
 
 PostTemplate.propTypes = {
   data: PropTypes.object.isRequired,
-  pathContext: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired,
   navigatorPosition: PropTypes.string.isRequired,
   setNavigatorPosition: PropTypes.func.isRequired,
   isWideScreen: PropTypes.bool.isRequired

@@ -1,8 +1,8 @@
 import React from "react";
 import injectSheet from "react-jss";
 import PropTypes from "prop-types";
-import Avatar from "material-ui/Avatar";
-import Link from "gatsby-link";
+import Avatar from "@material-ui/core/Avatar";
+import { Link } from "gatsby"
 import { connect } from "react-redux";
 
 import { setNavigatorPosition } from "../../state/store";

@@ -1,7 +1,7 @@
-import { createMuiTheme } from "material-ui/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
 import Color from "color";
 
-const colors = require("./colors");
+import * as colors from "./colors";
 
 const theme = createMuiTheme({
   base: {
@@ -147,6 +147,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    useNextVariants: true,
     fontFamily: `Arial, sans-serif`,
     fontSize: 16
   },

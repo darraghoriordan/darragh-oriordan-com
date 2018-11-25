@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
-import { MenuItem, MenuList } from "material-ui/Menu";
-import MoreVertIcon from "material-ui-icons/MoreVert";
-import IconButton from "material-ui/IconButton";
+import { MenuItem, MenuList } from "@material-ui/core/Menu";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import IconButton from "@material-ui/core/IconButton";
 import { Manager, Target, Popper } from "react-popper";
-import ClickAwayListener from "material-ui/utils/ClickAwayListener";
-import Grow from "material-ui/transitions/Grow";
-import Paper from "material-ui/Paper";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import Grow from "@material-ui/core/Grow";
+import Paper from "@material-ui/core/Paper";
 import classNames from "classnames";
 
 const styles = theme => ({
