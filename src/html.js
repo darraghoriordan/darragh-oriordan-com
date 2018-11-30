@@ -1,7 +1,7 @@
 /* eslint  react/prop-types: 0 */
 import React from "react";
 
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
     return (
       <html {...this.props.htmlAttributes}>

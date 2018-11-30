@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import SpringScrollbars from "../SpringScrollbars";
+import Layout from "../layout";
 
 const styles = theme => ({
   main: {
@@ -66,9 +67,11 @@ const Main = props => {
   const { classes, children } = props;
 
   return (
-    <main className={classes.main}>
-      <SpringScrollbars>{children}</SpringScrollbars>
-    </main>
+    <Layout>
+      <main className={classes.main}>
+        <SpringScrollbars>{children}</SpringScrollbars>
+      </main>
+    </Layout>
   );
 };
 

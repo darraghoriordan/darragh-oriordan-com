@@ -8,7 +8,7 @@ import Main from "../components/Main/";
 import Page from "../components/Page/";
 import Footer from "../components/Footer/";
 import Seo from "../components/Seo";
-
+import Layout from "../components/layout"
 class PageTemplate extends React.Component {
   moveNavigatorAside = moveNavigatorAside.bind(this);
 
@@ -23,11 +23,12 @@ class PageTemplate extends React.Component {
     const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
 
     return (
+      <Layout>
       <Main>
         <Page page={data.page} />
         <Footer footnote={data.footnote} />
         <Seo data={data.page} facebook={facebook} />
-      </Main>
+      </Main></Layout>
     );
   }
 }
@@ -54,7 +55,7 @@ const mapDispatchToProps = {
 export default connect(mapStateToProps, mapDispatchToProps)(PageTemplate);
 
 //eslint-disable-next-line no-undef
-export const pageQuery = graphql`
+export const query = graphql`
   query PageByPath($slug: String!) {
     page: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
@@ -63,7 +64,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    footnote: markdownRemark(id: { regex: "/footnote/" }) {
+    footnote: markdownRemark(fileAbsolutePath: { regex: "/footnote/" }) {
       id
       html
     }
