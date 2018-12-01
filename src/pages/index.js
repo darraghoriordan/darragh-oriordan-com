@@ -1,62 +1,74 @@
-import React from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
 
-import { setNavigatorPosition, setNavigatorShape } from "../state/store";
-import { featureNavigator } from "../utils/shared";
-import Seo from "../components/Seo";
+import Layout from '../components/Layout'
+import { rhythm } from '../utils/typography'
 
-class Index extends React.Component {
-  featureNavigator = featureNavigator.bind(this);
-
-  componentWillMount() {
-    if (this.props.navigatorPosition !== "is-featured") {
-      this.props.setNavigatorPosition("is-featured");
-    }
-  }
-
+class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
-    const facebook = (((data || {}).site || {}).siteMetadata || {}).facebook;
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteDescription = get(
+      this,
+      'props.data.site.siteMetadata.description'
+    )
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
-        <Seo facebook={facebook} data={{}} />
-      </div>
-    );
+      <Layout location={this.props.location} title={siteTitle}>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: siteDescription }]}
+          title={siteTitle}
+        />
+        <h1>Blog Posts</h1>
+        {posts.map(({ node }) => {
+          const title = get(node, 'frontmatter.title') || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          )
+        })}
+      </Layout>
+    )
   }
 }
 
-Index.propTypes = {
-  data: PropTypes.object.isRequired,
-  navigatorPosition: PropTypes.string.isRequired,
-  setNavigatorPosition: PropTypes.func.isRequired,
-  isWideScreen: PropTypes.bool.isRequired
-};
+export default BlogIndex
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    navigatorPosition: state.navigatorPosition,
-    isWideScreen: state.isWideScreen
-  };
-};
-
-const mapDispatchToProps = {
-  setNavigatorPosition,
-  setNavigatorShape
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Index);
-
-//eslint-disable-next-line no-undef
 export const pageQuery = graphql`
-  query IndexQuery {
+  query {
     site {
       siteMetadata {
-        facebook {
-          appId
+        title
+        description
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
         }
       }
     }
   }
-`;
+`

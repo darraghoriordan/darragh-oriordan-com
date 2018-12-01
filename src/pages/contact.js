@@ -1,33 +1,42 @@
-import React from "react";
-import PropTypes from "prop-types";
-import injectSheet from "react-jss";
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
 
-import Main from "../components/Main";
-import Article from "../components/Main/Article";
-import PageHeader from "../components/Page/PageHeader";
-import Content from "../components/Main/Content";
+class ContactPage extends React.Component {
+  render() {
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 
-const styles = theme => ({});
+    const pageTitle = 'Contact'
+    const metaDescription = 'Contact me on linked in or twitter'
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: metaDescription }]}
+          title={pageTitle + ' - ' + +siteTitle}
+        />
+        <h1>{pageTitle}</h1>
+        <p>
+          Feel free to get in touch with me on{' '}
+          <a href="https://www.linkedin.com/in/darraghoriordan/">LinkedIn</a> or{' '}
+          <a href="https://twitter.com/darraghor">Twitter</a>
+        </p>
+      </Layout>
+    )
+  }
+}
 
-const Contact = () => {
-  return (
-    <Main>
-      <Article>
-        <PageHeader title="Contact" />
-        <Content>
-          <span>
-            Feel free to get in touch with me on{" "}
-            <a href="https://www.linkedin.com/in/darraghoriordan/">Linkedin</a> or{" "}
-            <a href="https://twitter.com/darraghor">twitter</a>
-          </span>
-        </Content>
-      </Article>
-    </Main>
-  );
-};
+export default ContactPage
 
-Contact.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default injectSheet(styles)(Contact);
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`

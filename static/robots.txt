@@ -1,3 +1,2 @@
 User-agent: *
-
-sitemap: https://www.darraghoriordan.com/sitemap.xml
+Disallow:

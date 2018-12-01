@@ -1,7 +1,11 @@
 # My blog
 
-Copied code from https://github.com/greglobinski/gatsby-starter-personal-blog by [@greglobinski](https://twitter.com/greglobinski)
 
 View at https://www.darraghoriordan.com/
+
+Design copied badly from https://www.scotttolinksi.com
+
+## Running in development
+`gatsby develop`
 
 

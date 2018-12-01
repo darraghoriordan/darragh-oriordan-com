@@ -51,17 +51,19 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
 # dotenv environment variables file
 .env
 
+# gatsby files
 .cache/
-.DS_Store
 public
-yarn-error.log
 
-# editors
-.idea/
-.vscode
+# Mac files
+.DS_Store
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
