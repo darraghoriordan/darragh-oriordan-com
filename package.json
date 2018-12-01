@@ -1,6 +1,6 @@
 {
   "name": "darragh-o-riordan-com",
-  "description": "Starter Gatsby Blog",
+  "description": "Personal site for Darragh ORiordan",
   "version": "2.0.0",
   "author": "Darragh ORiordan <darragh.oriordan@gmail.com>",
   "private": true,
@@ -16,6 +16,7 @@
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-plugin-sitemap": "^2.0.3",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
@@ -43,7 +44,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://darraghoriordan.com",
   "keywords": [
     "gatsby"
   ],
@@ -51,7 +52,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/darraghoriordan/darragh-oriordan-com.git"
   },
   "scripts": {
     "dev": "gatsby develop",
