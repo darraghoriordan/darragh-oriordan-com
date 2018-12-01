@@ -1,46 +1,25 @@
-const webpack = require("webpack");
-const _ = require("lodash");
-const Promise = require("bluebird");
-const path = require("path");
-const { createFilePath } = require(`gatsby-source-filesystem`);
-const { store } = require(`./node_modules/gatsby/dist/redux`);
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` });
-    const separtorIndex = ~slug.indexOf("--") ? slug.indexOf("--") : 0;
-    const shortSlugStart = separtorIndex ? separtorIndex + 2 : 0;
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
-    });
-    createNodeField({
-      node,
-      name: `prefix`,
-      value: separtorIndex ? slug.substring(1, separtorIndex) : ""
-    });
-  }
-};
+const _ = require('lodash')
+const Promise = require('bluebird')
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve("./src/templates/PostTemplate.js");
-    const pageTemplate = path.resolve("./src/templates/PageTemplate.js");
+    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(filter:{ fileAbsolutePath:{ regex: "//posts|pages//" } }, limit: 1000) {
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
-                  id
                   fields {
                     slug
-                    prefix
+                  }
+                  frontmatter {
+                    title
                   }
                 }
               }
@@ -49,68 +28,41 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
+          console.log(result.errors)
+          reject(result.errors)
         }
 
-        // Create posts and pages.
-        _.each(result.data.allMarkdownRemark.edges, edge => {
-          const slug = edge.node.fields.slug;
-          const isPost = /posts/.test(edge.node.id);
+        // Create blog posts pages.
+        const posts = result.data.allMarkdownRemark.edges;
+
+        _.each(posts, (post, index) => {
+          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+          const next = index === 0 ? null : posts[index - 1].node;
 
           createPage({
-            path: slug,
-            component: isPost ? postTemplate : pageTemplate,
+            path: post.node.fields.slug,
+            component: blogPostTemplate,
             context: {
-              slug: slug
-            }
-          });
-        });
+              slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          })
+        })
       })
-    );
-  });
-};
+    )
+  })
+}
 
-// exports.onCreateWebpackConfig = ({ stage, actions }) => {
-//   switch (stage) {
-//     case "build-javascript":
-     // {
-      //   let components = store.getState().pages.map(page => page.componentChunkName);
-      //   components = _.uniq(components);
-      //   config.plugin("CommonsChunkPlugin", webpack.optimize.CommonsChunkPlugin, [
-      //     {
-      //       name: `commons`,
-      //       chunks: [`app`, ...components],
-      //       minChunks: (module, count) => {
-      //         const vendorModuleList = []; // [`material-ui`, `lodash`];
-      //         const isFramework = _.some(
-      //           vendorModuleList.map(vendor => {
-      //             const regex = new RegExp(`[\\\\/]node_modules[\\\\/]${vendor}[\\\\/].*`, `i`);
-      //             return regex.test(module.resource);
-      //           })
-      //         );
-      //         return isFramework || count > 1;
-      //       }
-      //     }
-      //   ]);
-      //   // config.plugin("BundleAnalyzerPlugin", BundleAnalyzerPlugin, [
-      //   //   {
-      //   //     analyzerMode: "static",
-      //   //     reportFilename: "./report/treemap.html",
-      //   //     openAnalyzer: true,
-      //   //     logLevel: "error",
-      //   //     defaultSizes: "gzip"
-      //   //   }
-      //   // ]);
-      // }
-//       break;
-//   }
-//   return config;
-// };
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
-// exports.modifyBabelrc = ({ babelrc }) => {
-//   return {
-//     ...babelrc,
-//     plugins: babelrc.plugins.concat([`syntax-dynamic-import`, `dynamic-import-webpack`])
-//   };
-//};
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
