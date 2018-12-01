@@ -1,25 +1,46 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const webpack = require("webpack");
+const _ = require("lodash");
+const Promise = require("bluebird");
+const path = require("path");
+const { createFilePath } = require(`gatsby-source-filesystem`);
+const { store } = require(`./node_modules/gatsby/dist/redux`);
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` });
+    const separtorIndex = ~slug.indexOf("--") ? slug.indexOf("--") : 0;
+    const shortSlugStart = separtorIndex ? separtorIndex + 2 : 0;
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
+    });
+    createNodeField({
+      node,
+      name: `prefix`,
+      value: separtorIndex ? slug.substring(1, separtorIndex) : ""
+    });
+  }
+};
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
+    const postTemplate = path.resolve("./src/templates/PostTemplate.js");
+    const pageTemplate = path.resolve("./src/templates/PageTemplate.js");
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(filter:{ fileAbsolutePath:{ regex: "//posts|pages//" } }, limit: 1000) {
               edges {
                 node {
+                  id
                   fields {
                     slug
-                  }
-                  frontmatter {
-                    title
+                    prefix
                   }
                 }
               }
@@ -28,41 +49,31 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
+          console.log(result.errors);
+          reject(result.errors);
         }
 
-        // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-
-        _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+        // Create posts and pages.
+        _.each(result.data.allMarkdownRemark.edges, edge => {
+          const slug = edge.node.fields.slug;
+          const isPost = /posts/.test(edge.node.id);
 
           createPage({
-            path: post.node.fields.slug,
-            component: blogPostTemplate,
+            path: slug,
+            component: isPost ? postTemplate : pageTemplate,
             context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          })
-        })
+              slug: slug
+            }
+          });
+        });
       })
-    )
-  })
-}
+    );
+  });
+};
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
-}
+  // exports.modifyBabelrc = ({ babelrc }) => {
+  //   return {
+  //     ...babelrc,
+  //     plugins: babelrc.plugins.concat([`syntax-dynamic-import`, `dynamic-import-webpack`])
+  //   };
+  // };

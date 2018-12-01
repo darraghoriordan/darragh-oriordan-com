@@ -10,19 +10,24 @@ const rootPath = `${__PATH_PREFIX__}/`
 const HeaderTitle= styled.h1`
 top: 0px;
 position: absolute;
-display: block;
+display: none;
     margin-bottom:0;
     margin-top:${rhythm(-1/12)};
     text-transform:uppercase;
     letter-spacing: 3px;
+    background-color:white;
     transform: translate3d(-100%, 0px, 0px);
     font-size:${rhythm(1)};
     line-height: ${rhythm(2)};
+    @media (min-width: 68em) {
+    display: block;
+}
 `
 const HeaderLink = styled(Link)`
     box-shadow: none;
     text-decoration: none;
     color: inherit;
+
     font-size:${rhythm(1)};
     `
 
@@ -40,6 +45,7 @@ const HeaderContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     top: 0px;
+    z-index:90;
     width: 100%;
     &:hover ${HeaderTitle} {
         animation: ${titleAnimation} 0.3s ease-in-out 0s 1;

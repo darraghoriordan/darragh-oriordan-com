@@ -11,6 +11,7 @@ const NavUl = styled.ul`
 const NavElement = styled.li`
     padding-left:${rhythm(1/2)};
     padding-right:${rhythm(1/2)};
+    background-color:white;
     &:hover {
         border-bottom: 5px solid
         }
