@@ -1,9 +1,9 @@
 ---
 title: Webstock 2017 Part 2
 subTitle: A long summary Part 2
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-19T17:12:33"
+date: '2017-02-19T17:12:33'
 ---
 
 Web Stock is tech conference like no other, held in Wellington, New Zealand. Once again I left feeling energized and impassioned after listening to all the speakers on such a wide range of subjects.
@@ -22,7 +22,7 @@ We should embrace wicked problems. Thy ignite creativity and hep us to innovate.
 
 Lots of practical advice on the various stages of how an organisation incorporates UX in to their systems and processes. Great talk. Highly recommended.
 
-Spoke about Disney. How in 90's their website UX was terrible. So bad user's couldn't tell which park they were booking a hotel for. Described the transformation from that company to the company that created the [Disney magic band][16] – a $1 billion UX project.
+Spoke about Disney. How in 90's their website UX was terrible. So bad user's couldn't tell which park they were booking a hotel for. Described the transformation from that company to the company that created the [Disney magic band][16] – a \$1 billion UX project.
 
 Your goal should be to have your entire team CEO down to individual contributors fluent in UX.
 
@@ -44,12 +44,12 @@ Learned about perchrolates and why they're going to be a [problem on mars][17].
 
 Obama brought private sector technical experts in to government to fix healthcare.gov. This was very successful so they started the US Digital Service to bring private sector methodologies and people in to government. Some points for successfully introducing these methods to government were…
 
-* Hire and empower great people
-* Find the truth tell the truth – you have to be honest up the chain about the issues your facing.
-* Optimize for results not optics – press conferences and quarterly reports shouldnt drive the work being done. Only focus on fixing the real issues.
-* Go where the work is – break down walls. Talk to your customers.
-* Design with users, not for them – There was a wrong assumption in government that government departments couldn't talk to the public directly to get feedback on digital products. This was wrong and they started doing UX testing.
-* Create momentum – If things are moving slowly, and they do in government, create your own momentum. Have weekly goals and hit them.
+- Hire and empower great people
+- Find the truth tell the truth – you have to be honest up the chain about the issues your facing.
+- Optimize for results not optics – press conferences and quarterly reports shouldnt drive the work being done. Only focus on fixing the real issues.
+- Go where the work is – break down walls. Talk to your customers.
+- Design with users, not for them – There was a wrong assumption in government that government departments couldn't talk to the public directly to get feedback on digital products. This was wrong and they started doing UX testing.
+- Create momentum – If things are moving slowly, and they do in government, create your own momentum. Have weekly goals and hit them.
 
 ### Jeff Gothelf ([@jboogie][19]) – Scaling agile, bringing agile to the entire organisation
 
@@ -83,9 +83,9 @@ We have been living in an age with the cult of the individual. Western children 
 
 ### Darius Kazemi ([@tinysubversions][24]) – Doing tech for activists
 
-* Use simple stuff
-* Don't recreate, mutate
-* Technology is terrible, avoid where possible
+- Use simple stuff
+- Don't recreate, mutate
+- Technology is terrible, avoid where possible
 
 ### Genevieve Bell ([@feraldata][25]) – Talking to AI
 
@@ -103,7 +103,7 @@ The modern internet is not an efficient market. Opaque algorithms cannot be regu
 
 ### Stefan Sagmeister ([@sagmeisterwalsh][27]) – Why beauty does matter in everything
 
-Modernist buildings are horrible to live in. The modernists themselves renounced their lack of beauty. Gave some great examples of how adding beauty to things changes the way people feel and think. Underpass where people used to piss all the time. Tey had $5k to prevent the urinating. Painted "Yes" on each side of the wall and it became a place where newly weds would do photos. From industrial train transport to the skyline park. There has not been a single act of crime on the skyline park.
+Modernist buildings are horrible to live in. The modernists themselves renounced their lack of beauty. Gave some great examples of how adding beauty to things changes the way people feel and think. Underpass where people used to piss all the time. Tey had \$5k to prevent the urinating. Painted "Yes" on each side of the wall and it became a place where newly weds would do photos. From industrial train transport to the skyline park. There has not been a single act of crime on the skyline park.
 
 How if NASA added beauty to their suit it could become a talking point for more funding. People like supporting beautiful things. How Air bnb and Etsy have bland sparse design. It could be more beautiful. Showed some of his own work.
 

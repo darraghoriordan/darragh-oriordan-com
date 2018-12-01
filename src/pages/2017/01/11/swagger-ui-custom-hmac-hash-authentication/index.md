@@ -1,10 +1,10 @@
 ---
-title: "Swagger UI: Custom HMAC hash authenticationn headers"
-subTitle: "Injecting html headers from swagger ui"
-category: "development"
-description: "How to add custom HMAC authentication to the headers for swagger-ui and swashbuckle"
+title: 'Swagger UI: Custom HMAC hash authenticationn headers'
+subTitle: 'Injecting html headers from swagger ui'
+category: 'development'
+description: 'How to add custom HMAC authentication to the headers for swagger-ui and swashbuckle'
 cover: header.png
-date: "2017-02-19T17:12:33"
+date: '2017-02-19T17:12:33'
 ---
 
 Last year I launched a new API for an integration project. It's using Microsoft's WebApi framework. I was looking for a fast way to document the API so I wouldn't have to do much work and clients could use the API easily. After some research it was obvious that I needed Swagger.

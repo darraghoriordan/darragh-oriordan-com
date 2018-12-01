@@ -8,21 +8,21 @@ class ContactPage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
 
-    const pageTitle = "Contact"
-    const metaDescription = "Contact me on linked in or twitter"
+    const pageTitle = 'Contact'
+    const metaDescription = 'Contact me on linked in or twitter'
     return (
-    
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + " - " + + siteTitle}
+          title={pageTitle + ' - ' + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <p>
-        Feel free to get in touch with me on{" "}
-        <a href="https://www.linkedin.com/in/darraghoriordan/">LinkedIn</a> 
-        {" "}or{" "}<a href="https://twitter.com/darraghor">Twitter</a></p> 
+          Feel free to get in touch with me on{' '}
+          <a href="https://www.linkedin.com/in/darraghoriordan/">LinkedIn</a> or{' '}
+          <a href="https://twitter.com/darraghor">Twitter</a>
+        </p>
       </Layout>
     )
   }
@@ -37,6 +37,6 @@ export const pageQuery = graphql`
         title
         description
       }
-    }    
+    }
   }
 `

@@ -1,9 +1,9 @@
 ---
 title: When agile gets dangerous
 subTitle: Honesty, clarity and consistency in your agile implementation
-category: "management"
+category: 'management'
 cover: header-agd.jpg
-date: "2017-09-14T17:12:33"
+date: '2017-09-14T17:12:33'
 ---
 
 If you’re selling your teams on some form of agile but the reality they work in is completely different, you are damaging and demotivating your teams through confusion and an impossible to achieve vision. If you’ve adopted ‘agile’ do yourself a favor and check the health of the adoption right now.
@@ -15,6 +15,7 @@ The damage occurs when you sell yourself as a particular agile-way-of-working to
 This cycle of raising hopes and talking about implementing change but not doing anything meaningful is catastrophic to morale.
 
 ### Modern agile
+
 What the hell is agile these days anyways? The four principals of modern agile are
 
 Make People Awesome – This includes the people who use, make, buy, sell or fund our products or services
@@ -28,6 +29,7 @@ Or has the adoption of agile principals hit a wall at some level of management a
 Are the agile practices you preach really how your organisation operates?
 
 ### Shitty products are a choice
+
 You say – We are customer focused
 
 The reality is your focus is on pumping out barely finished MVPs where being on-time is critical. These products or features tick the box in some OKR as “completed” but they are not awesome, they don’t make the customers using them feel awesome and they definitely don’t make the team building them feel proud of the work.
@@ -43,6 +45,7 @@ The team never gets the opportunity to iterate on their learnings after deploy b
 Rushing out product with no iterations results in shitty products. Shitty products make the people who made them feel uninspired, especially when they get feedback and can’t act on it because they have rushed on to the next feature. Try to be honest about why you need to get stuff out and can’t make it better based on feedback, it probably isn’t to satisfy your customers.
 
 ### Managers burn out too
+
 You say – We have cross-functional, autonomous teams
 
 You have autonomous teams but there’s massive stress present for the managers who don’t trust their ‘agile’ teams to have autonomy. These managers psychologically own the outcome of the work rather than the implementation team.
@@ -58,6 +61,7 @@ Take the time to give enough information to the team and let them make their own
 Think about the feedback loops the team is using, do they go up the hierarchy for decisions or do they go to the data and ultimately the customer? Do they get training in the things that your organisation controls centrally? Knowledge gives them confidence and allows them to do more of this decision making correctly as an autonomous team and ultimately, MOVE FASTER.
 
 ### Destroying rapid value delivery
+
 You say – We are a flat organisation
 
 You say your teams are agile and day to day they work in a way that seems to look the part but the processes that surround them are rigidly enforced.
@@ -71,6 +75,7 @@ Let the team decide how much and what processes and documentation are needed to 
 If you don’t have confidence in the team to step back think about why that is? Do they not have the same information you have? Are the priorities you are working to the same as the ones they are working to? There may be a significant disconnect between their priorities and yours, their expectations and yours. Figure it out.
 
 ### Learning and iteration applies to your agile too
+
 These are just a few examples. Whatever brand of agile you’re doing make sure that what you say you’re doing is really what you’re doing. Be honest about how you work so your teams know the norms and expectations. The confusion and disappointment from reality not matching the rhetoric will result in unhappy teams and it will affect your products and customers too.
 
 Try new things. Let your team’s try new things from their retros. They will grow and may have already grown out of what your original definition of ‘agile’ was. Guide them to ensure they make the best decisions for their customers and their products, but get out of their way and let them grow. It will eventually give you more free time to work on the important stuff.

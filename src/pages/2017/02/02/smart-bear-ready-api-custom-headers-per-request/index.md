@@ -1,9 +1,9 @@
 ---
 title: Smart Bear Ready API
 subTitle: Custom headers per request
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-02T17:12:33"
+date: '2017-02-02T17:12:33'
 ---
 
 I recently had a problem where our test analysts use Ready API software from Smart bear but our API authentication does a custom hashing function on the content. For tests to work we had to hash the entire request and apply headers for each test step.

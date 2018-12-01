@@ -1,9 +1,9 @@
 ---
 title: Startup Weekend
 subTitle: Auckland 2017
-category: "management"
+category: 'management'
 cover: header.jpg
-date: "2017-05-25T17:12:33"
+date: '2017-05-25T17:12:33'
 ---
 
 Wow, it's a week after Startup Weekend Auckland. I've had time to get my thoughts straight about the whole experience. I learned a hell of a lot of positive lessons about idea validation, about myself and about working in teams.

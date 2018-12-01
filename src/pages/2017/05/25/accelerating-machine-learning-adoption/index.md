@@ -1,9 +1,9 @@
 ---
 title: Cats and Dogs
 subTitle: Accelerating machine learning adoption
-category: "management"
+category: 'management'
 cover: header.png
-date: "2017-05-25T17:12:33"
+date: '2017-05-25T17:12:33'
 ---
 
 Last week I had an amazing opportunity to present about machine learning and innovation to 110 people leaders at my company. It was a mixed audience of technical and non technical people.
@@ -50,7 +50,7 @@ We have an incredible set of users here. And they're giving us some great data. 
 
 ![](./7.png)
 
-One of the reasons you hear a lot about machine learning recently is that computing power has gotten very cheap. I spent just $150 for a few hours of computing from amazon for cats and dogs.
+One of the reasons you hear a lot about machine learning recently is that computing power has gotten very cheap. I spent just \$150 for a few hours of computing from amazon for cats and dogs.
 
 Why now? Exponential innovation…
 
@@ -60,7 +60,7 @@ Every few years for the past 100 years the amount of computing power you can buy
 
 ![](./9.png)
 
-If this trajectory continues then by 2024 for that same $1000 dollars you will be able to purchase the same amount of computing power as the human brain.
+If this trajectory continues then by 2024 for that same \$1000 dollars you will be able to purchase the same amount of computing power as the human brain.
 
 Now this is a wacky idea and I don't believe it myself. But that's perfectly normal! Humans are really bad at thinking exponentially.
 

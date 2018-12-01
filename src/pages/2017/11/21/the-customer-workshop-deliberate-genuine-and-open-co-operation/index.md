@@ -1,9 +1,9 @@
 ---
 title: The Customer Workshop
 subTitle: Deliberate, genuine and open co-operation with your customers
-category: "management"
+category: 'management'
 cover: headerimage.jpg
-date: "2017-11-21T17:12:33"
+date: '2017-11-21T17:12:33'
 ---
 
 I lead a team of developers that work on one of the busiest New Zealand websites. We have ~4 million members and ~850,000 unique users every day. Working at this kind of scale means the real people who buy and use our products can get lost behind user personas or Jira ticket numbers.
@@ -46,23 +46,23 @@ This was the most important day of the entire week. Everything had to run perfec
 
 We started with breakfast and a casual introduction our team to make sure everyone was relaxed and well fed! This was a nice way for everyone to meet and it went very well. After 30 minutes everyone had met and we were on our way!
 
-![breakfast](./caketable.jpg "breakfast")
+![breakfast](./caketable.jpg 'breakfast')
 
 We took the customers on a tour of our office and described how our teams are comprised. We showed them how agile teams work, the size of our organisation and roles of the team members. In general they thought our office was awesome and we’re surprised how few of us there were to keep the all our apps and sites running!
 
 We had an hour Q+A session with our head of business where we also described our strategy and how customer focused we are trying to be. It was a little bit tough to get the customers to ask what was on their mind initially but once one started the rest joined in. We got asked some TOUGH questions. It was a great experience for our customer to get frank answers and great for the delivery team to see what they are worried about.
 
-![top down office](./topdown.jpg "top down office")
+![top down office](./topdown.jpg 'top down office')
 
 Next we split the customers in to three groups. We paired them up with members of our delivery team and set them loose with post-it notes, whiteboards and markers. They spent the afternoon talking about our software and their business. We had each group prioritize everything they came up with and chose the top three items for us to work on.
 
-![table](./table.jpg "table")
+![table](./table.jpg 'table')
 
 Then we brought the 3 groups and the 9 problems together and asked them to vote again on the combined list of problems. We gave each customer three sticky dots to vote on the problems they wanted us to focus on for the week.
 
 I wanted to do this to give our customers and idea of the prioritization and compromise we have to deal with every time we tackle a new feature for them. It’s cleat that there were two things that were most important for all customers even though each of these items came from one group.
 
-![whiteboard](./whiteboard.jpg "whiteboard")
+![whiteboard](./whiteboard.jpg 'whiteboard')
 
 We finished the day with some heartfelt thanks and a small gift to our customers for giving up their day to be with us.
 
@@ -74,7 +74,7 @@ One challenge during the four days was breaking out of the processes in our orga
 
 In the end we had teams working on 5 problems. We got solutions deployed to production for four of them. This was a far better result than I could have imagined and the demo day had 8 solid prototypes and production features to show off. The solutions went across all of our platforms – multiple .Net websites, Android and iOS apps.
 
-![presso](./presso.jpg "presso")
+![presso](./presso.jpg 'presso')
 
 ### Three Key Learnings
 

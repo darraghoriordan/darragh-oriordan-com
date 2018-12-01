@@ -11,9 +11,9 @@ delete Wordpress2016.googleFonts
 
 // Wordpress2016.headerFontFamily= ['Lato', 'sans-serif'];
 // Wordpress2016.bodyFontFamily= ['Lato', 'san-serif'];
-Wordpress2016.headerFontFamily= ['Lato', 'sans-serif'];
-Wordpress2016.bodyFontFamily= ['Lato', 'san-serif'];
-const typography = new Typography(Wordpress2016);
+Wordpress2016.headerFontFamily = ['Lato', 'sans-serif']
+Wordpress2016.bodyFontFamily = ['Lato', 'san-serif']
+const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {

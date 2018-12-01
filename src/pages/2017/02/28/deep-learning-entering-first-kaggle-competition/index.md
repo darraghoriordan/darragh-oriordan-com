@@ -1,9 +1,9 @@
 ---
 title: Entering my first kaggle competition
 subTitle: I did some deep learning!
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-28T17:12:33"
+date: '2017-02-28T17:12:33'
 ---
 
 Three weeks ago I discovered the fast.ai course. They offer a practical deep learning course for coders where you get straight in to building neural networks. They provide a huge amount of support through wikis, forums, aws scripts and tooling, videos and book recommendations.
@@ -21,10 +21,9 @@ To do the calculations quickly you'll need a computer with a GPU. I used AWS for
 Keras is a (high-level) library that sits on top of the TensorFlow or Theano libraries. It abstracts away the details of creating modular models that can easily be implemented, modified, trained and verified. It makes it easy to run your model on CPU or GPU and change the underlying deep learning library.
 
 There is a command line tool for pulling down keras competition data.
-    
-    
-    pip install kaggle-cli
-    
+  
+  
+ pip install kaggle-cli
 
 You'll need to accept the T&Cs for the competition. You'll need to do a forgot password if you signed up for kaggle.com with an OAuth provider. Use this password for the kg client.
 
@@ -42,4 +41,4 @@ But just the fact that I can create a working model like this, trained to a spec
 
 For the first time it really feels like AI is now part of the developer's toolkit.
 
-get started now!… 
+get started now!…

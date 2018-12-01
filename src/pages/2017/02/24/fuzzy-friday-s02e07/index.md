@@ -1,9 +1,9 @@
 ---
 title: Fuzzy Friday
 subTitle: S02E07
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-24T17:12:33"
+date: '2017-02-24T17:12:33'
 ---
 
 From lunch to acquisition, how [Atlassian bought Trello][2] .
@@ -21,7 +21,7 @@ dar
 
 Subscribe here: https://tinyletter.com/darraghor
 
-* ### _Related_
+- ### _Related_
 
 [1]: http://gallery.tinyletterapp.com/1e5cf15292dc97882321c18990722135838340f4/images/e83fd11d-a1ea-47b5-84ad-7f5939909723.png
 [2]: https://techcrunch.com/2017/02/21/how-atlassian-bought-trello/

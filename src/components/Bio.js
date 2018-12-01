@@ -1,6 +1,6 @@
 import React from 'react'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './profile-pic.png'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -23,11 +23,13 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Darragh ORiordan</strong> who lives and works in Auckland, New Zealand building useful things.{' '}
+          This site is written by <strong>Darragh ORiordan</strong> who lives and works in
+          Auckland, New Zealand building things on the web.{' '}You should {' '}
           <a href="https://twitter.com/darraghor">
-            You should follow him on Twitter
+             follow him on Twitter
           </a>
         </p>
+        <br />        
       </div>
     )
   }

@@ -1,9 +1,9 @@
 ---
 title: Fuzzy Friday
 subTitle: S02E06
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-14T17:12:33"
+date: '2017-02-14T17:12:33'
 ---
 
 Seth Godin wants us to [stop calling them soft-skills][16].
@@ -19,7 +19,7 @@ dar
 
 Subscribe here: https://tinyletter.com/darraghor
 
-* ### _Related_
+- ### _Related_
 
 [16]: https://itsyourturnblog.com/lets-stop-calling-them-soft-skills-9cc27ec09ecb#.ai9muakoo
 [17]: http://www.rferl.org/a/faberge-eggs-still-captivate-100-years-on/28246742.html

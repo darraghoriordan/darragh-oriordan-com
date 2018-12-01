@@ -1,9 +1,9 @@
 ---
 title: Webstock 2017 Part 1
 subTitle: A long summary Part 1
-category: "development"
+category: 'development'
 cover: ../../../../post-default.jpg
-date: "2017-02-19T17:12:33"
+date: '2017-02-19T17:12:33'
 ---
 
 Web Stock is tech conference like no other, held in Wellington, New Zealand. Once again I left feeling energized and impassioned after listening to all the speakers on such a wide range of subjects.
@@ -18,17 +18,17 @@ There are parts of web development that we don't always consider – access, sec
 
 There are barriers to internet access you might not consider
 
-* Content – e.g. access to certain content is simply blocked in many countries
-* Culture – e.g. in parts of India women cannot own mobile devices because it is described as "dangerous to their well being"
-* Cost – e.g. see GNI below. Some refugees in Europe have to decide on contacting family members at home country or eating that day.
-* Infrastructure – e.g. Only one in five Tanzanians have access to power and that power is not reliable.
+- Content – e.g. access to certain content is simply blocked in many countries
+- Culture – e.g. in parts of India women cannot own mobile devices because it is described as "dangerous to their well being"
+- Cost – e.g. see GNI below. Some refugees in Europe have to decide on contacting family members at home country or eating that day.
+- Infrastructure – e.g. Only one in five Tanzanians have access to power and that power is not reliable.
 
 53% of people leave your page if load time is >3 seconds.  
 [https://whatdoesmysitecost.com/ ][2]will tell you how much of GDI it costs someone in poorer places to view your web site.  
  will scan your site for security issues  
  Axe can be used to check for accessibility issues
 
-Not providing basic accessibility cost Target $6 million in a lawsuit. Basic stuff – no alt text, image maps, not using header structure.
+Not providing basic accessibility cost Target \$6 million in a lawsuit. Basic stuff – no alt text, image maps, not using header structure.
 
 ### Kim Goodwin ([@kimgoodwin][3]) – Use scenarios and storyboards
 
@@ -42,7 +42,7 @@ Kim recommends lots of user discovery.
 
 Meeting expectations in your scenario is not good enough. You should add something exceptionally good.
 
-### Lara Hogan  ([@lara_hogan][4]) – Performance
+### Lara Hogan ([@lara_hogan][4]) – Performance
 
 Gave lots of practical performance optimizations you can make.
 
@@ -62,15 +62,15 @@ Give the peers guard rails – prevent any of the peers from inadvertently creat
 
 Keep it real – let peers be authentic. Example of uber ride where she was having a terrible day and the guy said "can I cheer you up?". He turned on disco ball and some techno and made her day. Also gave examples of allowing video for Airbnb's new travel experiences product rather than images because it would show more of the host's personality and authenticity of the complex experience.
 
-Some examples from listening to Car Talk – 
+Some examples from listening to Car Talk –
 
 ### Marcin Wichary ([@mwichary][8]) – Three examples with a surprising detail in their UX
 
 Speaks about one of Charles Babbage's machines, the pacman game and mouse pointers on text mode displays. How they all have incredible UX but it's not well known.
 
-* The babbage machine had error states to show people that calculating machines were safe.
-* Pacman had incredible tweaks to make the game more friendly than anything that had come before.
-* Detailed how much time and effort went into a DOS program to have a smooth mouse movement. No technical need for it but it made the physical mouse disappear and the user's hand became directly linked to the pointer.
+- The babbage machine had error states to show people that calculating machines were safe.
+- Pacman had incredible tweaks to make the game more friendly than anything that had come before.
+- Detailed how much time and effort went into a DOS program to have a smooth mouse movement. No technical need for it but it made the physical mouse disappear and the user's hand became directly linked to the pointer.
 
 Very entertaining and informative!
 
@@ -80,19 +80,19 @@ I think this was the highlight of the day for me. Excellent content and delivery
 
 In general it was about diversity. It was themed around the fandom that One Direction has and how this has inspired non-coders to become self taught coders and media content producers (editing tumblr and wrdpress themes), movie editors, CSS editing, social media management, writing fan fiction. How all these people are perfect candidates for tech jobs but haven't followed that traditional path.
 
-She became part of the community,  gained some trust and then ran a survey. They are typically young women, they are full of self doubt – no formal education, didn't know about tech roles – even the job titles, were told they shouldn't go for tech roles.
+She became part of the community, gained some trust and then ran a survey. They are typically young women, they are full of self doubt – no formal education, didn't know about tech roles – even the job titles, were told they shouldn't go for tech roles.
 
 Recommends hiring on ability (not just academic achievement)
 
 Gave incredible examples of the things one direction fans did. They organised 55 million social media fans to basically get a single they wanted released.
 
-Recommended   
+Recommended  
  – remove gender specific keywords  
  – achievement based hiring (no resumes)
 
 ### Ashley Nelson-Hornstein ([@ashleynh][10]) – Humanities x Technology
 
-Apple ads never have tech specs. Focus on the experience. 
+Apple ads never have tech specs. Focus on the experience.
 
 Big homage to steve jobs. He was at the crossroads of tech and humanities.
 
@@ -107,7 +107,6 @@ Fascinating history and how they are displayed on various devices. Such a fantas
 ### Patricia Moore
 
 Unfortunately Patti was hit by a car in New Zealand but she still recorded a talk from hospital while waiting for an operation. She spoke about designing for humanity.
-
 
 ### _Related_
 

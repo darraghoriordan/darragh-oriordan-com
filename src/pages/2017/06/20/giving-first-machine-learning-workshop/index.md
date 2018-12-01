@@ -1,9 +1,9 @@
 ---
 title: Giving your first machine learning workshop
 subTitle: A rough overview of a basic workshop
-category: "management"
+category: 'management'
 cover: headerimage.png
-date: "2017-06-20T17:12:33"
+date: '2017-06-20T17:12:33'
 ---
 
 Last week I offered to give a workshop on machine learning to share some of what I’ve learned so far. I had 2 goals for my workshop – first, I wanted to show everyone that they shouldn’t be afraid of machine learning. Second, I wanted to get people set up with anaconda so they can continue to learn themselves.
@@ -21,7 +21,6 @@ If you have time, pick a problem in your work domain. But don’t sweat if you c
 Use visual learning tools. There are some great ones for decision trees and random forests.
 Don’t make people write code the first time out. Just have them execute lines.
 THE PROCESS
- 
 
 INSTALL ANACONDA
 Before the workshop, I asked everyone to install Anaconda on their computers from https://www.continuum.io/downloads. I decided to use python because it’s what our data team use and enables future model sharing.
@@ -45,9 +44,7 @@ Then we stepped through each section together. We talked about all the visualiza
 
 I really tried to stress that training the model is easy but understanding and preparing the data is difficult.
 
-
 ![Identifying important variables](./int-2-300x171.png)
- 
 
 I got some great feedback on the machine learning workshop. Some attendees wanted to stay longer to get better accuracy and learn more algorithms!
 
