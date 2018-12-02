@@ -5,14 +5,18 @@ import { Link } from 'gatsby'
 
 const NavUl = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0px;
   margin: 0px;
+  @media (max-width: 660px) {
+    margin-top:.2em;
+  }
 `
 const NavElement = styled.li`
   padding-left: ${rhythm(1 / 2)};
   padding-right: ${rhythm(1 / 2)};
-  background-color: white;
+
   &:hover {
     border-bottom: 5px solid;
   }
@@ -27,6 +31,10 @@ const NavAnchor = styled(Link)`
   box-shadow: none;
   color: black;
   line-height: ${rhythm(2)};
+  @media (max-width: 660px) {
+    line-height: ${rhythm(2/3)};
+    letter-spacing: 2px;
+  }
 `
 
 class NavMenu extends React.Component {

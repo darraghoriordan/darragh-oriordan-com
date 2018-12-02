@@ -42,7 +42,8 @@ const titleAnimation = keyframes`
 const HeaderContainer = styled.div`
   display: flex;
   position: fixed;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  background-color: white;
   justify-content: space-between;
   top: 0px;
   z-index: 90;
