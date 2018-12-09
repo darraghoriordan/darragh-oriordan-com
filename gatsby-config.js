@@ -13,6 +13,7 @@ module.exports = {
         name: 'pages',
       },
     }
+    ,`gatsby-plugin-typescript`
     ,`gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -49,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `DarraghORiordanCom`,
+        short_name: `DarraghCom`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
