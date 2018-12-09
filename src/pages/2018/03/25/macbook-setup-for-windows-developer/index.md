@@ -12,13 +12,13 @@ First thing is download iTerm from: https://www.iterm2.com/
 
 Open a new iTerm and run the following to install Homebrew (this is like chocolatey)
 
-```
+```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 next install oh my zsh
 
-```
+```shell
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -26,7 +26,7 @@ Follow this great tutorial on setting up powershopp fonts and zsh: https://githu
 
 Setup git with homebrew
 
-```
+```shell
 brew update && brew upgrade
 
 brew install git
@@ -42,7 +42,7 @@ Run the fllowing lines to set up some git diff and merge magic and to add an ali
 
 Then in an iterm window enter:
 
-```
+```shell
 git config --global alias.code-review = "!git difftool --dir-diff origin/develop...$1"
 git config --global diff.tool bc3
 git config --global difftool.bc3.trustExitCode true
@@ -57,7 +57,7 @@ To launch a diff using Beyond Compare, use the command "git difftool --dir-diff"
 
 If you're on a mac and you're using Rider from jetbrains but the rest of your team is using visual studio you can have repository specifc ignores by editing the .git/info/exclude file. The following will hide the idea folder.
 
-```
+```shell
 .idea
 ```
 
@@ -65,7 +65,7 @@ Set iterm to use your project directory as the start up location in the preferen
 
 If you use jira i highly recommend the zsh plugin "jira". To have this remember your jira instance add the following to ~/.zshrc
 
-```
+```shell
 export JIRA_URL=https://jira.myorganisation.com
 export JIRA_NAME=doriordan
 export JIRA_PREFIX=REC-
@@ -74,7 +74,7 @@ export JIRA_RAPID_BOARD=true
 
 then you can use
 
-```
+```shell
 jira            # performs the default action
 jira new        # opens a new issue
 jira dashboard  # opens your JIRA dashboard
