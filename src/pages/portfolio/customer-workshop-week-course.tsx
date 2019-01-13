@@ -1,34 +1,34 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/Layout'
+import { graphql } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../../components/Layout"
 
-class PortfolioIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class PortfolioIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'The Customer Workshop'
+    const pageTitle = "The Customer Workshop"
     const metaDescription =
-      'A week long event for forging incredible relationships between product delivery teams and their customers'
+      "A week long event for forging incredible relationships between product delivery teams and their customers"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <h2>The Story</h2>
         <p>
-          I created this course based on my experience running{' '}
+          I created this course based on my experience running{" "}
           <a href="">The Customer Workshop</a> . A friend requested some
           information on how we organised it and I’ve wanted to try creating a
           course on the teachable platform since hearing about it on Side Hustle
           School.
         </p>
         <p>
-          You can check out the course for FREE! here:{' '}
+          You can check out the course for FREE! here:{" "}
           <a href="https://fuzzyminds.teachable.com/p/the-customer-workshop">
             https://fuzzyminds.teachable.com/p/the-customer-workshop
           </a>
@@ -74,7 +74,7 @@ class PortfolioIndex extends React.Component {
         <p>…then you will benefit from this course!</p>
         <h2>The Course</h2>
         <p>
-          You can check out the course for FREE! here:{' '}
+          You can check out the course for FREE! here:{" "}
           <a href="https://fuzzyminds.teachable.com/p/the-customer-workshop">
             https://fuzzyminds.teachable.com/p/the-customer-workshop
           </a>

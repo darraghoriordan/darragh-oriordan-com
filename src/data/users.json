@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Darragh",
+    "items": [
+      {
+        "name": "Osprey Talon 44",
+        "fixedWeight": 1000,
+        "dailyWeight": 0,
+        "category": "Pack",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Bike helmet",
+        "fixedWeight": 500,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Outdoor Research Helium 2 Raincoat",
+        "fixedWeight": 280,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Coffee Bag",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      }
+    ],
+    "trips": [
+      {
+        "title": "Rakiura Track",
+        "slug": "rakiura-track",
+        "location": "Stewart Island",
+        "durationNights": 3,
+        "needStove": true,
+        "needShelter": false,
+        "tripType": "hiking"
+      },
+      {
+        "title": "Round the mountain",
+        "slug": "round-the-mountain",
+        "location": "Ruapehu",
+        "durationNights": 3,
+        "needStove": true,
+        "needShelter": true,
+        "tripType": "hiking"
+      },
+      {
+        "title": "Southland cycle",
+        "slug": "southland-cycle",
+        "location": "Otago",
+        "durationNights": 25,
+        "needStove": true,
+        "needShelter": true,
+        "tripType": "bikepacking"
+      }
+    ]
+  }
+]

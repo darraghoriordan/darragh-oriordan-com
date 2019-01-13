@@ -1,30 +1,30 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import { graphql, Link } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
 
-import Layout from '../components/Layout'
-import { rhythm } from '../utils/typography'
+import Layout from "../components/Layout"
+import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class BlogIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
     const siteDescription = get(
       this,
-      'props.data.site.siteMetadata.description'
+      "props.data.site.siteMetadata.description"
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, "props.data.allMarkdownRemark.edges")
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: siteDescription }]}
           title={siteTitle}
         />
         <h1>Blog Posts</h1>
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
+        {posts.map(({ node }: any) => {
+          const title = get(node, "frontmatter.title") || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3
@@ -32,7 +32,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

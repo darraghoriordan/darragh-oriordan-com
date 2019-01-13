@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rhythm } from '../utils/typography'
-import 'typeface-lato'
-import FullWidthHeader from './FullWidthHeader'
+import React from "react"
+import styled from "styled-components"
+import "typeface-lato"
+import { rhythm } from "../utils/typography"
+import FullWidthHeader from "./FullWidthHeader"
 
 const SiteContainer = styled.div`
   width: 100%;
@@ -13,8 +13,8 @@ const ContentContainer = styled.div`
   max-width: ${rhythm(30)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 `
-class Layout extends React.Component {
-  render() {
+class Layout extends React.Component<any,any> {
+  public render() {
     const { location, title, children } = this.props
 
     return (

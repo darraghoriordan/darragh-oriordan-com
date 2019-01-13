@@ -1,30 +1,30 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../components/Layout'
+import { graphql } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../components/Layout"
 
-class ResumePage extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class ResumePage extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'Resume'
+    const pageTitle = "Resume"
     const metaDescription =
-      'Resume for Darragh ORiordan - Fullstack software developor and people leader in Auckland, New Zealand'
+      "Resume for Darragh ORiordan - Fullstack software developor and people leader in Auckland, New Zealand"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <p>
-          Hi! Here is my resume, but hit me up on{' '}
+          Hi! Here is my resume, but hit me up on{" "}
           <a href="https://www.linkedin.com/in/darraghoriordan/">
             https://www.linkedin.com/in/darraghoriordan/
-          </a>{' '}
-          for more info…{' '}
+          </a>{" "}
+          for more info…{" "}
         </p>
         <h2>Work History</h2>
         <h3>Trade Me Ltd</h3>

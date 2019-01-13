@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/Layout'
+import { graphql, Link } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../../components/Layout"
 
-class PortfolioIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class PortfolioIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'Portfolio'
+    const pageTitle = "Portfolio"
     const metaDescription = "Some things I've built"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <h3>New Leader List</h3>
@@ -36,7 +36,9 @@ class PortfolioIndex extends React.Component {
           course saves you up to 6 weeks of time planning for the event.
         </p>
         <p>
-        <Link to={"/portfolio/customer-workshop-week-course/"}>More Details</Link>
+          <Link to={"/portfolio/customer-workshop-week-course/"}>
+            More Details
+          </Link>
         </p>
         <h3>Cruhahore chrome extension</h3>
         <p>

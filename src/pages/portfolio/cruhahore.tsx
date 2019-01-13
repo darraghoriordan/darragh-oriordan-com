@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/Layout'
+import { graphql } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../../components/Layout"
 
-class PortfolioIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class PortfolioIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'Cruhahore'
-    const metaDescription = 'Use less social media'
+    const pageTitle = "Cruhahore"
+    const metaDescription = "Use less social media"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <h2>A chrome pluhin to help you use less social media</h2>
@@ -33,7 +33,7 @@ class PortfolioIndex extends React.Component {
 
         <h2>Check it out</h2>
         <p>
-          You can install the extension from the Chrome Web Store:{' '}
+          You can install the extension from the Chrome Web Store:{" "}
           <a href="https://chrome.google.com/webstore/detail/cruhahore/dgbcchgknbaelgkocedkhclhcomnhmjh?utm_source=chrome-app-launcher-info-dialog">
             https://chrome.google.com/webstore/detail/cruhahore/dgbcchgknbaelgkocedkhclhcomnhmjh?utm_source=chrome-app-launcher-info-dialog
           </a>

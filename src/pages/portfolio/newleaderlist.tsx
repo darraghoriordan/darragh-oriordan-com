@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/Layout'
+import { graphql } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../../components/Layout"
 
-class PortfolioIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class PortfolioIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'New Leader List'
-    const metaDescription = 'An app to help you connect better with your team'
+    const pageTitle = "New Leader List"
+    const metaDescription = "An app to help you connect better with your team"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <h2>Helping new people leaders</h2>
@@ -31,13 +31,13 @@ class PortfolioIndex extends React.Component {
 
         <h2>Check it out</h2>
         <p>
-          You can see it running here:{' '}
+          You can see it running here:{" "}
           <a href="http://www.newleaderlist.com">
             http://www.newleaderlist.com
           </a>
         </p>
         <p>
-          The code is here:{' '}
+          The code is here:{" "}
           <a href="https://gitlab.com/darragh.oriordan/managenow/tree/master">
             https://gitlab.com/darragh.oriordan/managenow/tree/master
           </a>

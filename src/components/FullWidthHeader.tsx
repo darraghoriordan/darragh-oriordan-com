@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
-import styled, { keyframes } from 'styled-components'
-import colors from '../utils/colors'
-import NavMenu from './NavMenu'
+import { Link } from "gatsby"
+import React from "react"
+import styled, { keyframes } from "styled-components"
+import colors from "../utils/colors"
+import { rhythm } from "../utils/typography"
+import NavMenu from "./NavMenu"
 
-const rootPath = `${__PATH_PREFIX__}/`
+// const rootPath = `${__PATH_PREFIX__}/`
 
 const HeaderTitle = styled.h1`
   top: 0px;
@@ -74,12 +74,12 @@ const HeaderLogo = styled.span`
   }
 `
 
-class FullWidthHeader extends React.Component {
-  render() {
-    const { title, location } = this.props
+class FullWidthHeader extends React.Component<any, any> {
+  public render() {
+    const { title } = this.props
     return (
       <HeaderContainer>
-        <HeaderLink to={'/'}>
+        <HeaderLink to={"/"}>
           <HeaderLogo />
           <HeaderTitle>{title}</HeaderTitle>
         </HeaderLink>

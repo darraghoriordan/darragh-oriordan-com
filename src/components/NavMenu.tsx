@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rhythm } from '../utils/typography'
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
+import React from "react"
+import styled from "styled-components"
+import { rhythm } from "../utils/typography"
 
 const NavUl = styled.ul`
   display: flex;
@@ -10,7 +10,7 @@ const NavUl = styled.ul`
   padding: 0px;
   margin: 0px;
   @media (max-width: 660px) {
-    margin-top:.2em;
+    margin-top: 0.2em;
   }
 `
 const NavElement = styled.li`
@@ -32,13 +32,13 @@ const NavAnchor = styled(Link)`
   color: black;
   line-height: ${rhythm(2)};
   @media (max-width: 660px) {
-    line-height: ${rhythm(2/3)};
+    line-height: ${rhythm(2 / 3)};
     letter-spacing: 2px;
   }
 `
 
-class NavMenu extends React.Component {
-  render() {
+class NavMenu extends React.Component<any, any> {
+  public render() {
     return (
       <nav>
         <NavUl>

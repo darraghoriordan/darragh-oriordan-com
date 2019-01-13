@@ -1,72 +1,76 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Darragh ORiordan',
-    author: 'Darragh ORiordan',
-    description: 'A personal website in gatsby 2',
-    siteUrl: 'https://darraghoriordan.com',
-  },
   plugins: [
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        path: `./src/data/`,
       },
-    }
-    ,`gatsby-plugin-typescript`
-    ,`gatsby-plugin-styled-components`,
+      resolve: `gatsby-source-filesystem`,
+    },
     {
-      resolve: `gatsby-transformer-remark`,
+      options: { name: 'pages', path: `${__dirname}/src/pages` },
+      resolve: `gatsby-source-filesystem`,
+    },
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-styled-components`,
+    {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
             },
+            resolve: `gatsby-remark-images`,
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
+            resolve: `gatsby-remark-responsive-iframe`,
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
       },
+      resolve: `gatsby-transformer-remark`,
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
       options: {
+        head: true,
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true
       },
+      resolve: `gatsby-plugin-google-analytics`,
     },
     `gatsby-plugin-feed`,
     {
-      resolve: `gatsby-plugin-manifest`,
       options: {
+        background_color: `#ffffff`,
+        display: `minimal-ui`,
+        icon: `src/assets/blog-icon.png`,
         name: `DarraghORiordanCom`,
         short_name: `DarraghCom`,
         start_url: `/`,
-        background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/blog-icon.png`,
       },
+      resolve: `gatsby-plugin-manifest`,
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
       },
+      resolve: 'gatsby-plugin-typography',
     },
   ],
+  siteMetadata: {
+    author: 'Darragh ORiordan',
+    description: 'A personal website in gatsby 2',
+    siteUrl: 'https://darraghoriordan.com',
+    title: 'Darragh ORiordan',
+  },
 }

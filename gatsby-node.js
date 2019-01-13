@@ -7,12 +7,15 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
+    const blogPostTemplate = path.resolve('./src/templates/blog-post.tsx')
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
                   fields {
@@ -28,25 +31,27 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
+          // tslint:disable-next-line: no-console
           console.log(result.errors)
           reject(result.errors)
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+          const previous =
+            index === posts.length - 1 ? null : posts[index + 1].node
+          const next = index === 0 ? null : posts[index - 1].node
 
           createPage({
-            path: post.node.fields.slug,
             component: blogPostTemplate,
             context: {
-              slug: post.node.fields.slug,
-              previous,
               next,
+              previous,
+              slug: post.node.fields.slug,
             },
+            path: post.node.fields.slug,
           })
         })
       })

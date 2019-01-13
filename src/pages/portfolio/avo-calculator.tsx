@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/Layout'
+import { graphql } from "gatsby"
+import get from "lodash/get"
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../../components/Layout"
 
-class PortfolioIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+class PortfolioIndex extends React.Component<any, any> {
+  public render() {
+    const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
-    const pageTitle = 'Avo calculator'
-    const metaDescription = 'How many avo breakfasts will your house cost'
+    const pageTitle = "Avo calculator"
+    const metaDescription = "How many avo breakfasts will your house cost"
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: metaDescription }]}
-          title={pageTitle + ' - ' + +siteTitle}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: metaDescription }]}
+          title={pageTitle + " - " + +siteTitle}
         />
         <h1>{pageTitle}</h1>
         <h2>Simple-As house deposits</h2>
@@ -26,13 +26,13 @@ class PortfolioIndex extends React.Component {
 
         <h2>Check it out</h2>
         <p>
-          You can see it running here:{' '}
+          You can see it running here:{" "}
           <a href="http://avocalc.darraghoriordan.com/">
             http://avocalc.darraghoriordan.com/
           </a>
         </p>
         <p>
-          The code is here:{' '}
+          The code is here:{" "}
           <a href="https://github.com/darraghoriordan/how-many-avos">
             https://github.com/darraghoriordan/how-many-avos
           </a>
