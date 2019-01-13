@@ -1,10 +1,8 @@
 import { graphql, Link } from "gatsby"
-import get from "lodash"
 import * as React from "react"
 import Helmet from "react-helmet"
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
-import TinyLetterSignup from "../components/TinyLetterSignup"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component<any, any> {
@@ -16,9 +14,10 @@ class BlogPostTemplate extends React.Component<any, any> {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        htmlAttributes as Helmet={{ lang: "en" }}
-        meta={[{ name: "description", content: siteDescription }]}
-        title={`${post.frontmatter.title} | ${siteTitle}`}
+        <Helmet
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: siteDescription }]}
+          title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
