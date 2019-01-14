@@ -36,7 +36,7 @@ class AboutPage extends React.Component<any, any> {
         <p>
           I studied applied physics at Cork Institute of Technology. After that
           I moved to Canada to work for Blackberry for a while. I found myself
-          building http apps rather than contrl systems and have continued doing
+          building web apps rather than control systems and have continued doing
           that.
         </p>
         <p>
@@ -53,20 +53,19 @@ class AboutPage extends React.Component<any, any> {
           places.
         </p>
         <p>
-          {" "}
-          I read all the time. I’ve never stopped playing with Lego and in
-          general I’d rather be on my paddle board, especially in the ocean
-          around New Zealand.
+          I read all the time. I still play with Lego and in general I’d rather
+          be on my paddle board, especially in the warm ocean around New
+          Zealand.
         </p>
 
         <p>
           I drive my motorcycle to work most days to beat the traffic. I love
-          cycling on longer trips and on sunny days. I only drive a car when I
+          cycling on longer trips and on sunny days. I only drive my car when I
           need to get boards to the surf.
         </p>
         <p>
-          I bloody love chocolate. I drink reds mostly. I don’t like salad
-          dressing.
+          I bloody love chocolate and beer. I drink reds mostly. I don’t like
+          salad dressing, butter or creamy white sauces.
         </p>
       </Layout>
     )

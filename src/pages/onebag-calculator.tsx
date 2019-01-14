@@ -111,7 +111,7 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
             onChange={this.handleInputChange}
           />
           <label htmlFor="needAShelter">Need a shelter</label>
-          <fieldset>
+          {/* <fieldset>
             <legend>Conditions</legend>
             <div>
               <input
@@ -143,8 +143,9 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
               />
               <label htmlFor="conditionsWinter">Winter</label>
             </div>
-          </fieldset>
+          </fieldset> */}
         </form>
+        OVERALL TOTAL: {res.totalWeight()}g
         {res.categories.map((cat, i) => (
           <div key={i}>
             <h3>{cat.name}</h3>
@@ -162,7 +163,6 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
             TOTAL: {cat.totalWeight(res.inputs.numberOfDays)}g
           </div>
         ))}
-        OVERALL TOTAL: {res.totalWeight()}g
       </Layout>
     )
   }
