@@ -10,23 +10,554 @@
         "tripTypes": ["hiking"]
       },
       {
-        "name": "Bike helmet",
-        "fixedWeight": 500,
+        "name": "Pack liner",
+        "fixedWeight": 280,
+        "dailyWeight": 0,
+        "category": "Pack",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Towel",
+        "fixedWeight": 190,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Warm jacket",
+        "fixedWeight": 450,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Rain jacket",
+        "fixedWeight": 280,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp shorts",
+        "fixedWeight": 118,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp thermals",
+        "fixedWeight": 174,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp t-shirt",
+        "fixedWeight": 80,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp socks",
+        "fixedWeight": 124,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp shoes - jandals",
+        "fixedWeight": 486,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Beanie",
+        "fixedWeight": 82,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Rain trousers",
+        "fixedWeight": 190,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Msr Cooking Pot",
+        "fixedWeight": 232,
+        "dailyWeight": 0,
+        "category": "Cooking",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Convertable pants",
+        "fixedWeight": 550,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Packed Undies",
+        "fixedWeight": 80,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Tent",
+        "fixedWeight": 1763,
+        "dailyWeight": 0,
+        "category": "Shelter",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Sleeping bag",
+        "fixedWeight": 915,
+        "dailyWeight": 0,
+        "category": "Sleep System",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Sleeping mat",
+        "fixedWeight": 640,
+        "dailyWeight": 0,
+        "category": "Sleep System",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Pillow",
+        "fixedWeight": 70,
+        "dailyWeight": 0,
+        "category": "Sleep System",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Stove",
+        "fixedWeight": 27,
+        "dailyWeight": 0,
+        "category": "Stove",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Lighter",
+        "fixedWeight": 21,
+        "dailyWeight": 0,
+        "category": "Stove",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Gas can",
+        "fixedWeight": 350,
+        "dailyWeight": 0,
+        "category": "Stove",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Camp shoes - Vivo barefoot",
+        "fixedWeight": 520,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Sunscreen",
+        "fixedWeight": 0,
+        "dailyWeight": 15,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Toothpaste",
+        "fixedWeight": 0,
+        "dailyWeight": 5,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Mouthwash",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Toothbrush (electric)",
+        "fixedWeight": 300,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Deodorant",
+        "fixedWeight": 50,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "First aid kit",
+        "fixedWeight": 50,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Wet wipes",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Toilet paper (1 roll)",
+        "fixedWeight": 100,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Insect repellant",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Hand sanitizer",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Soap",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Lipbalm",
+        "fixedWeight": 15,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Toiletries Bag",
+        "fixedWeight": 175,
+        "dailyWeight": 0,
+        "category": "Toiletries",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Water bladder",
+        "fixedWeight": 312,
+        "dailyWeight": 0,
+        "category": "Water System",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Shirt",
+        "fixedWeight": 170,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Shorts",
+        "fixedWeight": 170,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Socks",
+        "fixedWeight": 150,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Hiking boots",
+        "fixedWeight": 1052,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Bike shoes",
+        "fixedWeight": 800,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Hat",
+        "fixedWeight": 120,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Trekking pole",
+        "fixedWeight": 202,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Undies",
+        "fixedWeight": 80,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["hiking"]
+      },
+      {
+        "name": "Spare bib",
+        "fixedWeight": 150,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Spare bike shirt",
+        "fixedWeight": 150,
+        "dailyWeight": 0,
+        "category": "Packed Clothes",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Spoon",
+        "fixedWeight": 20,
+        "dailyWeight": 0,
+        "category": "Cooking",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Plastic drinking cup",
+        "fixedWeight": 19,
+        "dailyWeight": 0,
+        "category": "Cooking",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Big Multitool Knife",
+        "fixedWeight": 414,
+        "dailyWeight": 0,
+        "category": "Cooking",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Spare tube",
+        "fixedWeight": 100,
         "dailyWeight": 0,
         "category": "Equipment",
         "tripTypes": ["bikepacking"]
       },
       {
-        "name": "Outdoor Research Helium 2 Raincoat",
-        "fixedWeight": 280,
+        "name": "Chain links",
+        "fixedWeight": 5,
         "dailyWeight": 0,
         "category": "Equipment",
-        "tripTypes": ["hiking", "bikepacking"]
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Chain lube",
+        "fixedWeight": 80,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Bike pump",
+        "fixedWeight": 188,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Puncture kit",
+        "fixedWeight": 35,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Spare gear cable",
+        "fixedWeight": 15,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "4 zip ties",
+        "fixedWeight": 5,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Pot scrubber",
+        "fixedWeight": 4,
+        "dailyWeight": 0,
+        "category": "Cooking",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Survival blanket",
+        "fixedWeight": 54,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Kindle",
+        "fixedWeight": 301,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Phone",
+        "fixedWeight": 237,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "10,000mAh battery pack",
+        "fixedWeight": 220,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Usb cable",
+        "fixedWeight": 20,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Ear plugs",
+        "fixedWeight": 5,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Glasses and case",
+        "fixedWeight": 192,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Rubbish bag",
+        "fixedWeight": 20,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking", "hiking"]
+      },
+      {
+        "name": "Bike helmet",
+        "fixedWeight": 500,
+        "dailyWeight": 0,
+        "category": "Worn Clothes",
+        "tripTypes": ["bikepacking"]
+      },
+      {
+        "name": "Bike lock",
+        "fixedWeight": 445,
+        "dailyWeight": 0,
+        "category": "Equipment",
+        "tripTypes": ["bikepacking"]
       },
       {
         "name": "Coffee Bag",
         "fixedWeight": 0,
         "dailyWeight": 10,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Apple",
+        "fixedWeight": 0,
+        "dailyWeight": 80,
+        "caloriesPerGram": 0.5,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Milk powder",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Oats",
+        "fixedWeight": 0,
+        "dailyWeight": 40,
+        "caloriesPerGram": 3.7,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Honey",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "caloriesPerGram": 3,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Water",
+        "fixedWeight": 0,
+        "dailyWeight": 1000,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Cashews",
+        "fixedWeight": 0,
+        "dailyWeight": 50,
+        "caloriesPerGram": 5.5,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "OSM bars",
+        "fixedWeight": 0,
+        "dailyWeight": 65,
+        "caloriesPerGram": 3.8,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Main meal",
+        "fixedWeight": 0,
+        "dailyWeight": 100,
+        "caloriesPerGram": 4.5,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Hard sweets",
+        "fixedWeight": 0,
+        "dailyWeight": 10,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Alcohol - wine",
+        "fixedWeight": 0,
+        "dailyWeight": 150,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       }

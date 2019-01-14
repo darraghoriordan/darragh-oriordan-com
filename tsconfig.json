@@ -4,7 +4,7 @@
     "paths": { "*": ["types/*"] },
     "module": "commonjs",
     "target": "esnext",
-    "jsx": "react",
+    "jsx": "preserve",
     "lib": ["dom", "es2015", "es2017"],
     "strict": true,
     "noEmit": true,
