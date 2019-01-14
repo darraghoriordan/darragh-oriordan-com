@@ -11,9 +11,9 @@ const ContentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: ${rhythm(30)};
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  margin-top: 6em;
 `
-class Layout extends React.Component<any,any> {
+class Layout extends React.Component<any, any> {
   public render() {
     const { location, title, children } = this.props
 

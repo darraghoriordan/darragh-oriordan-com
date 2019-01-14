@@ -9,7 +9,10 @@ const NavUl = styled.ul`
   list-style: none;
   padding: 0px;
   margin: 0px;
-  @media (max-width: 660px) {
+  & li {
+    margin-top: 0;
+  }
+  @media (max-width: 700px) {
     margin-top: 0.2em;
   }
 `
@@ -23,6 +26,12 @@ const NavElement = styled.li`
 `
 const NavAnchor = styled(Link)`
   font-weight: 900;
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
   font-size: ${rhythm(2 / 3)};
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -31,7 +40,7 @@ const NavAnchor = styled(Link)`
   box-shadow: none;
   color: black;
   line-height: ${rhythm(2)};
-  @media (max-width: 660px) {
+  @media (max-width: 700px) {
     line-height: ${rhythm(2 / 3)};
     letter-spacing: 2px;
   }

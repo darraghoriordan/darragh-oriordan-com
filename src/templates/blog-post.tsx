@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component<any, any> {
           }}
         />
         <Bio />
-        /> as TinyLetterSignup
+
         <ul
           style={{
             display: "flex",
@@ -54,7 +54,6 @@ class BlogPostTemplate extends React.Component<any, any> {
               </Link>
             )}
           </li>{" "}
-          as
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">

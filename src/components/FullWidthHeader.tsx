@@ -9,10 +9,16 @@ import NavMenu from "./NavMenu"
 
 const HeaderTitle = styled.h1`
   top: 0px;
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
   position: absolute;
   display: none;
   margin-bottom: 0;
-  margin-top: ${rhythm(-1 / 12)};
+  margin-top: 2px;
   text-transform: uppercase;
   letter-spacing: 3px;
   background-color: white;
@@ -27,7 +33,12 @@ const HeaderLink = styled(Link)`
   box-shadow: none;
   text-decoration: none;
   color: inherit;
-
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
   font-size: ${rhythm(1)};
 `
 
@@ -61,7 +72,6 @@ const HeaderLogo = styled.span`
   font-size: ${rhythm(1)};
   letter-spacing: 1px;
   line-height: ${rhythm(2)};
-  height: ${rhythm(2)};
   width: ${rhythm(2)};
   padding-left: ${rhythm(1 / 5)};
   padding-right: ${rhythm(1 / 5)};

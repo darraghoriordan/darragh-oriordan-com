@@ -1,19 +1,15 @@
 import { graphql } from "gatsby"
 import * as React from "react"
+import Helmet from "react-helmet"
+import Layout from "../components/Layout"
+import IProfile from "../oneBagPlanner/IProfile"
 import {
   calculate,
   getWeightDisplayString,
   totalDailyCalories,
 } from "../oneBagPlanner/PackingCalculator"
 
-import Helmet from "react-helmet"
-import Layout from "../components/Layout"
-import IProfile from "../oneBagPlanner/IProfile"
-
 const initialState = {
-  conditionsSpringAutumn: true,
-  conditionsSummer: true,
-  conditionsWinter: true,
   location: "Ruapehu, New Zealand",
   needAShelter: true,
   needAStove: true,
@@ -78,16 +74,20 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
         <h1>OneBag Calculator</h1>
         <p>Trip Details</p>
         <form>
-          <label htmlFor="tripType">Trip type</label>
-          <select
-            name="tripType"
-            value={this.state.tripType}
-            onChange={this.handleInputChange}
-          >
-            <option value="hiking">Hiking</option>
-            <option value="bikepacking">Bikepacking</option>
-          </select>
-
+          <div className="form-group">
+            <label className="form-label" htmlFor="tripType">
+              Trip type
+            </label>
+            <select
+              name="tripType"
+              className="form-select"
+              value={this.state.tripType}
+              onChange={this.handleInputChange}
+            >
+              <option value="hiking">Hiking</option>
+              <option value="bikepacking">Bikepacking</option>
+            </select>
+          </div>
           <label htmlFor="numberOfDays">Trip length</label>
           <input
             type="text"
@@ -111,41 +111,14 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
             onChange={this.handleInputChange}
           />
           <label htmlFor="needAShelter">Need a shelter</label>
-          {/* <fieldset>
-            <legend>Conditions</legend>
-            <div>
-              <input
-                type="checkbox"
-                id="conditionsSpringAutumn"
-                name="conditionsSpringAutumn"
-                onChange={this.handleInputChange}
-                checked={this.state.conditionsSpringAutumn}
-              />
-              <label htmlFor="conditionsSpringAutumn">Spring / Autumn</label>
-            </div>
-            <div>
-              <input
-                type="checkbox"
-                id="conditionsSummer"
-                name="conditionsSummer"
-                onChange={this.handleInputChange}
-                checked={this.state.conditionsSummer}
-              />
-              <label htmlFor="conditionsSummer">Summer</label>
-            </div>
-            <div>
-              <input
-                type="checkbox"
-                id="conditionsWinter"
-                name="conditionsWinter"
-                onChange={this.handleInputChange}
-                checked={this.state.conditionsWinter}
-              />
-              <label htmlFor="conditionsWinter">Winter</label>
-            </div>
-          </fieldset> */}
         </form>
-        OVERALL TOTAL: {res.totalWeight()}g
+        <p>OVERALL TOTAL: {res.totalWeight()}g</p>
+        <p>
+          Total Daily calories:{" "}
+          {totalDailyCalories(
+            res.categories.find(x => x.name === "Food")!.items
+          )}
+        </p>
         {res.categories.map((cat, i) => (
           <div key={i}>
             <h3>{cat.name}</h3>
