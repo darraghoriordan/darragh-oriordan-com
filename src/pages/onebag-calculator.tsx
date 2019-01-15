@@ -1,7 +1,9 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import Helmet from "react-helmet"
+import { IItem } from "src/oneBagPlanner/IItem"
 import Layout from "../components/Layout"
+import TripInput from "../components/onebagCalculator/TripInput"
 import IProfile from "../oneBagPlanner/IProfile"
 import {
   calculate,
@@ -71,71 +73,60 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
           meta={[{ name: "description", content: metaDescription }]}
           title={pageTitle + " - " + siteTitle}
         />
-        <h1>OneBag Calculator</h1>
-        <p>Trip Details</p>
-        <form>
-          <div className="form-group">
-            <label className="form-label" htmlFor="tripType">
-              Trip type
-            </label>
-            <select
-              name="tripType"
-              className="form-select"
-              value={this.state.tripType}
-              onChange={this.handleInputChange}
-            >
-              <option value="hiking">Hiking</option>
-              <option value="bikepacking">Bikepacking</option>
-            </select>
-          </div>
-          <label htmlFor="numberOfDays">Trip length</label>
-          <input
-            type="text"
-            value={this.state.numberOfDays}
-            name="numberOfDays"
-            onChange={this.handleInputChange}
-          />
-
-          <input
-            type="checkbox"
-            checked={this.state.needAStove}
-            name="needAStove"
-            onChange={this.handleInputChange}
-          />
-          <label htmlFor="needAStove">Need a stove</label>
-
-          <input
-            type="checkbox"
-            checked={this.state.needAShelter}
-            name="needAShelter"
-            onChange={this.handleInputChange}
-          />
-          <label htmlFor="needAShelter">Need a shelter</label>
-        </form>
-        <p>OVERALL TOTAL: {res.totalWeight()}g</p>
-        <p>
-          Total Daily calories:{" "}
-          {totalDailyCalories(
-            res.categories.find(x => x.name === "Food")!.items
-          )}
-        </p>
-        {res.categories.map((cat, i) => (
-          <div key={i}>
-            <h3>{cat.name}</h3>
-            <ul>
-              {cat.items.map((item, j) => (
-                <p key={j}>
-                  {item.name} -{" "}
-                  {getWeightDisplayString(item, this.state.numberOfDays)}
-                </p>
-              ))}
-            </ul>
-            {cat.name === "Food" && (
-              <p>Total Daily calories: {totalDailyCalories(cat.items)}</p>
+        <h1 className="title">OneBag Calculator</h1>
+        <div className="container">
+          <p>Trip Details</p>
+          <TripInput onChange={this.handleInputChange} data={this.state} />
+        </div>
+        <div className="container">
+          <p>OVERALL TOTAL: {res.totalWeight()}g</p>
+          <p>
+            Total Daily calories:{" "}
+            {totalDailyCalories(
+              res.categories.find(x => x.name === "Food")!.items
             )}
-            TOTAL: {cat.totalWeight(res.inputs.numberOfDays)}g
+          </p>
+          <div className="container">
+            <hr />
+            <div className="columns is-multiline">
+              {res.categories.map((cat, i) => (
+                <div className="column is-one-third" key={i}>
+                  <h3 className="title is-5">{cat.name}</h3>
+                  <table className="table is-narrow">
+                    <tbody>
+                      {cat.items
+                        .sort((a: IItem, b: IItem) => {
+                          if (a.dailyWeight > 0) {
+                            return b.dailyWeight - a.dailyWeight
+                          }
+
+                          return b.fixedWeight - a.fixedWeight
+                        })
+                        .map((item, j) => (
+                          <tr key={j}>
+                            <td>{item.name}</td>
+                            <td>
+                              {" "}
+                              {getWeightDisplayString(
+                                item,
+                                this.state.numberOfDays
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      <tr>
+                        <td>
+                          <strong>Total</strong>
+                        </td>
+                        <td>{cat.totalWeight(res.inputs.numberOfDays)}g </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
       </Layout>
     )
   }

@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     {
       options: {
@@ -12,6 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     `gatsby-plugin-typescript`,
+
     `gatsby-plugin-styled-components`,
     {
       options: {
