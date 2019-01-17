@@ -91,6 +91,10 @@ class PortfolioIndex extends React.Component<any, any> {
             </a>
           </li>
         </ul>
+
+        <p>
+          You can see my resume here: <Link to={"/resume"}>Resume</Link>
+        </p>
       </Layout>
     )
   }

@@ -1,9 +1,37 @@
-@import '../../node_modules/bulma/bulma.sass';
+@charset "utf-8";
+@import '~bulma/sass/utilities/initial-variables';
+// Edit your Bulma variables here
+@import '~bulma';
 html {
-  font-size: 16px
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
   font-family: 'Lato', 'san-serif';
   font-size: inherit;
+  padding: 0px;
+  margin: 0px;
+}
+
+// .token.number {
+//   font-size: 40em;
+// }
+// prism and bulma (and bootstrap) conflict on some
+// css classes. The prism classes are prepended with .token
+.token.tag,
+.token.content,
+.token.number {
+  display: inline;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  border-radius: inherit;
+  font-weight: inherit;
+  white-space: inherit;
+  background: inherit;
+  margin: inherit;
 }

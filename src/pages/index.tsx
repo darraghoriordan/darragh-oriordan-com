@@ -3,8 +3,13 @@ import get from "lodash/get"
 import React from "react"
 import Helmet from "react-helmet"
 
+import styled from "styled-components"
+import Bio from "../components/Bio"
 import Layout from "../components/Layout"
-import { rhythm } from "../utils/typography"
+
+const PostItem = styled.div`
+  margin-bottom: 3em;
+`
 
 class BlogIndex extends React.Component<any, any> {
   public render() {
@@ -22,23 +27,20 @@ class BlogIndex extends React.Component<any, any> {
           meta={[{ name: "description", content: siteDescription }]}
           title={siteTitle}
         />
-        <h1>Blog Posts</h1>
+        <Bio />
         {posts.map(({ node }: any) => {
           const title = get(node, "frontmatter.title") || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
+            <PostItem key={node.fields.slug}>
+              <h3 className="title">
                 <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <h4 className="title is-6">{node.frontmatter.date}</h4>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+              <Link to={node.fields.slug}>read more...</Link>
+            </PostItem>
           )
         })}
       </Layout>

@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import colors from "../utils/colors"
-import { rhythm } from "../utils/typography"
 import NavMenu from "./NavMenu"
 
 // const rootPath = `${__PATH_PREFIX__}/`
@@ -20,11 +19,12 @@ const HeaderTitle = styled.h1`
   margin-bottom: 0;
   margin-top: 2px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  font-weight: 900;
+  letter-spacing: 4px;
   background-color: white;
   transform: translate3d(-100%, 0px, 0px);
-  font-size: ${rhythm(1)};
-  line-height: ${rhythm(2)};
+  font-size: 2em;
+  line-height: 1.8em;
   @media (min-width: 68em) {
     display: block;
   }
@@ -39,7 +39,7 @@ const HeaderLink = styled(Link)`
     text-decoration: none;
     color: black;
   }
-  font-size: ${rhythm(1)};
+  font-size: 1em;
 `
 
 const titleAnimation = keyframes`
@@ -69,12 +69,12 @@ const HeaderLogo = styled.span`
   text-transform: uppercase;
   position: relative;
   font-weight: 900;
-  font-size: ${rhythm(1)};
-  letter-spacing: 1px;
-  line-height: ${rhythm(2)};
-  width: ${rhythm(2)};
-  padding-left: ${rhythm(1 / 5)};
-  padding-right: ${rhythm(1 / 5)};
+  font-size: 2em;
+  letter-spacing: 2px;
+  line-height: 2em;
+  width: 2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   z-index: 100;
   display: block;
   background: ${colors.mainBlue};

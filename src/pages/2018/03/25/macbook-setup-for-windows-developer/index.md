@@ -6,7 +6,7 @@ cover: header.jpg
 date: '2018-03-25T17:12:33'
 ---
 
-I recently got a macbook at work and I'm doing only web development these days so no Visual Studio. I had to do a bit of reading to get things set up and I don't want to do it again so here is a post for me!
+I recently got a macbook at work and I'm doing only web development these days so no Visual Studio. I had to do a bit of reading to get things set up and I don't want to do it again so here is a post for me!<!-- end excerpt -->
 
 First thing is download iTerm from: https://www.iterm2.com/
 

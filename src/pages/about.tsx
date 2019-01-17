@@ -22,11 +22,11 @@ class AboutPage extends React.Component<any, any> {
           meta={[{ name: "description", content: metaDescription }]}
           title={pageTitle + " - " + siteTitle}
         />
-        <h1>{pageTitle}</h1>
+        <h1 className="title is-1">{pageTitle}</h1>
         <Bio />
 
         <img src={mountainPic} alt={`Me on a mountain`} />
-        <h3>Hi, I'm Darragh ORiordan</h3>
+        <h3 className="title is-3">Hi, I'm Darragh ORiordan</h3>
         <p>
           I was lucky enough to have access to a computer early through my
           school and eventually my family got a computer. I grew up breaking and
