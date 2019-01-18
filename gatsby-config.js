@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     `gatsby-plugin-typescript`,
-    // `gatsby-plugin-styled-components`,
+    `gatsby-plugin-styled-components`,
     {
       options: {
         excerpt_separator: `<!-- end excerpt -->`,

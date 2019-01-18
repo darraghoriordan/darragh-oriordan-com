@@ -15,11 +15,6 @@ body {
   margin: 0px;
 }
 
-// .token.number {
-//   font-size: 40em;
-// }
-// prism and bulma (and bootstrap) conflict on some
-// css classes. The prism classes are prepended with .token
 .token.tag,
 .token.content,
 .token.number {
