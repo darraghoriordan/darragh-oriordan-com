@@ -13,10 +13,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     `gatsby-plugin-typescript`,
-
     `gatsby-plugin-styled-components`,
     {
       options: {
+        excerpt_separator: `<!-- end excerpt -->`,
         plugins: [
           {
             options: {
@@ -52,8 +52,8 @@ module.exports = {
         background_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/assets/blog-icon.png`,
-        name: `DarraghORiordanCom`,
-        short_name: `DarraghCom`,
+        name: `Darraghor`,
+        short_name: `Darraghor`,
         start_url: `/`,
         theme_color: `#663399`,
       },
@@ -62,16 +62,11 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-      resolve: 'gatsby-plugin-typography',
-    },
   ],
   siteMetadata: {
     author: 'Darragh ORiordan',
-    description: 'A personal website in gatsby 2',
+    description:
+      'Darragh is a software developer and people leader from Ireland and living in New Zealand',
     siteUrl: 'https://darraghoriordan.com',
     title: 'Darragh ORiordan',
   },

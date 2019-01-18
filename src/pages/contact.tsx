@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import get from "lodash/get"
 import React from "react"
 import Helmet from "react-helmet"
+import Bio from "../components/Bio"
 import Layout from "../components/Layout"
 
 class ContactPage extends React.Component<any, any> {
@@ -17,12 +18,7 @@ class ContactPage extends React.Component<any, any> {
           meta={[{ name: "description", content: metaDescription }]}
           title={pageTitle + " - " + siteTitle}
         />
-        <h1>{pageTitle}</h1>
-        <p>
-          Feel free to get in touch with me on{" "}
-          <a href="https://www.linkedin.com/in/darraghoriordan/">LinkedIn</a> or{" "}
-          <a href="https://twitter.com/darraghor">Twitter</a>
-        </p>
+        <Bio />
       </Layout>
     )
   }

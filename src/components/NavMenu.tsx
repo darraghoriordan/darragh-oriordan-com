@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import { rhythm } from "../utils/typography"
 
 const NavUl = styled.ul`
   display: flex;
@@ -10,15 +9,15 @@ const NavUl = styled.ul`
   padding: 0px;
   margin: 0px;
   & li {
-    margin-top: 0;
+    margin-top: 0.4em;
   }
   @media (max-width: 700px) {
-    margin-top: 0.2em;
+    margin-top: 0.5em;
   }
 `
 const NavElement = styled.li`
-  padding-left: ${rhythm(1 / 2)};
-  padding-right: ${rhythm(1 / 2)};
+  padding-left: 0.8em;
+  padding-right: 0.8em;
 
   &:hover {
     border-bottom: 5px solid;
@@ -32,17 +31,17 @@ const NavAnchor = styled(Link)`
     text-decoration: none;
     color: inherit;
   }
-  font-size: ${rhythm(2 / 3)};
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 3px;
   display: block;
   text-decoration: none;
   box-shadow: none;
   color: black;
-  line-height: ${rhythm(2)};
+  line-height: 2em;
   @media (max-width: 700px) {
-    line-height: ${rhythm(2 / 3)};
-    letter-spacing: 2px;
+    //line-height: 1em;
+    font-size: 1em;
   }
 `
 
@@ -59,9 +58,6 @@ class NavMenu extends React.Component<any, any> {
           </NavElement>
           <NavElement>
             <NavAnchor to={"/portfolio"}>Portfolio</NavAnchor>
-          </NavElement>
-          <NavElement>
-            <NavAnchor to={"/resume"}>Resume</NavAnchor>
           </NavElement>
           <NavElement>
             <NavAnchor to={"/contact"}>Contact</NavAnchor>

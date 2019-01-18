@@ -6,7 +6,7 @@ cover: ./finished-bike.jpg
 date: '2018-11-25T14:12:33'
 ---
 
-This is the guide I wish I had when I was researching how to convert a 2013 Giant Defy road bike in to an electric bicycle using a Bafang centre drive kit.
+This is the guide I wish I had when I was researching how to convert a 2013 Giant Defy road bike in to an electric bicycle using a Bafang centre drive kit.<!-- end excerpt -->
 
 When I started I knew converting a road bike to electric wasn't too common and that there would be difficulties. I had to read heaps of different blogs and watch lots of videos to figure out how to convert the bicycle. I managed to get it all working in the end and thought this retrospective might help others out!
 
@@ -52,7 +52,7 @@ When I started I knew converting a road bike to electric wasn't too common and t
 
 ## The Bike
 
-I've recently upgraded my 5 year old Giant Defy bicycle to a beautiful Cannondale Synapse. I have some great memories on the Defy cycling around New Zealand and Europe fully loaded as a tourer and I've gotten some serious use out of it but it is quite beat up at this stage. 
+I've recently upgraded my 5 year old Giant Defy bicycle to a beautiful Cannondale Synapse. I have some great memories on the Defy cycling around New Zealand and Europe fully loaded as a tourer and I've gotten some serious use out of it but it is quite beat up at this stage.
 
 I have 15 km bike commute here in Auckland. Lately I see more and more folks on electric bikes whizzing past me on the way to work not even breaking a sweat so I built an electric bicycle to replace my motorcycle for commuting on the days I don't feel like riding a standard push bike.
 
@@ -80,7 +80,7 @@ A type of motor you could choose is a hub-drive system. Hub drives are essential
 
 I've read that there are some disadvantages with this type of motor around the way they feel to ride along with. They don't work well with gears and don't feel natural. Hub drives can understandably make changing the rear tyre a pain with the weight of the motor too. If you use Schwalbe Marathon Plus tyres you won't be fixing punctures very often but I can still understand the weight issue, motors are heavy. I've never ridden a hub drive myself though so this info is all from articles I've read online.
 
-I had some really nice Mavic wheels on my bike and I wanted to keep using those so changing one out for a hub drive was out of the question. 
+I had some really nice Mavic wheels on my bike and I wanted to keep using those so changing one out for a hub drive was out of the question.
 
 The second common type of motor you can buy is the mid-drive motor pictured in the previous section. These types of motors replace the drive system on your bike. You'll get a motor that replaces everything that's in your bottom bracket including a new chainring and cranks.
 
@@ -102,7 +102,7 @@ These resellers also sell all the spares and accessories you will need, usually 
 
 ## Choosing a motor model
 
-So once I decided on the brand the next step was figuring out a model. Bafang have three main models. The BBS01 is a 250W motor (some vendors tune it up to 350W), the BBS02 is a 500W or 750W motor and the BBSHD is a 1000W motor. 
+So once I decided on the brand the next step was figuring out a model. Bafang have three main models. The BBS01 is a 250W motor (some vendors tune it up to 350W), the BBS02 is a 500W or 750W motor and the BBSHD is a 1000W motor.
 
 Bafang accessories work across all the motors so your decision should be based on what power you need, legality of the motor in your area and if the motor will fit on your bike.
 
@@ -148,13 +148,13 @@ So if you have a road bike. And it has a weird, wide bottom bracket (wider than 
 
 If you have a fat bike or some mountain bikes with a wide chain stay, you also have to make sure the cranks and chainring will fit and turn without hitting your chain stays.
 
-I almost purchased my motor from Ali express but I noticed that the seller actually sold the 120mm Bafang model with spacers to get it to the length you ordered. This is a terrible solution because the spacers ruin your chain alignment. 
+I almost purchased my motor from Ali express but I noticed that the seller actually sold the 120mm Bafang model with spacers to get it to the length you ordered. This is a terrible solution because the spacers ruin your chain alignment.
 
 When you're purchasing the motor make sure that you are actually getting the specific length motor and not a 120mm one with spacers.
 
 ### Choosing a vendor
 
-There are lots of resellers of Bafang motors. In my research I found one company getting recommended all the time - Luna Cycles. This is a US company that resells bafang motors and all the accessories you might need. They have some kind of partner company in Australia called Luna Mate that sells similar kit to us down here in Australia and New Zealand. 
+There are lots of resellers of Bafang motors. In my research I found one company getting recommended all the time - Luna Cycles. This is a US company that resells bafang motors and all the accessories you might need. They have some kind of partner company in Australia called Luna Mate that sells similar kit to us down here in Australia and New Zealand.
 
 I had already ordered some tools and parts from Ali Express before I found this company, if I was doing it all over again I would just order everything I could from Luna because they deliver really quickly and you have everything in one package so you can build your bike right away.
 
@@ -169,6 +169,7 @@ For the BBSHD you need at least a 48V battery. I went with a 52V because that's 
 I don't know much about batteries but there are some interesting YouTube videos comparing different voltages and such. I was happy to go with the choices on Luna Mate.
 
 ## The "Bling Ring"
+
 You can buy a special chain ring called a Bling Ring for the Bafang electric motors. I recommend getting one. It's much lighter than the chain ring provided by Bafang and the chain fits the teeth FAR better. This means there's much less chance of an unexpected chain derailment. They also have less teeth than the default chain ring which puts less strain on the motor and makes for a smoother take off. On top of all that they look a lot better too :)
 
 ### Sizing the battery for your bike frame

@@ -1,35 +1,30 @@
 import React from "react"
-
-import { rhythm } from "../utils/typography"
+import styled from "styled-components"
 import profilePic from "./profile-pic.png"
 
+const BioContainer = styled.div`
+  display: flex;
+  margin-bottom: 2em;
+`
+const BioImage = styled.img`
+  height: 3em;
+  margin-bottom: 0;
+  margin-right: 1em;
+  width: 3em;
+`
 class Bio extends React.Component<any, any> {
   public render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={profilePic}
-          alt={`Kyle Mathews`}
-          style={{
-            height: rhythm(2),
-            marginBottom: 0,
-            marginRight: rhythm(1 / 2),
-            width: rhythm(2),
-          }}
-        />
+      <BioContainer>
+        <BioImage src={profilePic} alt={`Darragh ORiordan`} />
         <p>
-          This site is written by <strong>Darragh ORiordan</strong> who lives
-          and works in Auckland, New Zealand building things on the web. You
-          should{" "}
-          <a href="https://twitter.com/darraghor">follow him on Twitter</a>
+          Hi! I'm <strong>Darragh ORiordan</strong>. I live and work in
+          Auckland, New Zealand 🥝 enjoying the ocean 🏄 and building things on
+          the web 💻 Contact me{" "}
+          <a href="https://twitter.com/darraghor">on Twitter</a>
         </p>
         <br />
-      </div>
+      </BioContainer>
     )
   }
 }
