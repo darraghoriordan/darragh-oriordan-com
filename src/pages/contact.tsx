@@ -1,23 +1,17 @@
 import { graphql } from "gatsby"
-import get from "lodash/get"
 import React from "react"
-import Helmet from "react-helmet"
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
+import SEOConfiguration from "../components/SEOConfiguration"
 
 class ContactPage extends React.Component<any, any> {
   public render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title")
-
     const pageTitle = "Contact"
-    const metaDescription = "Contact me on linked in or twitter"
+    const metaDescription =
+      "I ❤️ questions and helping interesting projects! Please get in touch..."
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: metaDescription }]}
-          title={pageTitle + " - " + siteTitle}
-        />
+      <Layout>
+        <SEOConfiguration description={metaDescription} title={pageTitle} />
         <Bio />
       </Layout>
     )

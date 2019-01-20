@@ -1,9 +1,9 @@
 import { graphql } from "gatsby"
 import * as React from "react"
-import Helmet from "react-helmet"
 import { IItem } from "src/oneBagPlanner/IItem"
 import Layout from "../components/Layout"
 import TripInput from "../components/onebagCalculator/TripInput"
+import SEOConfiguration from "../components/SEOConfiguration"
 import IProfile from "../oneBagPlanner/IProfile"
 import {
   calculate,
@@ -50,7 +50,6 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
 
   public render() {
     const pageTitle = "OneBag Packing Calculator"
-    const siteTitle = this.props.data.site.siteMetadata.title
     const metaDescription =
       " A tool to help calculate the weight of my pack before a trip"
     const profile: IProfile = this.props.data.allUsersJson.edges.find(
@@ -67,12 +66,8 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
     )
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: metaDescription }]}
-          title={pageTitle + " - " + siteTitle}
-        />
+      <Layout>
+        <SEOConfiguration description={metaDescription} title={pageTitle} />
         <h1 className="title">OneBag Calculator</h1>
         <div className="container">
           <p>Trip Details</p>

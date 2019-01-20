@@ -1,10 +1,8 @@
-import { Link } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import colors from "../utils/colors"
 import NavMenu from "./NavMenu"
-
-// const rootPath = `${__PATH_PREFIX__}/`
 
 const HeaderTitle = styled.h1`
   top: 0px;
@@ -83,20 +81,39 @@ const HeaderLogo = styled.span`
     content: '{D}';
   }
 `
-
-class FullWidthHeader extends React.Component<any, any> {
-  public render() {
-    const { title } = this.props
-    return (
-      <HeaderContainer>
-        <HeaderLink to={"/"}>
-          <HeaderLogo />
-          <HeaderTitle>{title}</HeaderTitle>
-        </HeaderLink>
-        <NavMenu />
-      </HeaderContainer>
-    )
+interface IQueryResponse {
+  site: {
+    siteMetadata: {
+      title: string
+    }
   }
 }
+
+const FullWidthHeader = () => (
+  <StaticQuery
+    query={query}
+    render={(queryResponse: IQueryResponse) => {
+      return (
+        <HeaderContainer>
+          <HeaderLink to={"/"}>
+            <HeaderLogo />
+            <HeaderTitle>{queryResponse.site.siteMetadata.title}</HeaderTitle>
+          </HeaderLink>
+          <NavMenu />
+        </HeaderContainer>
+      )
+    }}
+  />
+)
+
+const query = graphql`
+  query FullWidthHeader {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default FullWidthHeader

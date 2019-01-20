@@ -14,11 +14,11 @@ const ContentContainer = styled.div`
 `
 class Layout extends React.Component<any, any> {
   public render() {
-    const { location, title, children } = this.props
+    const { children } = this.props
 
     return (
       <SiteContainer>
-        <FullWidthHeader title={title} location={location} />
+        <FullWidthHeader />
         <ContentContainer className="container content">
           {children}
         </ContentContainer>

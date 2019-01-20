@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 class NotFoundPage extends React.Component<any, any> {
   public render() {
     return (
-      <Layout location={this.props.location}>
+      <Layout>
         <h1 className="title is-1">Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist...</p>
         <p>

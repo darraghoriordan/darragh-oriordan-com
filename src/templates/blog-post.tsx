@@ -1,23 +1,23 @@
 import { graphql, Link } from "gatsby"
 import * as React from "react"
-import Helmet from "react-helmet"
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
+import SEOConfiguration from "../components/SEOConfiguration"
 
 class BlogPostTemplate extends React.Component<any, any> {
   public render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const siteDescription = post.excerpt
+
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+      <Layout>
+        <SEOConfiguration
+          description={post.excerpt}
+          title={post.frontmatter.title}
+          //   image={post.frontmatter.cover.publicURL}
         />
+
         <h1 className="title is-1">{post.frontmatter.title}</h1>
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        cover
         date(formatString: "MMMM DD, YYYY")
       }
     }
