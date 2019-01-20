@@ -1,6 +1,6 @@
 ---
-title: How to add Bulma and prism Js to a Gatsby project avoiding CSS class conflicts
-subTitle: Avoiding conflicts with bulma and prismJs
+title: How to add Bulma and PrismJs to a Gatsby project avoiding CSS conflicts
+subTitle: Avoiding conflicts with Bulma and PrismJs
 category: 'development'
 cover: header.jpg
 date: '2019-01-20T17:12:33'
