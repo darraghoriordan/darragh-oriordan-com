@@ -7,7 +7,9 @@ date: '2019-01-17T17:12:33'
 
 Cors protection is a recommended security configuration for any api. It protects your customers from unexpected attacks by blocking websites you haven't approved.
 
-Like most things in express, there's a package you can install to add cors protection to your application and with a tiny bit of configuration you'll be set.<!-- end excerpt -->
+If you have a devOps team they will handle this for you. But if you are a single maker with an application on Heroku and front end on Netlify you need to implement this yourself.<!-- end excerpt -->
+
+Like most things in express, there's a package you can install to add cors protection to your application and with a tiny bit of configuration you'll be set.
 
 First install the package (<https://www.npmjs.com/package/cors>)
 
