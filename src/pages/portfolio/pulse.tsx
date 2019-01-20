@@ -1,22 +1,15 @@
-import { graphql } from "gatsby"
-import get from "lodash/get"
 import * as React from "react"
-import Helmet from "react-helmet"
 import Layout from "../../components/Layout"
+import SEOConfiguration from "../../components/SEOConfiguration"
 
 class PortfolioIndex extends React.Component<any, any> {
   public render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title")
-
-    const pageTitle = "Portfolio"
-    const metaDescription = "Some things I've built"
+    const pageTitle = "Pulse"
+    const metaDescription =
+      "A map showing buying and selling activity on trademe.co.nz"
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: metaDescription }]}
-          title={pageTitle + " - " + siteTitle}
-        />
+      <Layout>
+        <SEOConfiguration description={metaDescription} title={pageTitle} />
         <h1>{pageTitle}</h1>
         <h2>Highlighting the team’s impact</h2>
         <p>
@@ -56,14 +49,3 @@ class PortfolioIndex extends React.Component<any, any> {
 }
 
 export default PortfolioIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`

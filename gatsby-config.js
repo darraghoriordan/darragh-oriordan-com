@@ -67,7 +67,10 @@ module.exports = {
     author: 'Darragh ORiordan',
     description:
       'Darragh is a software developer and people leader from Ireland and living in New Zealand',
+    image: '/favicon.png',
     siteUrl: 'https://darraghoriordan.com',
     title: 'Darragh ORiordan',
+    titleTemplate: '%s - Darragh ORiordan',
+    twitterUsername: '@darraghor',
   },
 }

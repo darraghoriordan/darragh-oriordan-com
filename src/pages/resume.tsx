@@ -1,30 +1,21 @@
-import { graphql } from "gatsby"
-import get from "lodash/get"
+import { graphql, Link } from "gatsby"
 import React from "react"
-import Helmet from "react-helmet"
 import Layout from "../components/Layout"
+import SEOConfiguration from "../components/SEOConfiguration"
 
 class ResumePage extends React.Component<any, any> {
   public render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title")
-
     const pageTitle = "Resume"
     const metaDescription =
       "Resume for Darragh ORiordan - Fullstack software developor and people leader in Auckland, New Zealand"
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: metaDescription }]}
-          title={pageTitle + " - " + siteTitle}
-        />
-        <h1>{pageTitle}</h1>
+      <Layout>
+        <SEOConfiguration description={metaDescription} title={pageTitle} />
+        <h1 className="title">{pageTitle}</h1>
+        <p>Hi! Here is my resume copied from linked in.</p>
         <p>
-          Hi! Here is my resume, but hit me up on{" "}
-          <a href="https://www.linkedin.com/in/darraghoriordan/">
-            https://www.linkedin.com/in/darraghoriordan/
-          </a>{" "}
-          for more info…{" "}
+          Please <Link to={"/contact"}>get in touch</Link> if you would like to
+          discuss any work...
         </p>
         <h2>Work History</h2>
         <h3>Trade Me Ltd</h3>

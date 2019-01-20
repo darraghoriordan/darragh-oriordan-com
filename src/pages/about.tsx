@@ -1,27 +1,17 @@
 import { graphql } from "gatsby"
-import get from "lodash/get"
 import React from "react"
-import Helmet from "react-helmet"
 // tslint:disable-next-line
 import mountainPic from '../../static/mountain.jpg'
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
+import SEOConfiguration from "../components/SEOConfiguration"
 
 class AboutPage extends React.Component<any, any> {
   public render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title")
-
     const pageTitle = "About"
-
-    const metaDescription =
-      " I’m a full stack web developer and people leader. I use javascript and C# to build things customers love. I'm a servant leader, I hire and work with great people and get out of their way."
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: metaDescription }]}
-          title={pageTitle + " - " + siteTitle}
-        />
+      <Layout>
+        <SEOConfiguration title={pageTitle} image={"/mountain.jpg"} />
         <h1 className="title is-1">{pageTitle}</h1>
         <Bio />
 
