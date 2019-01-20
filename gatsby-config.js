@@ -59,7 +59,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
