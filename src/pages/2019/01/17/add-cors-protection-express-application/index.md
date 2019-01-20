@@ -53,7 +53,7 @@ It might look like this for production
 CORS_ALLOWED_HOSTS="https://www.darraghoriordan.com"
 ```
 
-The starterCorsProtection() takes some configuration.
+The cors() method takes an options object and the configuration is as follows.
 
 - "credentials: true" sets the Access-Control-Allow-Credentials header. This lets us use credentials on ajax requests.
 - "optionsSuccessStatus: 200" helps cors works on more devices.

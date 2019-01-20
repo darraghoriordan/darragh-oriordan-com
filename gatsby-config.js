@@ -41,7 +41,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       options: {
-        head: true,
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
       resolve: `gatsby-plugin-google-analytics`,
