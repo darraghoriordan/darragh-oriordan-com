@@ -68,3 +68,5 @@ const starterCors = starterCorsConfiguration()
 app.use(starterCors)
 app.options('*', starterCors)
 ```
+
+You can see this in action on my starter source code @ <https://gitlab.com/darragh.oriordan/starter/tree/master>
