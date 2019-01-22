@@ -5,7 +5,7 @@ cover: header.jpg
 date: '2019-01-22T17:12:33'
 ---
 
-Some of us like to make things for the web but everyone finds it super hard to find time to start and finish any side projects. If you've been thinking about something for a year but haven't even started, here are some tips to help you start and finish more stuff!
+Some of us like to make things for the web but everyone finds it super hard to find time to start and finish any side projects. If you've been thinking about something for a year but haven't even started, here are some tips to help you start and finish more stuff!<!-- end excerpt -->
 
 ## 1. Ship immediately
 
