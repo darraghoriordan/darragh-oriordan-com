@@ -11,8 +11,11 @@ const NavUl = styled.ul`
   & li {
     margin-top: 0.4em;
   }
-  @media (max-width: 700px) {
-    margin-top: 0.5em;
+  @media (max-width: 535px) {
+    margin-top: 0;
+    & li {
+      margin-top: 0;
+    }
   }
 `
 const NavElement = styled.li`

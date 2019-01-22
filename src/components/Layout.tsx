@@ -9,8 +9,8 @@ const ContentContainer = styled.div`
   margin-top: 6em;
   @media (min-width: 700px) {
     max-width: 825px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   margin-left: 20px;
