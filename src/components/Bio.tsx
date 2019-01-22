@@ -21,7 +21,7 @@ class Bio extends React.Component<any, any> {
           Hi! I'm <strong>Darragh ORiordan</strong>. I live and work in
           Auckland, New Zealand 🥝 enjoying the ocean 🏄 and building things on
           the web 💻 Contact me{" "}
-          <a href="https://twitter.com/darraghor">on Twitter</a>
+          <a href="https://twitter.com/darraghor">on Twitter</a>!
         </p>
         <br />
       </BioContainer>
