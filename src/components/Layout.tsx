@@ -9,7 +9,13 @@ const ContentContainer = styled.div`
   margin-top: 6em;
   @media (min-width: 700px) {
     max-width: 825px;
+    margin-left: 0;
+    margin-right: 0;
   }
+
+  margin-left: 20px;
+  margin-right: 20px;
+
   font-size: 20px;
 `
 class Layout extends React.Component<any, any> {
