@@ -12,7 +12,6 @@ const ContentContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-
   margin-left: 20px;
   margin-right: 20px;
 
