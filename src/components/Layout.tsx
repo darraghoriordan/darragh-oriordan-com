@@ -7,7 +7,7 @@ const SiteContainer = styled.div`
 `
 const ContentContainer = styled.div`
   margin-top: 6em;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     max-width: 825px;
     margin-left: auto;
     margin-right: auto;
