@@ -47,8 +47,12 @@ export const getWeightDisplayString = (
   }
   if (hasDailyWeight) {
     response += `${item.dailyWeight}g / day`
-    response += ` ( ${item.dailyWeight * numberOfDays +
-      item.fixedWeight}g total )`
+    if (item.name === "Water") {
+      response += ` ( ${item.dailyWeight * 1 + item.fixedWeight}g total )`
+    } else {
+      response += ` ( ${item.dailyWeight * numberOfDays +
+        item.fixedWeight}g total )`
+    }
   }
   return response
 }

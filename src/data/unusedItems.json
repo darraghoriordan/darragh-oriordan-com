@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Convertable pants",
+    "fixedWeight": 550,
+    "dailyWeight": 0,
+    "category": "Packed Clothes",
+    "tripTypes": ["hiking", "bikepacking"]
+  },
+  {
+    "name": "Camp shoes - Vivo barefoot",
+    "fixedWeight": 520,
+    "dailyWeight": 0,
+    "category": "Packed Clothes",
+    "tripTypes": ["hiking", "bikepacking"]
+  },
+  {
+    "name": "Camp shoes - jandals",
+    "fixedWeight": 486,
+    "dailyWeight": 0,
+    "category": "Packed Clothes",
+    "tripTypes": ["hiking", "bikepacking"]
+  }
+]
