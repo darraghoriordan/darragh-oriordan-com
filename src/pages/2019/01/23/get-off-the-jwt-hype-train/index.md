@@ -5,7 +5,7 @@ cover: header.jpg
 date: '2019-01-23T17:12:33'
 ---
 
-I've been researching using node as a backend for a few months now and SO MANY articles and project "starters" on GitHub suggest using JWT for authorization on your client facing API. JWT is a terrible solution for client auth on a web application, especially new apps and projects with few users and here's why.<!-- end excerpt -->
+I’ve been researching using node as a back end for a few months now and SO MANY setting node articles, courses and project “starters” on GitHub suggest using JWT on your client facing API. JWT is a terrible solution for client sessions on a web application, especially new apps and projects with few users and here’s why.<!-- end excerpt -->
 
 ## What is JWT?
 
@@ -13,7 +13,7 @@ JWT is a JSON object that gets signed in a standardised way. It can be sent to t
 
 The idea is that token has all the details about the user and their permissions on your API stored in it so your API doesn't have to hit your database when the user sends the JWT with a request for some resource as an authenticated user.
 
-This is in comparison to a regular session ID that is sent to the client, usually in a cookie. which they send back to your server with each subsequent request. The server validates the session ID and looks up whatever it needs to about the user to fulfil the request. All state remains on the server/database.
+This is in comparison to a regular session ID that is sent to the client, usually in a cookie. Which they send back to your server with each subsequent request. The server validates the session ID and looks up whatever it needs to about the user to fulfil the request. All state remains on the server/database.
 
 Here's some of the reasoning people give for JWT and my thoughts.
 
@@ -51,10 +51,12 @@ Every back end web framework supports HTTP headers and in fact probably has firs
 
 ## "JWT is secure"
 
-Many articles describe storing your JWT in local storage. This is not secure. Any JavaScript on the page can read it and use it. You almost certainly have JavaScript on the page that you didn't write that came from an NPM package or a CDN. Vulnerability injection in this way has ben done before and will happen again.
+The signing is secure. However many articles describe storing your JWT in local storage. This is not secure. Any JavaScript on the page can read it and use it. You almost certainly have JavaScript on the page that you didn’t write that came from an NPM package or a CDN. Vulnerability injection in this way has been done before and will happen again.
 
 The alternative is storing the JWT in a cookie. So now you need to protect the cookie just like you would with an old school session cookie. See cookie security features above.
 
 ## So what should you do?
 
-Just start with a normal session ID! Use whatever popular session library you like for your framework to support this. The library will create a session id on successful login. It will store the ID in a secure cookie and send it back to the user. It will store the session id's in a table in your database and handle reading and validating IDs for you.
+Well you probably don't need JWT. There's a good chance it's actually the wrong solution for your application and it's making things more complicated so just be sure you know why you're using it if you are.
+
+Just start with a normal session ID, a cookie and a session store in your main database! Use whatever popular session library you like for your framework to support this.
