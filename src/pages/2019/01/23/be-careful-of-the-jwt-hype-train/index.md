@@ -71,4 +71,4 @@ The alternative to local storage is storing the JWT in a cookie. So now you need
 
 Well you probably don't need JWT. JWT has its uses but there's a good chance it's actually the wrong solution for your application and it's making things more complicated or insecure than a session store with Ids and cookies.
 
-So just be sure you know why you're using JWT and understand it's limitations before adding it to your awesome new app!! 😊
+So just be sure you know why you're using JWT and understand its limitations before adding it to your awesome new app!! 😊
