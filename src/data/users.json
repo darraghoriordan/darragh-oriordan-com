@@ -462,6 +462,7 @@
         "name": "Coffee Bag",
         "fixedWeight": 0,
         "dailyWeight": 10,
+        "unitsPerDay": 2,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       },
@@ -470,6 +471,7 @@
         "fixedWeight": 0,
         "dailyWeight": 80,
         "caloriesPerGram": 0.5,
+        "unitsPerDay": 1,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       },
@@ -483,7 +485,7 @@
       {
         "name": "Oats",
         "fixedWeight": 0,
-        "dailyWeight": 40,
+        "dailyWeight": 50,
         "caloriesPerGram": 3.7,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
@@ -493,6 +495,23 @@
         "fixedWeight": 0,
         "dailyWeight": 10,
         "caloriesPerGram": 3,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Lindt 85% Bar",
+        "fixedWeight": 0,
+        "dailyWeight": 50,
+        "caloriesPerGram": 6,
+        "unitsPerDay": 0.5,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Olive Oil",
+        "fixedWeight": 0,
+        "dailyWeight": 5,
+        "caloriesPerGram": 8,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       },
@@ -520,17 +539,28 @@
         "tripTypes": ["hiking", "bikepacking"]
       },
       {
-        "name": "Main meal",
+        "name": "Dry Pasta",
         "fixedWeight": 0,
-        "dailyWeight": 100,
-        "caloriesPerGram": 4.5,
+        "dailyWeight": 150,
+        "caloriesPerGram": 3.5,
+        "category": "Food",
+        "tripTypes": ["hiking", "bikepacking"]
+      },
+      {
+        "name": "Tomato Paste",
+        "fixedWeight": 0,
+        "dailyWeight": 50,
+        "unitsPerDay": 1,
+        "caloriesPerGram": 1,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       },
       {
         "name": "Hard sweets",
         "fixedWeight": 0,
-        "dailyWeight": 10,
+        "dailyWeight": 20,
+        "unitsPerDay": 4,
+        "caloriesPerGram": 4.6,
         "category": "Food",
         "tripTypes": ["hiking", "bikepacking"]
       },

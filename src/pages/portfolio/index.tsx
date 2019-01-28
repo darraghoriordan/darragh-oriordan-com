@@ -11,6 +11,14 @@ class PortfolioIndex extends React.Component<any, any> {
       <Layout>
         <SEOConfiguration description={metaDescription} title={pageTitle} />
         <h1>{pageTitle}</h1>
+        <h3>Packing Calculator</h3>
+        <p>
+          A quick calculator for my trips so I know what to pack and how much to
+          bring. This one is mostly for me!
+        </p>
+        <p>
+          <Link to={"/onebag-calculator"}>Go right there</Link>
+        </p>
         <h3>New Leader List</h3>
         <p>
           Improve your team with instant references to content from your

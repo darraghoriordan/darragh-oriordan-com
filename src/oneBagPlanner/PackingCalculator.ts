@@ -30,7 +30,17 @@ export const totalDailyCalories = (items: IItem[]): number => {
   })
   return totalCals
 }
+export const getUnitsPerDayString = (
+  item: IItem,
+  numberOfDays: number
+): string => {
+  if (item.unitsPerDay > 0) {
+    return `(${item.unitsPerDay} / day - ${item.unitsPerDay *
+      numberOfDays} Total)`
+  }
 
+  return ""
+}
 export const getWeightDisplayString = (
   item: IItem,
   numberOfDays: number

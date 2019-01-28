@@ -7,6 +7,7 @@ import SEOConfiguration from "../components/SEOConfiguration"
 import IProfile from "../oneBagPlanner/IProfile"
 import {
   calculate,
+  getUnitsPerDayString,
   getWeightDisplayString,
   totalDailyCalories,
 } from "../oneBagPlanner/PackingCalculator"
@@ -105,6 +106,10 @@ export default class PackingCalculator extends React.Component<IProps, IState> {
                               {getWeightDisplayString(
                                 item,
                                 this.state.numberOfDays
+                              )}{" "}
+                              {getUnitsPerDayString(
+                                item,
+                                this.state.numberOfDays
                               )}
                             </td>
                           </tr>
@@ -145,6 +150,7 @@ export const query = graphql`
             caloriesPerGram
             category
             tripTypes
+            unitsPerDay
           }
           trips {
             title

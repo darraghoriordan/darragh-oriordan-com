@@ -21,4 +21,5 @@ export interface IItem {
   tripTypes: string[]
   bringHiking: boolean
   bringBackacking: boolean
+  unitsPerDay: number
 }

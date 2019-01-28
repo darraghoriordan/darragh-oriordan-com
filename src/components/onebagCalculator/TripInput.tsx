@@ -1,4 +1,5 @@
 import * as React from "react"
+import styled from "styled-components"
 
 interface IProps {
   onChange: (
@@ -16,7 +17,9 @@ const initialState = {
   numberOfDays: 3,
   tripType: "hiking",
 }
-
+const TripLengthContainer = styled.div`
+  width: 5em;
+`
 type IState = Readonly<typeof initialState>
 
 export default class PackingCalculator extends React.Component<IProps> {
@@ -48,7 +51,7 @@ export default class PackingCalculator extends React.Component<IProps> {
           </div>
         </div>
         <div className="field">
-          <div className="control">
+          <TripLengthContainer className="control">
             <label className="label" htmlFor="numberOfDays">
               Trip length (days)
             </label>
@@ -60,7 +63,7 @@ export default class PackingCalculator extends React.Component<IProps> {
               name="numberOfDays"
               onChange={this.props.onChange}
             />
-          </div>
+          </TripLengthContainer>
         </div>
         <div className="field">
           <div className="control">
