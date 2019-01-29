@@ -5,7 +5,7 @@ cover: header.jpg
 date: '2019-01-25T17:12:33'
 ---
 
-I had to import a JavaScript in to my React project with typescript and typescript gave me an error. It wasn't causing my build to fail but it was annoying seeing it in the console. Here's how I got rid of the error.
+I had to import a JavaScript in to my React project with typescript and typescript gave me an error. It wasn't causing my build to fail but it was annoying seeing it in the console. Here's how I got rid of the error.<!-- end excerpt -->
 
 I added the .js file to `/public/scripts` so it would be treated as a kind of static file. This is what caused the issue.
 
