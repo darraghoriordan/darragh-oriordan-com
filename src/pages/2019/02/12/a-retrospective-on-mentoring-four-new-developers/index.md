@@ -48,13 +48,13 @@ We also did lots of communication on slack. There was a separate slack channel f
 
 For a smaller group like this it would be better for everyone to be in the #tech channel.
 
-- Set up regular meetings with an opt in video conference link (just use google calendar if that's available to you)
+- Set up regular meetings with an opt in video conference link (just use google calendar if that's available to you). Skype isn't great for organising the people.
 - Set up a chat room (slack or discord or something)
-- Don't keep "tech" chats separate in a short project. Time is far too precious!
+- Don't keep "tech" chats separate in a short project. Time is far too precious so just have everyone listening to all chats!
 
 ## Technology
 
-The project would need source control, hosting, back end tech, front end tech and a data store. I suggested that the students do some research before deciding on technologies so they looked at
+Most web projects need source control, hosting, back end tech, front end tech and a data store. I suggested that the students do some research before deciding on technologies so they looked at
 
 - What technologies are in demand seeing as they would be graduating soon
 - What they had experience with already
@@ -62,9 +62,9 @@ The project would need source control, hosting, back end tech, front end tech an
 
 The students had done some work with .Net and really wanted to work with JavaScript. So the initial discussions were around a DotNetCore backend with React front end.
 
-The students quickly decided that DotNetCore wasn't going to work for them and they would go full JavaScript with node and React. I don't think there were strong reasons for not using DotNetCore, just a preference.
+The students quickly decided that DotNetCore wasn't going to work for them and they would go full JavaScript with node and React. I don't think there were strong reasons for not using DotNetCore, just a preference. Both work just as well so I didn't care too much about that one.
 
-The students also wanted to use MongoDb. They had seen it used in lots of tutorials but I didn't feel like a schema-less database would work out well with a brand new, undisciplined team. Seeing as Heroku also provides a free instance of Postgres I suggested we go with that and an ORM with migrations so everyone could always restore an exact copy of the schema. This saved us a few times later.
+The students also wanted to use MongoDb. They had seen it used in lots of tutorials but I didn't feel like a schema-less database would work out well with a brand new, undisciplined team. Seeing as Heroku also provides a free instance of Postgres I suggested we go with Postgres and an ORM with migrations so everyone could always restore an exact copy of the schema. This saved us a few times later.
 
 I tried to save some time by setting the students up with a working starter that I mangled together from a bunch of other starter projects. The project had
 
@@ -79,11 +79,11 @@ I tried to save some time by setting the students up with a working starter that
 
 You can see the starter at <https://gitlab.com/darragh.oriordan/starter>. I've since added typescript, heaps of tests and graphQL (Apollo).
 
-We used GitLab over GitHub because at the time there was no CI/CD on GitHub and no free private repositories. Both of these are available on GitHub now. They hadn't used a branching model before so I thought them a kind of gitflow pattern. I made master a protected branch so they had to do pull requests to add code. Heroku would be deployed from master automatically.
+We used GitLab over GitHub because at the time there was no CI/CD on GitHub and no free private repositories. Both of these are available on GitHub now. They hadn't used a branching model before so I thought them a gitflow pattern. I made master a protected branch so they had to do pull requests to add code. Heroku would be deployed from master automatically.
 
 I did some code reviews initially to set some standards and suggested they code review each others work after that. I don't think this happened but it wasn't a large project. If you wanted to enforce reviews then make review acceptance a requirement for merging.
 
-I didn't add any type checking system and I didn't add any examples of automated testing. So the final product didn't have any of this either. There were lots of regressions because of missing tests.
+I didn't add any type checking system and I didn't add any examples of automated testing. So the final product didn't have any of this either. There were lots of regressions because of missing tests and basic type errors.
 
 - Let the team chose their own technologies unless it absolutely wont work.
 - Do provide sensible guard rails against their level of experience and your own time for fixing issues later
@@ -100,6 +100,7 @@ The students were going to use their university's private cloud to host the appl
 
 - There is 0 server configuration
 - It's free \$\$ for non production/staging
+- There are well known deploy patterns with dpl
 - The sponsors can see progress whenever from anywhere on the internet
 - The sponsors can show the product to customers whenever they like
 
@@ -109,26 +110,32 @@ Iterations worked well. The teams had a chunk of work to complete in a time they
 
 The students used libraries for authentication (Auth0) and payment (Stripe). This worked really well for them. It saved weeks of work developing more bespoke solutions. There was still quite a bit of work writing email copy, sending emails, hooking auth up to back end, front end and the database. Payments was smooth.
 
-We didn't have a designer on the team so the site didn't look professional. This was a huge problem in my opinion. I should have suggested that the first thing the sponsors do is get designs done with a designer. This would also have provided a nice paper based prototype to show to potential customers. It would have saved all the what-ifs and maybe's throughout the project.
+We didn't have a designer on the team so the site didn't look professional. This was a huge problem in my opinion. I should have suggested that the first thing the sponsors do is to work with a designer. This would also have given the sponsors a nice paper based prototype to show to potential customers. It would have saved the what-ifs and maybe's discussions throughout the project.
 
 Mobile support was added AFTER the desktop layouts. This caused a lot of time to be spent reworking layouts. I should have suggested a mobile first approach. Many sites are seeing minimum 60-70% mobile usage these days so you need to have it. You might as well start with the constraints. A designer would probably have caught this earlier anyway. So hire a designer first:)
 
 The students didn't have experience debugging so I had to help out with that sometimes. It could be something you can go through with your brand new junior devs before they get stuck. Things like how to read the console logs and locate a line in a file in the source and how to set a break point. I also taught them the remove all code from a module and adding it back piece by piece until it breaks again method:)
 
-- Have a design FIRST or instead of suggesting they copy and existing marketplace, have the sponsors pick a marketplace and have the team copy it as much as possible. But seriously have a good design first.
+- Have a design before coding or instead of suggesting they copy and existing marketplace, have the sponsors pick a marketplace and have the team copy it as much as possible. But seriously have a good design first.
 - SaaS products often have really simple examples that make them look super easy to use. The reality is you will most likely have to do significant work on your end to integrate. There is still configuration and copy to add to the SaaS that will take time.
 - Make sure mobile layout is considered early.
 - Make sure the sponsors have taken paper mocks to a customer to get some feedback.
 - Teach the developers how to debug early
 
-## Great results but..
+## Great results but...
 
-The students completed all of the larger chunks of functionality agreed to at the start. There were some small compromises to get the project completed in time. There were some bugs in the final product too. I haven't heard what kind of customer feedback there has been yet but with the dsign it might not have been great if customers expected a really polished experience.
+The students completed all of the larger chunks of functionality agreed to at the start. There were some small compromises to get the project completed in time. There were some bugs in the final product too. I haven't heard what kind of customer feedback there has been yet but with the design it might not have been great if customers expected a really polished experience.
 
-However the students received some of the best marks in their class for the project and for me that's a hug success.
+However the students received some of the best marks in their class for the project and for me that's a huge success.
 
 Overall the same major issues showed up here as they would for any software project.
 
 - Make sure the solution solves the problem before coding (great design and UX will help here)
 - There will be advantages and disadvantages to most technology choices. You'll just have to live with some annoying stuff.
 - It's always worth it in the end to follow good practices like CI/CD, automated testing, static types, iterative development with feedback from stake holders. It will pay back the upfront effort even in a short project
+
+Are there any tips you would add for a senior developer or lead who is taking on a team of junior developers?
+
+As a new developer do you remember anything that helped you out?
+
+Let me know!
