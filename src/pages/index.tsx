@@ -29,7 +29,11 @@ class BlogIndex extends React.Component<any, any> {
                 </Link>
               </h3>
               <h4 className="title is-6">{node.frontmatter.date}</h4>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.htmlExcerpt,
+                }}
+              />
               <Link to={node.fields.slug}>read more...</Link>
             </PostItem>
           )
@@ -47,6 +51,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt(pruneLength: 400)
+          htmlExcerpt: excerpt(format: HTML)
           fields {
             slug
           }

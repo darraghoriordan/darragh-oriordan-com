@@ -1,57 +1,52 @@
 ---
-title: My framework for helping new developers work on client projects
+title: A retrospective on mentoring four new developers
 category: 'development'
 cover: header.jpg
-date: '2019-02-06T17:12:33'
+date: '2019-02-12T17:12:33'
 ---
 
-Late last year I had the pleasure of helping a team of students build a prototype for a non-profit here in Auckland. The non-profit would use the prototype to raise more funds to continue or just get feedback.
+Late last year I had the pleasure of helping a team of students build a prototype for a non-profit here in Auckland. The non-profit needed a prototype to raise more funds and get feedback on their plan.
 
-I've helped run teams and mentor junior developers in large organisations where it's much easier because the support, tools, frameworks, systems of the organisation are already available. For this project the student teams had a blank slate and had to decide on everything from how they would communicate with the sponsors to how they would host the software.
+I've helped run teams and mentor junior developers in large organisations. It's much easier because the support, tools, frameworks, systems of the organisation are already available. For this project the student teams had a blank slate and had to decide on everything from how they would communicate with the sponsors to how they would host the software.
 
 I wanted to write down what I learned and note some of the mistakes I made so that I have a framework for the next time I help new developers!
 
 <!-- end excerpt -->
 
-## 0 years professional experience and enthusiasm
+## 0 years experience but heaps of enthusiasm!
 
-There were four students in total split into two teams. The students were in their final year and had built some web projects as course work. One had maintained a public facing website but otherwise they hadn't worked with clients or customers.
+There were four students in total split into two teams. The students were in their final year and had built some web projects as course work. One had maintained a public facing website but otherwise they hadn't worked with clients or customers. When I first met the students I was completely blown away by their positive attitude and decided to help right away.
 
-When I first met the students I was blown away by their positive attitude and decided to help right away.
-
-They were enthusiastic and passionate about software development. They cared about their community (this was a non-profit project). They had strong drive and work ethic - they all worked part time jobs (sometimes two!) in addition to university and this project.
+The whole team were enthusiastic and passionate about software development. They cared about their community enough to choose to work on a non-profit project). They all had strong drive and work ethic - each worked a part time job (sometimes two!) in addition to university and this project.
 
 I was acting as a kind of technical consultant and I spent roughly 4 hours a week on this project. I saw my role as helping
 
 1. The sponsors to get a working prototype
 2. The students to get good grades
 
-by
-
-1. Ensuring some best practices were in place
-2. Guiding some technology choices
-
-I also helped once or twice when the students got really stuck on something but that was rare. They were great at googling and figuring stuff out.
+I had ensure some best practices were in place and guide some technology choices. I also helped once or twice when the students got really stuck on something but that was rare. They were great at googling and figuring stuff out.
 
 ## Setting the scope and expectations
 
-The sponsors wanted to get as much done as possible and the students were very optimistic about development time. the first thing to do was limit the scope and set realistic expectations for both the development team AND the sponsors.
+The sponsors wanted to get as much done as possible in three months and the students were very optimistic about development time. The first thing I helped with was limiting the scope and settting realistic expectations for both the development team AND the sponsors.
 
-The sponsors had created a great, detailed specification in Excel with a "Must have" and "Optional" tag on each feature item. Th product would be an Ebay clone with all the customer and administrative features you expect on a mature service like Shopify and the students were agreeing to most of it for the three month cycle.
+The sponsors had created a comprehensive specification in Excel with a "Must have" and "Optional" tag on each feature item. The product would be a marketplace with all the customer and administrative features you expect on a mature service like Shopify and the students were agreeing to complete most of it for the three month cycle.
 
-I didn't think this would be possible in three months with a team of new developers. We applied some lean principles to figure out the most important features and to order the by priority. This would only to take the project to the next step rather than build out a fully featured marketplace.
+I just didn't think this was realistic with a team of new developers.
 
-- If your development team is very new they will be overly optimistic about their ability to deliver quality software features. Like, way more than the normal developer optimism. Help them out by teaching them under promise and over deliver. They will probably still over promise.
-- From what I saw the development team didn't take into account things like finding and creating infrastructure, setting up tooling, CI/CD all that kind of stuff that you need before you can even start. This will take a lot of their time outside of building application features.
-- Next time I would be even more specific about requirements and expectations at the start.
+We applied some lean principles to figure out the most important features to test and to order them by priority. This limited feature set would only to take the non-profit to the next step rather than build out a fully featured marketplace.
+
+- If your development team is very new they will be optimistic about their ability to deliver quality software features. Like, way more than the normal developer optimism:) Help them out by teaching them under promise and over deliver.
+- From what I saw the development team didn't take into account things like researching and creating infrastructure, setting up tooling, CI/CD all that kind of stuff that you need before you can even start. This will take a lot of their time outside of building application features.
+- Next time I would be even more specific about requirements and quality expectations at the start. Make sure the sponsors and team agree on what will be delivered.
 
 ## Communications
 
-There won't be any communication norms for the new project so you'll have to set them up. The project sponsors wanted to have a weekly get together with the students to catch up which was perfect. We initially organised this over skype and chat but quickly changed to Google meeting. Every two weeks roughly the sponsors and students would meet in person in the university to review progress.
+There won't be any communication norms like in a mature org so you'll have to set them up. The project sponsors wanted to have a weekly get together with the students to catch up which was perfect. We initially organised our meetings over Skype and chat but quickly changed to regularly scheduled Google meeting. Every two weeks roughly, the sponsors and students would meet in person in the university to review progress.
 
-We also did lots of communication on slack. There was a separate slack channel for #tech that didn't include the sponsors. Next time for a smaller group like this it would be better for everyone to be in the #tech channel.
+We also did lots of communication on slack. There was a separate slack channel for #tech that didn't include the sponsors. There were discussions that needed sponsor input that had to be moved to the #general channel with far less context and the sponsors would have had a better idea of the work, progress and complexities if they could see all the discussion.
 
-There were discussions that needed sponsor input that had to be moved to the #general channel with far less context and the sponsors would have had a better idea of the work, progress and complexities if they could see all the discussion.
+For a smaller group like this it would be better for everyone to be in the #tech channel.
 
 - Set up regular meetings with an opt in video conference link (just use google calendar if that's available to you)
 - Set up a chat room (slack or discord or something)
