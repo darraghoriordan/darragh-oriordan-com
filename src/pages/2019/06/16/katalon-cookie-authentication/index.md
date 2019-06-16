@@ -1,11 +1,13 @@
 ---
-title: How to use session cookie authentication for Katalon API tests
+title: How to use session cookie authentication for Katalon API integration tests
 category: 'development'
 cover: header.jpg
 date: '2019-06-16T17:12:33'
 ---
 
 This post describes automatically logging in to a webpage to get a session cookie and subsequently using the cookie for API authentication in Katalon. It shows how you can pass the cookie through a global variable to make authenticated API calls.
+
+<!-- end excerpt -->
 
 This is useful if you have an API without a common authentication system like Basic HTTP or OAuth. This technique can also be used to pass any kind of value between tests in a test suite.
 
