@@ -13,7 +13,7 @@ This is useful if you have an API without a common authentication system like Ba
 
 We will log in to the regular web site. We will copy the cookies in to a global variable. We will reuse those cookies in subsequent API test cases.
 
-We need to create a new browser driven test to get the authentication cookie but first we need the objects that the test case will use.
+We need to create a new browser driven tes t to get the authentication cookie but first we need the objects that the test case will use.
 
 ## Create the objects you need
 
