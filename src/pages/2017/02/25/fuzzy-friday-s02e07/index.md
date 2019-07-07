@@ -10,11 +10,13 @@ Seth Godin wants us to [stop calling them soft-skills][16].
 
 A beautiful photo story of [Faberge and his eggs][17].
 
+<!-- end excerpt -->
+
 The surprising ways [Facebook collects and uses your data][18], especially when you don’t think they are.
 
 Deep learning will [change everything][19].
 
-Enjoy and thanks for reading!  
+Enjoy and thanks for reading!
 dar
 
 Subscribe here: https://tinyletter.com/darraghor

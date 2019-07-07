@@ -8,6 +8,8 @@ date: '2017-11-21T17:12:33'
 
 I lead a team of developers that work on one of the busiest New Zealand websites. We have ~4 million members and ~850,000 unique users every day. Working at this kind of scale means the real people who buy and use our products can get lost behind user personas or Jira ticket numbers.
 
+<!-- end excerpt -->
+
 To bridge the gap between my team and their customers I organised a week of hands on outstanding customer appreciation. We would invite 9 customers to join us in our office. They would meet our team, learn how we work and ask us anything they liked. We would do a discovery session directly with them and have our customers prioritize what we should work on.
 
 For the next four days we would hack and hustle as many solutions as possible into production. I learned about the strengths of my team and some problems in our processes but we got some great stuff out to production and had some smiling customers at the end.
@@ -92,6 +94,6 @@ We have received great feedback on the day from our customers and from other tea
 
 Organizing an event like this takes weeks of planning but if you’re interested you can check out my FREE course on Teachable here:
 
-https://fuzzyminds.teachable.com/p/the-customer-workshop/
+<https://fuzzyminds.teachable.com/p/the-customer-workshop/>
 
 It includes all the files, checklists and agendas. There’s some promotional material and all the hints and tips I learned from organizing this event.

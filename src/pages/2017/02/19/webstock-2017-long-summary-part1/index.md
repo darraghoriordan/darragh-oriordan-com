@@ -8,6 +8,8 @@ date: '2017-02-19T17:12:33'
 
 Web Stock is tech conference like no other, held in Wellington, New Zealand. Once again I left feeling energized and impassioned after listening to all the speakers on such a wide range of subjects.
 
+<!-- end excerpt -->
+
 These are my summaries and don't even come close to describing the full scope and quality of each talk. Use only as a guide to hear more. I'll add links when the videos are released. I also may have made mistakes transcribing this because my hand writing is terrible!
 
 Day 1
@@ -23,10 +25,10 @@ There are barriers to internet access you might not consider
 - Cost – e.g. see GNI below. Some refugees in Europe have to decide on contacting family members at home country or eating that day.
 - Infrastructure – e.g. Only one in five Tanzanians have access to power and that power is not reliable.
 
-53% of people leave your page if load time is >3 seconds.  
-[https://whatdoesmysitecost.com/ ][2]will tell you how much of GDI it costs someone in poorer places to view your web site.  
- will scan your site for security issues  
- Axe can be used to check for accessibility issues
+53% of people leave your page if load time is >3 seconds.
+[https://whatdoesmysitecost.com/ ][2]will tell you how much of GDI it costs someone in poorer places to view your web site.
+will scan your site for security issues
+Axe can be used to check for accessibility issues
 
 Not providing basic accessibility cost Target \$6 million in a lawsuit. Basic stuff – no alt text, image maps, not using header structure.
 
@@ -86,9 +88,9 @@ Recommends hiring on ability (not just academic achievement)
 
 Gave incredible examples of the things one direction fans did. They organised 55 million social media fans to basically get a single they wanted released.
 
-Recommended  
- – remove gender specific keywords  
- – achievement based hiring (no resumes)
+Recommended
+– remove gender specific keywords
+– achievement based hiring (no resumes)
 
 ### Ashley Nelson-Hornstein ([@ashleynh][10]) – Humanities x Technology
 

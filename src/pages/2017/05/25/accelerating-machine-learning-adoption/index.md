@@ -8,6 +8,8 @@ date: '2017-05-25T17:12:33'
 
 Last week I had an amazing opportunity to present about machine learning and innovation to 110 people leaders at my company. It was a mixed audience of technical and non technical people.
 
+<!-- end excerpt -->
+
 My message is that machine learning needs to be understood by everyone in the business, not just the data scientists. Domain knowledge with machine learning will really enable successful data projects.
 
 Here are my slides and some notes

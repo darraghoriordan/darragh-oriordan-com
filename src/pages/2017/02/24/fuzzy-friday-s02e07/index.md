@@ -10,13 +10,15 @@ From lunch to acquisition, how [Atlassian bought Trello][2] .
 
 Success stories from [developers who started at age 35,40,45 ][3].
 
+<!-- end excerpt -->
+
 Why [Basecamp chose profit][4] over venture capital.
 
 [How do you measure leadership?][5] from YCombinator.
 
 Folk musician Jesse had his Youtube account hacked and lost all hist fans and likes. No recourse from Google so [he's starting again][6]. The power of internet giants to have huge effects on people's is only growing.
 
-Enjoy and thanks for reading!  
+Enjoy and thanks for reading!
 dar
 
 Subscribe here: https://tinyletter.com/darraghor

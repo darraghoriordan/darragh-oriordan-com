@@ -8,6 +8,8 @@ date: '2017-02-19T17:12:33'
 
 Web Stock is tech conference like no other, held in Wellington, New Zealand. Once again I left feeling energized and impassioned after listening to all the speakers on such a wide range of subjects.
 
+<!-- end excerpt -->
+
 Day 2
 
 ### Jonathon Colman ([@jcolman][12]) – Wicked Ambiguity and UX

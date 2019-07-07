@@ -10,6 +10,8 @@ A.k.a. how to get the truth from your direct reports while you sit back and eat 
 
 You’ve been a manager for a year and you’re not sure it’s all going OK? You don’t know if you’re providing maximum value to your team or which specific aspects of your people leadership to improve?
 
+<!-- end excerpt -->
+
 You might be having regular catch ups but you’re not receiving honest leadership feedback, or maybe you’re getting it but you’re just not hearing it!
 
 In Kim Scott’s ![presentation on radical candor](https://www.youtube.com/watch?v=4yODalLQ2lM) she suggests having a feedback session where your team and YOUR manager catch up WITHOUT YOU being present.

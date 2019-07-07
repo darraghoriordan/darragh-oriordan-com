@@ -11,7 +11,7 @@ Hi, thanks for signing up to the newsletter.
 Mary Meeker (Kleiner Perkins) has released the [state of the internet report][1] for 2018 - 294 pages of awesome . Personalised shopping and mobile advertising are growing like CRAZY!<!-- end excerpt -->
 
 I've had a flu this week so I spent most of my awake time watching Rich Hickey videos on [https://awesometalks.party][2]
-
+<!-- end excerpt -->
 Farnham Street has a wonderful interview with Patrick Collison from stripe. Check it out at [https://www.fs.blog/2018/05/patrick-collison/][3]
 
 Enjoy and thanks for reading!

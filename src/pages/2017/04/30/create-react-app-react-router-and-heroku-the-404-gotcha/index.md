@@ -9,6 +9,8 @@ date: '2017-04-30T17:12:33'
 
 I've been putting together a React app and I needed cheap, fast hosting so I went to put it on Heroku.
 
+<!-- end excerpt -->
+
 ### Configuring Heroku
 
 The community have put together a build pack for create-react-app. You can basically deploy in 2 minutes.

@@ -7,7 +7,7 @@ date: '2017-09-14T17:12:33'
 ---
 
 If you’re selling your teams on some form of agile but the reality they work in is completely different, you are damaging and demotivating your teams through confusion and an impossible to achieve vision. If you’ve adopted ‘agile’ do yourself a favor and check the health of the adoption right now.
-
+<!-- end excerpt -->
 Every organisation has a custom agile adoption. That’s the point, being reactive to what works for you, having less process and more awesome product in your customer’s hands. However this flexibility can cause problems.
 
 The damage occurs when you sell yourself as a particular agile-way-of-working to your delivery teams and you bring in the agile consultants and experts to inspire. But then senior leaders never attend these sessions. Your agile practitioners and advocates go back to their teams bursting with new ideas and they are faced with rejection from middle managers, deadlines on everything and solutions to implement.

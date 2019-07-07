@@ -8,6 +8,8 @@ date: '2017-02-28T17:12:33'
 
 Three weeks ago I discovered the fast.ai course. They offer a practical deep learning course for coders where you get straight in to building neural networks. They provide a huge amount of support through wikis, forums, aws scripts and tooling, videos and book recommendations.
 
+<!-- end excerpt -->
+
 ## AI competitions
 
 The first step in this AI course is building an neural network for detecting cats and dogs in images using keras. To make this easy you use an existing model called Vgg16. Yea I had no clue what any of those things were either. There is so much information in this first lesson. It took me three weeks part-time to get through it all properly, and I still didn't go deep in to the maths.
@@ -21,9 +23,8 @@ To do the calculations quickly you'll need a computer with a GPU. I used AWS for
 Keras is a (high-level) library that sits on top of the TensorFlow or Theano libraries. It abstracts away the details of creating modular models that can easily be implemented, modified, trained and verified. It makes it easy to run your model on CPU or GPU and change the underlying deep learning library.
 
 There is a command line tool for pulling down keras competition data.
-  
-  
- pip install kaggle-cli
+
+pip install kaggle-cli
 
 You'll need to accept the T&Cs for the competition. You'll need to do a forgot password if you signed up for kaggle.com with an OAuth provider. Use this password for the kg client.
 

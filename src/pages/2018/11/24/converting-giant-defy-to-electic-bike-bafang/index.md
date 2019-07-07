@@ -7,7 +7,7 @@ date: '2018-11-25T14:12:33'
 ---
 
 This is the guide I wish I had when I was researching how to convert a 2013 Giant Defy road bike in to an electric bicycle using a Bafang centre drive kit.<!-- end excerpt -->
-
+<!-- end excerpt -->
 When I started I knew converting a road bike to electric wasn't too common and that there would be difficulties. I had to read heaps of different blogs and watch lots of videos to figure out how to convert the bicycle. I managed to get it all working in the end and thought this retrospective might help others out!
 
 ![Finished Bike](./finished-bike.jpg 'Finished Bike')

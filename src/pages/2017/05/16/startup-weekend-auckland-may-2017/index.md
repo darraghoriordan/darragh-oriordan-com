@@ -8,6 +8,8 @@ date: '2017-05-25T17:12:33'
 
 Wow, it's a week after Startup Weekend Auckland. I've had time to get my thoughts straight about the whole experience. I learned a hell of a lot of positive lessons about idea validation, about myself and about working in teams.
 
+<!-- end excerpt -->
+
 ## Friday Night
 
 We started the event on Friday night with a brief introduction to the format and some key organizers. Thirty enthusiastic 60 second pitches quickly followed. There were ideas for B2B services, tournament platforms, monetizing Facebook, recipes and shopping.

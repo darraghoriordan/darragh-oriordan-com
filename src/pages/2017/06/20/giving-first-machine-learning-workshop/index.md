@@ -8,6 +8,8 @@ date: '2017-06-20T17:12:33'
 
 Last week I offered to give a workshop on machine learning to share some of what I’ve learned so far. I had 2 goals for my workshop – first, I wanted to show everyone that they shouldn’t be afraid of machine learning. Second, I wanted to get people set up with anaconda so they can continue to learn themselves.
 
+<!-- end excerpt -->
+
 I had a cross functional group of ~10 colleagues – business analysts, data analysts, UX designers, developers and test analysts. It went quite well! Everyone seemed engaged for the hour we spent together. I ran a survey after the workshop and achieved an NPS of 63!
 
 ![Survey results](./wk-2-300x132.png)
@@ -34,7 +36,7 @@ DOWNLOADING THE FILES
 I used a popular titanic data set from kaggle.com. I only used the training set for both training and testing to keep it simple. You can download the files here: https://www.darraghoriordan.com/wp-content/uploads/2017/06/titanic-data-and-solution-2.zip
 
 RUN THROUGH THE CODE
-I used an excellent kernel from https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial. I simplified it by only using three features for my model. Some of my visualizations are from super data science’s machine learning A-Z course.
+I used an excellent kernel from <https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial.> I simplified it by only using three features for my model. Some of my visualizations are from super data science’s machine learning A-Z course.
 
 With all this in place I just asked people to open Spyder from Anaconda. They had to set the working directory to where they had unzipped the files and restart the kernel.
 
