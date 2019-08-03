@@ -1,5 +1,5 @@
 ---
-title: How to log objects in winston (hint... Use meta data)
+title: How to log full objects in winston (hint... Use meta data)
 category: 'development'
 cover: header.jpg
 date: '2019-07-30T17:12:33'
