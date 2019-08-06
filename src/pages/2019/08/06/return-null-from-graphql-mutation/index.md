@@ -12,8 +12,8 @@ It shouldn't be too common to have a null response though, even for a mutation i
 <!-- end excerpt -->
 
 ```javascript
-    // This assumes the default schema settings where everything is nullable by default
-    @Mutation(returns => Boolean, {nullable: true})
+    // With type-graph ql you have to set the schema type nullable (Boolean!) AND set the nullable option to true
+    @Mutation(returns => Boolean!, {nullable: true})
     @Authorized()
     async deployBranch(
         @Arg('deploySpecificBranchRequest', { nullable: false }) deploySpecificBranchRequest: DeploySpecificBranchRequest,
