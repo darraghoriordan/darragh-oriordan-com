@@ -97,7 +97,7 @@ This is pretty standard. Just list the specific paths to any test results. There
 
 ## Copying the server files to folder for archiving
 
-The server is a standard Apollo graphQL server. It is not a static site so you have to copy over the source, the package.json and the lock file (I use yarn for this project)
+The server is a standard Apollo graphQL server. It is not a static site so you have to copy over the source, the package.json and the lock file (I use yarn for this project).
 
 We will install all the required packages when deploying the site later.
 
@@ -125,9 +125,11 @@ By publishing now we could also utilize the Azure DevOps "Releases" product in t
 
 Azure provides a special "Copy to Azure" task but the _does not work_ on Linux build agents. Instead we use the azure CLI to do this for us.
 
-Use the bash client. We're on linux and I this will be there for sure.
+Use the bash client. We're on Linux and I this will be there for sure.
 
-"$web" is the default storage container for static sites on Azure blobs. The $ is a special character in bash so we have to escape it with "\". The Azure variables "\$(XXX)" are replaced before running on bash.
+"$web" is the default storage container for static sites on Azure blobs. The $ is a special character in bash so we have to escape it with "\\". The Azure variables "\$(XXX)" are replaced before running on bash so won't be a problem.
+
+That's it for the client. Static sites are awesome!
 
 ```yaml
 - task: AzureCLI@2
@@ -140,9 +142,13 @@ Use the bash client. We're on linux and I this will be there for sure.
 
 ## Deploying the server build
 
-The deploy of the server to app service is a bit more straightforward because the Azure task works ok. Make sure the appType matches the type you added to Azure earlier. You must set the runtime stack to be the same as the runtime specified in your package.json (if you have done that)
+The deploy of the server to app service is a bit more straightforward because the Azure task works on Linux agents.
 
-We have to install any dependencies before running the container so we add a script to go into the required directory and yarn install. Make sure you have copied over the lock file or yarn will get different versions of your dependencies than you tested with!
+Make sure the appType matches the type you added to Azure earlier. You must set the runtime stack to be the same as the runtime specified in your package.json (if you have done that)
+
+We have to install any dependencies before running the container so we add a script to go into the required directory and yarn install.
+
+Make sure you have copied over the lock file or yarn/npm will get different versions of your dependencies than you tested with!
 
 After we install deps we simply run our application using node.
 
