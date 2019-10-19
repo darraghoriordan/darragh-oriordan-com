@@ -13,3 +13,5 @@ yarn install
 ```
 
 <!-- end excerpt -->
+
+And that's it!

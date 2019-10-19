@@ -298,3 +298,5 @@ stages:
                       cd server
                       npm install
 ```
+
+Hope that helps! Let me know if you have any trouble.
