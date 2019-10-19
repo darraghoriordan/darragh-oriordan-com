@@ -1,5 +1,5 @@
 ---
-title: If you get "Something went wrong installing the "sharp" module The specified procedure could not be found. in Gatsby"
+title: If you get "Something went wrong installing the "sharp" module The specified procedure could not be found." in Gatsby
 category: 'development'
 cover: header.jpg
 date: '2019-10-08T17:12:33'
