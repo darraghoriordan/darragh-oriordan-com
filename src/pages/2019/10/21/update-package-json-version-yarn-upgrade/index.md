@@ -11,11 +11,11 @@ However it will not update the package.json with the new semver for the package.
 
 <!-- end excerpt -->
 
-To have yarn also update the package.json semver there are a couple of options. Essentially you need to add --latest
+To have yarn also update the semver in your package.json there are a couple of options. Essentially you need to add --latest
 
 ## Using --latest
 
-If you have pass yarn the `--latest` flag it will update the package.json.
+If you pass yarn the `--latest` flag it will update the package.json.
 
 NOTE: this will not respect semver and will update to the latest version. Whatever that might be.
 
