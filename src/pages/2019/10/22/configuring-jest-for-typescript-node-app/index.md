@@ -81,4 +81,4 @@ winston.remove(winston.transports.Console)
 winston.remove(winston.transports.File)
 ```
 
-And that's it!
+And that's it! You should be able to add your `*.spec.ts` files with tests now and jest will pick them up and run them when you use `yarn test`.
