@@ -1,5 +1,5 @@
 ---
-title: Deploying assets to an Azure storage account behind a firewall from DevOps agents
+title: Dynamically setting IP to deploy assets to an Azure storage account behind a firewall from DevOps agents
 category: 'development'
 cover: header.jpg
 date: '2019-11-01T17:12:33'
