@@ -19,7 +19,7 @@ If you pass yarn the `--latest` flag it will update the package.json.
 
 NOTE: this will not respect semver and will update to the latest version. Whatever that might be.
 
-```sh
+```shell
 yarn upgrade @graphql-codegen/cli --latest
 ```
 
@@ -27,6 +27,6 @@ yarn upgrade @graphql-codegen/cli --latest
 
 If you use the interactive upgrade it will also upgrade the package.json for you
 
-```sh
+```shell
 yarn upgrade-interactive --latest
 ```

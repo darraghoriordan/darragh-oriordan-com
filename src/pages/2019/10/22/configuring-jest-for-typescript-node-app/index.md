@@ -17,7 +17,7 @@ ts-jest runs jest on typescript projects with type checking.
 
 jest-junit outputs the test results in a format that reporting tools can use to show test results. This is useful for CI systems like CircleCI, AzureDevOps, Jenkins etc.
 
-```sh
+```shell
 yarn add --dev jest ts-jest jest-junit
 ```
 
@@ -43,7 +43,7 @@ The next file I add, in the root of my project is a `jest-setup.js` file. Note i
 
 You can have ts-jest create this for you by using
 
-```sh
+```shell
 yarn ts-jest config:init
 ```
 

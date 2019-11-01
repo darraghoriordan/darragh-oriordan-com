@@ -19,7 +19,7 @@ You can skip to the end 👇 and find the entire file for easy copy pasting at t
 
 I keep the code for my project in a mono repo on guthub. The structure looks like this:
 
-```sh
+```shell
 server
 --src
 --dist (this is build output)

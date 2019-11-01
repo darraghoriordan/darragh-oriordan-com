@@ -7,7 +7,7 @@ date: '2019-10-10T17:12:33'
 
 I've found this happens sometimes if I manually change the package config. Simple fix.
 
-```sh
+```shell
 yarn cache clean
 yarn install
 ```

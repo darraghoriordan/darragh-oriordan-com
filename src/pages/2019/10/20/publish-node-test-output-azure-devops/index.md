@@ -11,7 +11,7 @@ If you're publishing a node app on Azure pipelines you will want to publish the 
 
 I use junit format to publish result. There is a jest formatter on npm
 
-```sh
+```shell
 yarn add -D jest-junit
 ```
 
