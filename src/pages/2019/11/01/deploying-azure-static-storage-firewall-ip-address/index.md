@@ -7,13 +7,17 @@ date: '2019-11-01T17:12:33'
 
 If you try to deploy a static React app to an Azure static site on a storage account that's behind a firewall you need to allow all the IPs that will be connecting to the storage.
 
-The problem is that the range of possible IPs is huge and changes regularly.
-
-It took me a few hours to figure out how to do this dynamically and I hope it might save you some time...
+The problem is that the range of possible IPs the devops agents use is huge and changes regularly.
 
 <!-- end excerpt -->
 
-The list of IPs used by Azure devops agents is published by Microsoft as an XML file but it's long and it changes every week! A colleague of mine had a brilliant idea of dynamically opening the firewall on the storage account based on the IP of the current build agent. I had noooo idea how to do this in a yaml file...
+The list of IPs used by Azure devops agents is published by Microsoft as an XML file and it changes every week! 
+
+A colleague of mine had a brilliant idea of dynamically opening the firewall on the storage account based on the IP of the current build agent each deploy. 
+
+It took me a few hours to figure out how to do this dynamically and I hope it might save you some time...
+
+Scroll to the end for the full yaml script 👇
 
 ## Task1: Open firewall and deploy the client
 
