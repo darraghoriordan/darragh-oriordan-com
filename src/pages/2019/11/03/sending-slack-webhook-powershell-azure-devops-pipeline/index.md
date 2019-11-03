@@ -33,7 +33,9 @@ I send three parameters to slack.
 
 To reference a user in slack through the webhook you don't use "@channel" you must use "<!channel>"
 
-I add a link to the build. You will have to change the url to your own organisation and project for those to work.
+In this example I add a manually created link to the build. You will have to change the url to your own organisation and project for those to work.
+
+`<$($env:RELEASE_RELEASEWEBURL)|$($env:RELEASE_RELEASENAME)>` is another useful link to post on slack to take users directly to the relevant release.
 
 In PowerShell you use the format `$($env:BUILD_BUILDID)` to access the predefined build variables. Notice that different to yaml, we get them through the \$env and the '.' are replaced with '\_' for PowerShell.
 
