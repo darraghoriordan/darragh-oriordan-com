@@ -7,9 +7,11 @@ date: '2019-11-03T17:12:33'
 
 I wanted to send a slack message when a deployment completed on Azure. It's fairly straightforward but there are a couple of things I had to pull together from documentation on slack, PowerShell and azure.
 
+Here is the script I finished with.
+
 <!-- end excerpt -->
 
-Just scroll to the bottom to see the entire script.
+Just scroll to the bottom to skip ahead and see the entire script.
 
 You will have to create a webhook url on your slack organisation. I will assume you have done that.
 
