@@ -12,6 +12,5 @@
   "search.exclude": {
     "public/**": true,
     "node_modules/**": true
-  },
-  "prettier.tslintIntegration": true
+  }
 }
