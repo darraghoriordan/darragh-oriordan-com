@@ -27,7 +27,7 @@ I called this "dev testing" for the last team I was working with. (Note: Even wi
 
 Because usually, not always, but usually, the reason testing is taking so long is because your software is regularly buggy and broken and/or your software system doesn't have good enough automated testing.
 
-I feel it's up to you as a developer to make sure you're not passing crap code to your colleagues and to make sure that they have everything they need to verify it quickly.
+I feel it's up to you as a developer to make sure you're not passing broken code to your colleagues and to make sure that they have everything they need to verify it quickly.
 
 You should only ask a QA person for help testing code on that you would be happy to put all the way in to production without their help. If there are cases piling up in the QA backlog you're probably not doing enough testing before passing it to them. This means they will find issues. When they find issues they lose confidence in your work.
 
