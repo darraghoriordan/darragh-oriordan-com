@@ -60,7 +60,7 @@ We don't need to test if linq works. We have moved the business logic out of the
 
 I also renamed all the variables so they make a little bit more sense.
 
-I don't show it here but the `strMovementGroup` value is later used in further conditionals. Now that we have a strategy selector we can also put the items that depend on this value in the strategy. The root conditional is the one that selects the `strMovementGroup`.
+I don't show it here but the `strMovementGroup` value is later used in further conditionals. Now that we have a strategy selector we can also put the items that depend on this value in the strategy. The root conditional is the one that selects the `strMovementGroup`. This is really important for future refactoring.
 
 I added an 'empty' strategy so we don't have to worry about nulls.
 
