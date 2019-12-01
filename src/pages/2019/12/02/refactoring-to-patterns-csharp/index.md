@@ -5,7 +5,9 @@ cover: header.jpg
 date: '2019-12-02T17:12:33'
 ---
 
-I'm doing some work on a legacy code base and there are some common refactorings I do over and over. One of my favourite issues to fix is making long lists of conditionals easier to read and especially test. I use the common refactor to strategies from Martin Fowler to deal with these.
+I'm doing some work on a legacy code base and there are some common refactorings I do over and over. One of my favourite improvements is making long lists of conditionals easier to read and especially test.
+
+I use the common refactor-to-strategies pattern from Martin Fowler to deal with these.
 
 <!-- end excerpt -->
 
@@ -16,11 +18,11 @@ Here is a simplified example of what the code typically looks like. There are he
 I had a new junior engineer ask how best to tackle something like this. Here is what I told them.
 
 - Hungarian notation is hard to read, the prefix has no value in a strongly typed language, the actual type drifts from the original prefix over time. We should remove the prefixes.
-- Using Area and Area2 do not tell us what they are actually used for. Why is 2 different from the original one? We should name these properly.
+- Using Area and Area2 do not tell us what they are actually used for. Why is 2 different from the original one? We should name these properly if we can.
 - There is repetition in the sanitization. We should prevent this.
 - It's difficult to test long conditionals. We should make it easier to test.
 - It's difficult for a new dev to understand and modify this code. We should always make it easy to modify the code.
-- Because the conditionals are different, all of these might run but they all assign to the same variable. We should make it so that only one of these will run.
+- Because the conditionals are different, all of these might run but they all assign to the same variable. It doesn't matter too much here because it's just assignments but we should make it so that only one of these will run as a matter of good practice.
 
 ```csharp
 pubic partial class MovementMain: Page
@@ -50,7 +52,7 @@ The strategies are added to a list in the desired precedence order.
 
 I then use linq to select the first applicable strategy and use its result.
 
-There is more code here because of the interface and boilerplate around each class. But it's much easier to understand and test.
+There is more code here because of the interface and boilerplate around each class. But it's much easier to understand and test (imho anyway!).
 
 If a new developer needs to add a new condition here they just need to add a new condition to the list.
 
@@ -81,6 +83,9 @@ pubic partial class MovementMain: Page
     strMovementGroup = movementGroupSelector.SanitizedName();
  // ... a few thousand more lines of code
 }
+
+
+
   // The following would be in different files
 public interface ICondition
 {
@@ -107,7 +112,6 @@ public class MovementSelector : ICondition
 
 public class VehicleSelector : ICondition
 {
-    public int Precedence => 1;
     public static string VEHICLE_NAME = "Vehicle";
     public static int AVAILABLE_STATUS = 3;
     private readonly int activeStatus;
