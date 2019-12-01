@@ -60,10 +60,10 @@ Reducing risk in software is widely discussed on the internet. As examples, here
 
 ## How to apply it
 
-1. Help the QA person analyse all queued work.
+1. Help the QA person analyse all queued testing work.
 2. Identify the less risky changes
 3. The QA person documents what should be tested (or just chats to the developer about it)
-4. The dev will perform the testing, document what they did and what they found
+4. The dev will perform the testing, document what they did and what they found (this should be a dev who didn't write the code)
 5. The QA will review the results and approve the change.
 
 ## Things to watch out for
