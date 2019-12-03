@@ -1,5 +1,5 @@
 ---
-title: Refactoring conditionals to strategies
+title: Refactoring conditionals to strategies (in .Net/C#)
 category: 'development'
 cover: header.jpg
 date: '2019-12-02T17:12:33'
@@ -117,7 +117,7 @@ public class VehicleSelector : ICondition
     private readonly int activeStatus;
     private readonly string transportType;
     private readonly decimal realQuantity;
-    public LaybySelector(int activeStatus, string transportType, decimal realQuantity)
+    public VehicleSelector(int activeStatus, string transportType, decimal realQuantity)
     {
         this.activeStatus = activeStatus;
         this.transportType = transportType;
