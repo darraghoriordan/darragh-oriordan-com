@@ -11,7 +11,7 @@ Here are the things I noticed with some descriptions.
 
 <!-- end excerpt -->
 
-## Flatten arrays of objects to delimited arrays
+## Flattening arrays of objects to custom delimited arrays
 
 I came across a number of arrays that contained flattened objects with custom delimiters.
 
@@ -36,7 +36,7 @@ This was parsed out in for loops to detect each `[!d]` delimiter. This means the
 ]
 ```
 
-## Pasting library code
+## Pasting library code in to large domain logic files
 
 I came across some instances of library code for handling date and number parsing pasted in to the middle of a large (5k+ lines) JavaScript file.
 
@@ -66,11 +66,11 @@ settings:{
 
 // And now the value will be truthy and falsey as expected
 if (!Settings.FirstRun){
-  someUiElement.text("Yes")
+  someUiElement.text("No")
 }
 ```
 
-## Understand the replace method is regex
+## Not using the replace method as regex
 
 I noticed the replace method was used repeatedly to replace the same item. It seems like this is done to ensure all instances of the value are replaced. The JavaScript replace function uses regex. You need to specify that you want to replace globally.
 
@@ -109,11 +109,11 @@ if (Utils.HasString(Settings.VehicleName)) {
 }
 ```
 
-## Don't waste time writing custom date time formatting code
+## Writing custom date time formatting code
 
-It's really difficult to get this right. Especially for a multiple locale website.
+It's really difficult to get datetime parsing right. Especially for a multiple locale website.
 
-Use a library like date-fns or moment instead!
+Use a library like date-fns or moment instead of writing custom parsing code.
 
 ```js
 // date-fns is very light weight and can do some great formatting for you
@@ -121,11 +121,14 @@ var ampm = hours >= 12 ? 'pm' : 'am'
 var minutes = minutes < 10 ? '0' + minutes : minutes
 ```
 
-## Replace alerts with input validation
+## Overuse of alerts and error messages instead of input validation
 
-If you find yourself popping up a lot of alerts or error messages for input. It can be a much better experience for the customer if they simply cannot enter bad data. If they can only tick one item for example, maybe checkboxes are not the best UI element for this task. Consider a drop down or set of radio buttons.
+I found there were lots of alerts and error messages for input. It can be a much better experience for the customer if they simply cannot enter bad data.
+
+In this example, if they can only tick one item then maybe checkboxes are not the best UI element for this task. Consider a drop down or set of radio buttons.
 
 ```js
+// numberOfItems is essentially a count of checked checkboxes
 if (numberOfItems > 2) {
   alert(
     'Operation can only be conducted on single items.\nUntick all except one.'
@@ -133,9 +136,11 @@ if (numberOfItems > 2) {
 }
 ```
 
-## Using boolean input parameters
+## Using boolean method input parameters
 
-If you have a method that takes a boolean and operates differently based on the boolean, it's difficult for the reader of the code to understand what the boolean is doing without reading the method source. It's better to just have two methods that have names that accurately describe what will happen when you call it.
+If you have a method that takes a boolean and operates differently based on the boolean, it's difficult for the reader of the code to understand what the boolean is doing without reading the method source.
+
+It's better to just have two methods that have names that accurately describe what will happen when you call it.
 
 ```js
 // This is difficult to understand without knowing how Update works. In this case with true a form is cleared. With false it is not cleared before updating the UI.
@@ -146,4 +151,4 @@ MainPanel.ClearAllFormElements()
 MainPanel.UpdateFromServer()
 ```
 
-If you see these in your code, think about refactoring them to make it easier for the next developer.
+If you see these javascript anti-patterns in your code, think about refactoring them to make it easier for the next developer.
