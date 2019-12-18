@@ -1,5 +1,5 @@
 ---
-title: 4 Prioritization Frameworks for your Team
+title: How to prioritize too many feature requests
 category: 'development'
 cover: header.jpg
 date: '2019-12-18T17:12:33'
