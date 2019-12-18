@@ -62,7 +62,7 @@ The _reach_ is the number of customers expected to be affected by the work. So a
 
 The _impact_ is very subjective and should be decided as a group with some external input. Use 3 for "massive", 2 for "high", 1 for "medium", 0.5 for low and 0.25 for minimal. These factors will scale the number appropriately.
 
-The _confidence_ is also subjective but don't overthink it. I use 100% for "high", 70% for "medium" and "50% for low".
+The _confidence_ is also subjective but don't overthink it. I use 100% for "high", 70% for "medium" and 50% for "low".
 
 For _effort_ use the timeframe that gives you the closest to whole numbers that matches your work. For my team and I that is person-weeks. For teams constantly working on larger pieces of work that might be person-months. It doesn't matter as long as you use whole numbers and are consistent for the set of items you're prioritising.
 
