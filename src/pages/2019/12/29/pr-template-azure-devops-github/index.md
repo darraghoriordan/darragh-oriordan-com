@@ -9,6 +9,10 @@ Code reviews and PRs are deservedly known as a fantastic way to improve code and
 
 I find that having a checklist is super handy for remembering all the checks to perform and the context to give a reviewer.
 
+<!-- end excerpt -->
+
+## Adding a template to your platform
+
 On some repository and CI platforms you can automatically populate the description field of a PR with content to remind yourself what to consider for each review.
 
 You'll need to check your the instructions for your specific platform but in general it means adding an `.md` file to a specific directory. For example:
@@ -17,6 +21,8 @@ You'll need to check your the instructions for your specific platform but in gen
 | ------------ | ----------------------------------------------- |
 | Github       | docs/pull_request_template.md                   |
 | Azure DevOps | /docs/pull_request_template/my_template_name.md |
+
+## My pull request template in markdown format
 
 Here's the checklist I use. Is there anything you would add or remove??
 
@@ -56,7 +62,7 @@ _Describe the risks that apply to your application. This will be very specific t
 # Author pre-publish checklist:
 
 - [ ] Has relevant logging
-- [ ] Meets our coding standards (link_to_your_coding_standards) - _Prefer auto-linting for this if possible_
+- [ ] Meets our coding standards (link*to_your_coding_standards) - \_Prefer auto-linting for this if possible*
 - [ ] I have performed a self-review of my own code (link_to_standards)
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass with my changes
@@ -78,3 +84,15 @@ _Is there any testing that seems like it would be needed in this case but maybe 
 
 - [ ] All the risks above are not present or have been mitigated
 ```
+
+## Conclusion
+
+Using a template might seem like too much bureaucracy but it is really helpful when you have some place to add issues that regularly show up in pull requests. This helps the author fix them before wasting anyone's time.
+
+The pull request template ensures that everyone has enough context to work with the new code before it is merged (e.g. testing).
+
+The pull request template is incredibly useful for new team members to understand the level of quality required by your organisation and to show them what is currently important. e.g. if you are doing a gradual system wide refactor and don't want anyone to use the "old way" of doing something but there are still many example of the "old way" in your code base, the code review template can be used to show the new team member that they shouldn't use that technique anymore, even if they see it everywhere.
+
+You can remove things from the pull request template when the is no longer relevant (and add them back again if the issue starts showing up too often). It is a living document that supports the developers on your team.
+
+The code review template provides a nice list of the things that could be automated away in your org. You should be on the lookout for ways to add a CI step or a pre-commit hook to automate the check away. These make for great hackathon problems!
