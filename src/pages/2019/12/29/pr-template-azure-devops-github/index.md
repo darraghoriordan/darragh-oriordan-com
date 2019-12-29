@@ -1,15 +1,15 @@
 ---
-title: How I improve pull request quality on Github and Azure DevOps
+title: How I enhance pull request quality on Github and Azure DevOps
 category: 'development'
 cover: header.jpg
 date: '2019-12-29T17:12:33'
 ---
 
-Code reviews with PRs are well known as a great way to improve product and code quality.
+Code reviews and PRs are deservedly known as a fantastic way to improve code and product quality.
 
-I find I need to have a checklist to remember all context I must to give the reviewer and for what I need to check when I'm reviewing another developer's code.
+I find that having a checklist is super handy for remembering all the checks to perform and the context to give a reviewer.
 
-You can make this easy for you and your team by adding an automatically populating checklist on your repository or CI platform.
+On some repository and CI platforms you can automatically populate the description field of a PR with content to remind yourself what to consider for each review.
 
 You'll need to check your the instructions for your specific platform but in general it means adding an `.md` file to a specific directory. For example:
 
@@ -18,9 +18,7 @@ You'll need to check your the instructions for your specific platform but in gen
 | Github       | docs/pull_request_template.md                   |
 | Azure DevOps | /docs/pull_request_template/my_template_name.md |
 
-The content will usually be added to the description field of the PR.
-
-Here is the checklist I use. Is there anything you would add or remove??
+Here's the checklist I use. Is there anything you would add or remove??
 
 ```md
 # Summary
@@ -58,7 +56,7 @@ _Describe the risks that apply to your application. This will be very specific t
 # Author pre-publish checklist:
 
 - [ ] Has relevant logging
-- [ ] Meets our coding standards (link*to_coding_standards) - \_Prefer auto-linting for this if possible*
+- [ ] Meets our coding standards (link_to_your_coding_standards) - _Prefer auto-linting for this if possible_
 - [ ] I have performed a self-review of my own code (link_to_standards)
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass with my changes
@@ -72,9 +70,9 @@ _Describe the risks that apply to your application. This will be very specific t
 
 # Developer testing performed
 
-\_Describe the testing you have performed as part of this change. Note it here for the reviewer and tester. Note if there is any data or scripts required to set the system up correctly to test your feature.
+_Describe the testing you have performed as part of this change. Note it here for the reviewer and tester. Note if there is any data or scripts required to set the system up correctly to test your feature._
 
-Is there any testing that seems like it would be needed in this case but maybe isn't required? - note it here with reasoning for the reviewer and tester\_
+_Is there any testing that seems like it would be needed in this case but maybe isn't required? - note it here with reasoning for the reviewer and tester_
 
 # Reviewer checklist
 
