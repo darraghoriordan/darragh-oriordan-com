@@ -3,13 +3,14 @@ import React, { useState } from 'react'
 
 const EmailListForm: React.FunctionComponent<{}> = () => {
   const [email, setEmail] = useState('')
+  const [subscribed, setSubscribed] = useState(false)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     addToMailchimp(email)
       .then(data => {
-        alert(data.result)
+        setSubscribed(true)
       })
       .catch((error: Error) => {
         // Errors in here are client side
@@ -32,6 +33,7 @@ const EmailListForm: React.FunctionComponent<{}> = () => {
           onChange={handleEmailChange}
         />
         <button type="submit">Get Updates</button>
+        {subscribed && <}
       </div>
     </form>
   )
