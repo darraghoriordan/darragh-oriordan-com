@@ -9,6 +9,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
     },
     {
+      options: {
+        endpoint:
+          'https://51summers.us2.list-manage.com/subscribe/post?u=9e6fb921b4a08e820c996f2c1&amp;id=18939a5501',
+      },
+      resolve: 'gatsby-plugin-mailchimp',
+    },
+    {
       options: { name: 'pages', path: `${__dirname}/src/pages` },
       resolve: `gatsby-source-filesystem`,
     },
