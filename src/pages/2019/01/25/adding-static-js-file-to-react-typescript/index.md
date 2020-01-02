@@ -11,7 +11,7 @@ I added the .js file to `/public/scripts` so it would be treated as a kind of st
 
 I don't want typescript to type check the file and I don't want to put it through tsc. I don't want it loaded by webpack asynchronously and it has to run in a very specific way in the browser to work correctly. Typescript gave me this console error...
 
-```pre
+```bash
  file is not under root dir 'rootdir' is expected to contain all source files
 ```
 
