@@ -52,7 +52,6 @@ module.exports = {
       },
       resolve: `gatsby-plugin-google-analytics`,
     },
-    `gatsby-plugin-feed`,
     {
       options: {
         background_color: `#ffffff`,
@@ -64,6 +63,59 @@ module.exports = {
         theme_color: `#663399`,
       },
       resolve: `gatsby-plugin-manifest`,
+    },
+    {
+      options: {
+        feeds: [
+          {
+            output: '/rss.xml',
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                  date: edge.node.frontmatter.date,
+                  description: edge.node.excerpt,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                })
+              })
+            },
+            title: 'DarraghORiordan.com RSS Feed',
+          },
+        ],
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+      },
+      resolve: `gatsby-plugin-feed`,
     },
     `gatsby-plugin-sitemap`,
     // `gatsby-plugin-offline`,
