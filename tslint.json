@@ -1,7 +1,6 @@
 {
   "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
-    "no-unused-expression": [true, "allow-fast-null-checks"],
-    "quotemark": [true, "single"]
+    "no-unused-expression": [true, "allow-fast-null-checks"]
   }
 }
