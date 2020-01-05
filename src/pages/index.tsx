@@ -18,10 +18,24 @@ class BlogIndex extends React.Component<any, any> {
 
     return (
       <Layout>
-        :
-        <SEOConfiguration title={'Build awesome web apps'} />
-        <Bio />
-        <EmailListForm />
+        <SEOConfiguration
+          title={'Darragh ORiordan helps you build awesome web applications'}
+        />
+
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '2em',
+          }}
+        >
+          <div style={{ flex: '2 1 70%', marginRight: '2em' }}>
+            <Bio />
+          </div>
+          <div style={{ flex: '1 1 30%' }}>
+            <EmailListForm />
+          </div>
+        </div>
         {posts.map(({ node }: any) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
