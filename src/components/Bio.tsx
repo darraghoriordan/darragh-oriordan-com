@@ -22,11 +22,13 @@ class Bio extends React.Component<any, any> {
             Hi! I'm <strong>Darragh ORiordan</strong>.{' '}
           </p>
           <p>
-            I live and work in Auckland, New Zealand enjoying the ocean. I build{' '}
-            <strong>happy teams</strong> that create{' '}
+            I live and work in Auckland, New Zealand enjoying the mountains and
+            the ocean.
+          </p>{' '}
+          <p>
+            I build <strong>happy teams</strong> that create{' '}
             <strong>high quality software</strong> for the web.
           </p>
-
           <p>
             Contact me <a href="https://twitter.com/darraghor">on Twitter</a>!
           </p>
