@@ -1,11 +1,12 @@
-import { graphql, Link } from "gatsby"
-import get from "lodash/get"
-import React from "react"
+import { graphql, Link } from 'gatsby'
+import get from 'lodash/get'
+import React from 'react'
 
-import styled from "styled-components"
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import SEOConfiguration from "../components/SEOConfiguration"
+import styled from 'styled-components'
+import Bio from '../components/Bio'
+import EmailListForm from '../components/EmailListForm'
+import Layout from '../components/Layout'
+import SEOConfiguration from '../components/SEOConfiguration'
 
 const PostItem = styled.div`
   margin-bottom: 3em;
@@ -13,18 +14,34 @@ const PostItem = styled.div`
 
 class BlogIndex extends React.Component<any, any> {
   public render() {
-    const posts = get(this, "props.data.allMarkdownRemark.edges")
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout>
-        <SEOConfiguration title={"Build awesome web apps"} />
-        <Bio />
+        <SEOConfiguration
+          title={'Darragh ORiordan helps you build awesome web applications'}
+        />
+
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '2em',
+          }}
+        >
+          <div style={{ flex: '2 1 70%', marginRight: '2em' }}>
+            <Bio />
+          </div>
+          <div style={{ flex: '1 1 30%' }}>
+            <EmailListForm />
+          </div>
+        </div>
         {posts.map(({ node }: any) => {
-          const title = get(node, "frontmatter.title") || node.fields.slug
+          const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <PostItem key={node.fields.slug}>
               <h3 className="title">
-                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

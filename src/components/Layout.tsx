@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import FullWidthHeader from "./FullWidthHeader"
+import React from 'react'
+import styled from 'styled-components'
+import FullWidthHeader from './FullWidthHeader'
 
 const SiteContainer = styled.div`
   width: 100%;

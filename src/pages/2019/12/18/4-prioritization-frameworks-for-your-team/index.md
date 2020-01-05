@@ -31,7 +31,7 @@ This is a popular form of prioritisation. It looks at the value and complexity o
 
 Value vs Complexity
 
-```pre
+```bash
                    High
                    |
               X    |   2
@@ -50,7 +50,7 @@ Low value / High complexity work should be avoided
 
 ## The Intercom RICE framework
 
-```pre
+```bash
             Reach x Impact x Confidence
         __________________________________
                     Effort

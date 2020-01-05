@@ -1,6 +1,6 @@
-import { graphql, StaticQuery } from "gatsby"
-import React from "react"
-import { Helmet } from "react-helmet"
+import { graphql, StaticQuery } from 'gatsby'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
 interface IProps {
   title?: string
@@ -35,14 +35,14 @@ const SEOConfiguration = (props: IProps) => (
           queryResponse.site.siteMetadata.defaultImage}`,
         title: props.title || queryResponse.site.siteMetadata.defaultTitle,
         url: `${queryResponse.site.siteMetadata.siteUrl}${props.pathname ||
-          "/"}`,
+          '/'}`,
       }
 
       return (
         <Helmet
           title={valuesToSet.title}
           titleTemplate={queryResponse.site.siteMetadata.titleTemplate}
-          htmlAttributes={{ lang: "en" }}
+          htmlAttributes={{ lang: 'en' }}
         >
           {valuesToSet.description && (
             <meta name="description" content={valuesToSet.description} />
@@ -61,7 +61,7 @@ const SEOConfiguration = (props: IProps) => (
           )}
           {valuesToSet.image && (
             <meta name="image" content={valuesToSet.image} />
-          )}{" "}
+          )}{' '}
           {valuesToSet.image && (
             <meta property="og:image" content={valuesToSet.image} />
           )}

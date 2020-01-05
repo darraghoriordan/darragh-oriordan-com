@@ -1,8 +1,8 @@
-import { graphql, Link, StaticQuery } from "gatsby"
-import React from "react"
-import styled, { keyframes } from "styled-components"
-import colors from "../utils/colors"
-import NavMenu from "./NavMenu"
+import { graphql, Link, StaticQuery } from 'gatsby'
+import React from 'react'
+import styled, { keyframes } from 'styled-components'
+import colors from '../utils/colors'
+import NavMenu from './NavMenu'
 
 const HeaderTitle = styled.h1`
   top: 0px;
@@ -95,7 +95,7 @@ const FullWidthHeader = () => (
     render={(queryResponse: IQueryResponse) => {
       return (
         <HeaderContainer>
-          <HeaderLink to={"/"}>
+          <HeaderLink to={'/'}>
             <HeaderLogo />
             <HeaderTitle>{queryResponse.site.siteMetadata.title}</HeaderTitle>
           </HeaderLink>
