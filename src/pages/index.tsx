@@ -1,11 +1,12 @@
-import { graphql, Link } from "gatsby"
-import get from "lodash/get"
-import React from "react"
+import { graphql, Link } from 'gatsby'
+import get from 'lodash/get'
+import React from 'react'
 
-import styled from "styled-components"
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import SEOConfiguration from "../components/SEOConfiguration"
+import styled from 'styled-components'
+import Bio from '../components/Bio'
+import EmailListForm from '../components/EmailListForm'
+import Layout from '../components/Layout'
+import SEOConfiguration from '../components/SEOConfiguration'
 
 const PostItem = styled.div`
   margin-bottom: 3em;
@@ -13,18 +14,20 @@ const PostItem = styled.div`
 
 class BlogIndex extends React.Component<any, any> {
   public render() {
-    const posts = get(this, "props.data.allMarkdownRemark.edges")
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout>
-        <SEOConfiguration title={"Build awesome web apps"} />
+        :
+        <SEOConfiguration title={'Build awesome web apps'} />
         <Bio />
+        <EmailListForm />
         {posts.map(({ node }: any) => {
-          const title = get(node, "frontmatter.title") || node.fields.slug
+          const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <PostItem key={node.fields.slug}>
               <h3 className="title">
-                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

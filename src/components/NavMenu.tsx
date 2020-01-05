@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
+import { Link } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
 
 const NavUl = styled.ul`
   display: flex;
@@ -54,16 +54,16 @@ class NavMenu extends React.Component<any, any> {
       <nav>
         <NavUl>
           <NavElement>
-            <NavAnchor to={"/"}>Posts</NavAnchor>
+            <NavAnchor to={'/'}>Posts</NavAnchor>
           </NavElement>
           <NavElement>
-            <NavAnchor to={"/about"}>About</NavAnchor>
+            <NavAnchor to={'/about'}>About</NavAnchor>
           </NavElement>
           <NavElement>
-            <NavAnchor to={"/portfolio"}>Portfolio</NavAnchor>
+            <NavAnchor to={'/portfolio'}>Portfolio</NavAnchor>
           </NavElement>
           <NavElement>
-            <NavAnchor to={"/contact"}>Contact</NavAnchor>
+            <NavAnchor to={'/contact'}>Contact</NavAnchor>
           </NavElement>
         </NavUl>
       </nav>
