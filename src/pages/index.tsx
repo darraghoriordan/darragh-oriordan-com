@@ -25,14 +25,15 @@ class BlogIndex extends React.Component<any, any> {
         <div
           style={{
             display: 'flex',
+            flexWrap: 'wrap',
             justifyContent: 'space-between',
             marginBottom: '2em',
           }}
         >
-          <div style={{ flex: '2 1 70%', marginRight: '2em' }}>
+          <div style={{ flex: '2 1 60%', marginRight: '2em' }}>
             <Bio />
           </div>
-          <div style={{ flex: '1 1 30%', minWidth: '250px' }}>
+          <div style={{ flex: '1 1', minWidth: '260px' }}>
             <EmailListForm />
           </div>
         </div>
