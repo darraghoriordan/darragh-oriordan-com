@@ -101,7 +101,7 @@ const EmailListForm: React.SFC<{}> = () => {
   return (
     <FormContainer>
       <EmailSignupHeaderText>
-        Get new posts, news, coding tips and learn!
+        Get new posts, curated tech articles and coding tips!
       </EmailSignupHeaderText>
       <Formik
         initialValues={{
