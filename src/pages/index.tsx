@@ -32,10 +32,11 @@ class BlogIndex extends React.Component<any, any> {
           <div style={{ flex: '2 1 70%', marginRight: '2em' }}>
             <Bio />
           </div>
-          <div style={{ flex: '1 1 30%' }}>
+          <div style={{ flex: '1 1 30%', minWidth: '250px' }}>
             <EmailListForm />
           </div>
         </div>
+        <h2>Articles</h2>
         {posts.map(({ node }: any) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (

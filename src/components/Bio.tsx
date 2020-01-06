@@ -26,7 +26,7 @@ class Bio extends React.Component<any, any> {
             the ocean.
           </p>{' '}
           <p>
-            I build <strong>happy teams</strong> that create{' '}
+            I build and support <strong>happy teams</strong> that create{' '}
             <strong>high quality software</strong> for the web.
           </p>
           <p>
