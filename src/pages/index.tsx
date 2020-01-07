@@ -3,8 +3,7 @@ import get from 'lodash/get'
 import React from 'react'
 
 import styled from 'styled-components'
-import Bio from '../components/Bio'
-import EmailListForm from '../components/EmailListForm'
+import ArticleHeader from '../components/ArticleHeader'
 import Layout from '../components/Layout'
 import SEOConfiguration from '../components/SEOConfiguration'
 
@@ -19,24 +18,9 @@ class BlogIndex extends React.Component<any, any> {
     return (
       <Layout>
         <SEOConfiguration
-          title={'Darragh ORiordan helps you build awesome web applications'}
+          title={'I help you build awesome web applications and happy teams'}
         />
-
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            marginBottom: '2em',
-          }}
-        >
-          <div style={{ flex: '2 1 60%', marginRight: '2em' }}>
-            <Bio />
-          </div>
-          <div style={{ flex: '1 1', minWidth: '260px' }}>
-            <EmailListForm />
-          </div>
-        </div>
+        <ArticleHeader />
         <h2>Articles</h2>
         {posts.map(({ node }: any) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug

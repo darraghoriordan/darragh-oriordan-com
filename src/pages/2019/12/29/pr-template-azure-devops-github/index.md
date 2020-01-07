@@ -1,5 +1,5 @@
 ---
-title: How I enhance pull request quality on Github and Azure DevOps
+title: How I enhance pull request quality on GitHub and Azure DevOps
 category: 'development'
 cover: header.jpg
 date: '2019-12-29T17:12:33'
@@ -19,7 +19,7 @@ You'll need to check your the instructions for your specific platform but in gen
 
 | Platform     | Location                                        |
 | ------------ | ----------------------------------------------- |
-| Github       | docs/pull_request_template.md                   |
+| GitHub       | docs/pull_request_template.md                   |
 | Azure DevOps | /docs/pull_request_template/my_template_name.md |
 
 ## My pull request template in markdown format
