@@ -5,17 +5,15 @@ cover: header.jpg
 date: '2020-01-10T17:12:33'
 ---
 
-I worry sometimes that I'm a lazy team lead. I'm always trying to 'free up' as much time as possible at work. I really don't like doing 'busy work'. Here are four rules of thumb I use to decrease the amount of time I spend doing some common management stuff so I have time to work on other stuff.
+I'm a lazy team lead. I like to 'free up' as much time as possible at work. I run away from 'busy work' like it's on fire. Here are four rules of thumb I use to decrease the amount of time I spend doing some management stuff so I have time to think and work on more valuable things.
 
 <!-- end excerpt -->
 
-Maybe I'm not a natural manager like some other people out there, but I need lots of time to just think about where I can add value.
+Note: There are no shortcuts for knowing what's happening with each of your team members and their work and then giving them appropriate, timely feedback or help and encouragement where necessary. That's the job!
 
-Note: There are no shortcuts for knowing what's happening with each of your team members, their work and giving them appropriate, timely feedback or help and encouragement where necessary. That's the job!
+Also note: Some of these things are not suitable at certain times and maybe not for folks that are brand new to their roles.
 
-Some of these things are not suitable at certain times and not for folks that are brand new to your org!
-
-Keen to know if there are any similar tips from leaders out there
+I'd love to know if there are any similar tips from other leaders out there!
 
 ## 1. The 50% allocation rule
 
