@@ -104,7 +104,7 @@ In general just make it clear that the technical stuff is up to the team to reso
 
 The hiring manager might be worried about your ability to accurately estimate and identify risk if you haven't written software before.
 
-The thing is that you just have to facilitate and make sure that these things regularly happen.
+The thing is that you just have to facilitate and make sure that these things regularly happen. There are well known techniques for facilitating group estimation and encouraging communication in the team, including risks. Describe how you will learn and apply them to the hiring manager.
 
 After working on a product for a while you quickly learn things like which areas are risky or how working on bad legacy code vs good legacy code vs greenfield can affect a schedule.
 
@@ -112,6 +112,8 @@ These things will be somewhat unique to your organisation anyway so an experienc
 
 ## For devs
 
-And if you're a developer that has a team lead that wasn't a software engineer then don't be an ass to them. They are supporting you in ways you don't even see, support them when it comes to software engineering related knowledge! :)
+And if you're a developer that has a team lead without software engineering experience then don't be an ass to them. They are supporting you in ways you don't even see, support them when it comes to software engineering related knowledge! :)
 
-Their job is to make the team more effective and create a better place to work. Enjoy your technical freedom!
+Their job is to make the team more effective and create a better place to work, if they're doing that they're doing their job.
+
+Enjoy your technical freedom!
