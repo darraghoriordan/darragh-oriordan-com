@@ -1,5 +1,5 @@
 ---
-title: "Should you apply for a team lead role if you're not technical?"
+title: "Should I apply for a team lead role if I'm not 'technical'?"
 category: 'development'
 cover: header.jpg
 date: '2020-01-13T17:12:33'
