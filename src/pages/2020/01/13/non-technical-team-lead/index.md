@@ -1,5 +1,5 @@
 ---
-title: 'Should you apply for team lead if you're not technical?'
+title: "Should you apply for a team lead role if you're not technical?"
 category: 'development'
 cover: header.jpg
 date: '2020-01-13T17:12:33'
@@ -97,3 +97,9 @@ You could have a chat to some of the other team members and team leads to ensure
 If you get the job and there are team members that are giving you a hard time for not being an ex-software engineer, just understand that it is almost certainly them and not you that have a problem. There are various ways you can try to resolve the conflict and you should read about that and work hard at it.
 
 In general just make it clear that the technical stuff is up to the team to resolve together. You will do everything you can to help them work together to get the best outcome. That's the role as team lead.
+
+## For devs
+
+And if you're a developer that has a team lead that wasn't a software engineer then don't be an ass to them. They are supporting you in ways you don't even see, support them when it comes to software engineering related knowledge! :)
+
+Their job is to make the team more effective and create a better place to work. Enjoy your technical freedom!
