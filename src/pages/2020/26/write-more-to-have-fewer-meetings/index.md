@@ -1,50 +1,62 @@
 ---
-title: 'Writing to reduce the number of meetings'
+title: 'How to have fewer, more effective meetings'
 category: 'development'
 cover: header.jpg
 date: '2020-01-26T17:12:33'
 ---
 
-There are some very common types of communications in orgs. I prefer written communications for all of them.
+According to research by Professor Steven Rogelberg 50% of meetings are seen as engaging, this means that 50% are not.
 
-I use the following steps, systems and checklists to avoid meetings and write effectively .
+From my own experience I would have to agree that most meetings are not very useful. So many meetings would be better as an email or a wiki document.
 
 <!-- end excerpt -->
 
-Common communications in organisations:
+## Good meetings
+
+Not all meetings are a waste of time.
+
+Regularly getting together for townhalls is great for alignment.
+
+Whiteboarding problems with peers generally leads to better solutions and running your project kick-offs in person is a wickedly effective method to start with an engaged team.
+
+However, these meetings still need to be facilitated well and supported with agendas and published minutes.
+
+## Wasteful meetings
+
+There are some common types of communications in organisations where the default mechanism is create a meeting.
 
 - Status Updates
 - Information Sharing
 - Decision Making
-- Problem Solving
-- Innovation
-- Team Building
 
-The default mechanism for these communications is often meetings. This is an issue because there is a physical limit to meeting attendance and the invitations and attendance are often not optimal.
-
-You improve productivity by writing instead of interrupting five colleagues to join your meeting.
+To handle these scenarios you can just write a document or email and ask for feedback. Maybe afterwards you can organise a meeting to discuss feedback but start with a well researched and written document.
 
 - Writing encourages you to think through the problem before involving others.
 - Reading a written communication is asynchronous, allowing your consumers time to digest your message and do any exploration and investigations themselves.
 - Writing, sharing and asking for input as a response or comment can make costly meetings obsolete and opens the discussion up to a much wider audience. - Written communications provide a knowledge-base and record of decisions for the entire organisation.
+- You're not monopolising time
 
-You compliment writing with relevant meetings. They will re-enforce your message and discussions in person are better than over comment threads. But consider starting with a well researched and written document.
+You compliment writing with relevant meetings afterwards. They will re-enforce your message.
 
-Note: Any time you need to give feedback, do this backwards. Give feedback in person first and maybe follow up with an email.
+Even the meetings you run in person are far more effective if you write appropriate material before and after.
 
-## Research
+## A note on giving feedback
 
-You need to start with writing down the specific outcome you want.
+Any time you need to give feedback, do this backwards. _Give feedback in person first_ and maybe follow up with an email as a record and to clarify.
+
+## So how do we write effectively?
+
+I use the following steps, systems and checklists to avoid meetings and write effectively .
+
+## Start at the end
+
+You need to start with writing down the specific outcome you want. Start at the end. What is the pain for the organisation that you're trying to relieve?
 
 Write down who your audience is and target the contents to them by identifying how the change or information will benefit them.
 
-What is the pain for the organisation that you're trying to relieve?
-
 Remember this writing is not going to be about what you want, but instead how it will benefit your audience.
 
-Think about what they are optimizing for and how you can help that.
-
-You should try to target one audience at a time.
+Think about what they are optimizing for and how you can help that. You should try to target one audience at a time. For example this document...
 
 | Desired Outcome                                              | Audience           | Benefits to them                                            |
 | ------------------------------------------------------------ | ------------------ | ----------------------------------------------------------- |
@@ -52,19 +64,17 @@ You should try to target one audience at a time.
 
 If you're struggling to frame the content as benefits to the audience, you might be shouting something no one wants to hear. Reconsider sending the content.
 
-Researching is very specific to your content but I personally use [Trello](https://trello.com/) for all my notes. I have heard amazing things about [Roam Research](https://roamresearch.com/).
+## Researching
+
+Researching is very specific to your content but I personally use [Trello](https://trello.com/) for all my notes. I've heard amazing things about [Roam Research](https://roamresearch.com/) for organising content.
 
 ## Writing
 
-The writing is going to be very different for different organisations, communication types and topics so good luck.
+The writing is going to be very different for different organisations, topics and audiences.
 
 I've taken some amazing lessons from the book [On Writing Well by William Zinsser](https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548).
 
-For technical writing you should try to start with a summary that is easy to digest.
-
-After presenting the audience with one piece of new information think about what question that will have given them.
-
-Answer that question in your following paragraph and provide another nugget. Repeat.
+For technical writing you should try to start with a summary that is easy to digest. Present a single piece of interesting information. After presenting the audience with one piece of new information think about what question they will have. Answer that question in your following paragraph and provide another nugget. Repeat.
 
 Here are some structures/systems for how to approach content.
 
@@ -89,7 +99,7 @@ There was a time when, but today things have changed, as we look into the future
 
 ## Reviewing
 
-Give your writing some time to settle. Do not write last minute.
+Now that your piece is complete give your writing some time to settle. Do not write last minute.
 
 - Do at least 2 passes to simplify the writing.
 - Get a peer review.
@@ -99,6 +109,7 @@ Give your writing some time to settle. Do not write last minute.
 
 I use this checklist when reviewing my writing
 
+- [ ] Content: Do I absolutely have to send this?
 - [ ] Content: Is there an obvious audience?
 - [ ] Content: Does it focus on what the audience needs to hear?
 - [ ] Content: Do you address all the points you wanted to?
@@ -118,4 +129,4 @@ Writing more will reduce the number of meetings you have to facilitate and atten
 
 Writing is not better than meetings where collaboration is key. I love a good whiteboard session or project kick-off with all stakeholders in the same room!
 
-But in general you should try to replace most meetings with written communication.
+Writing well is difficult and takes practice. Use systems to help!
