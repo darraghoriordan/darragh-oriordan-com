@@ -11,16 +11,6 @@ From my own experience I would have to agree that most meetings are not very use
 
 <!-- end excerpt -->
 
-## Good meetings
-
-Not all meetings are a waste of time.
-
-Regularly getting together for townhalls is great for alignment.
-
-Whiteboarding problems with peers generally leads to better solutions and running your project kick-offs in person is a wickedly effective method to start with an engaged team.
-
-However, these meetings still need to be facilitated well and supported with agendas and published minutes.
-
 ## Wasteful meetings
 
 There are some common types of communications in organisations where the default mechanism is create a meeting.
@@ -29,20 +19,29 @@ There are some common types of communications in organisations where the default
 - Information Sharing
 - Decision Making
 
-To handle these scenarios you can just write a document or email and ask for feedback. Maybe afterwards you can organise a meeting to discuss feedback but start with a well researched and written document.
+To handle these scenarios you should write a document (or email) and ask for feedback. Maybe afterwards you can organise a meeting to discuss feedback but start with a well researched and written document.
 
 - Writing encourages you to think through the problem before involving others.
 - Reading a written communication is asynchronous, allowing your consumers time to digest your message and do any exploration and investigations themselves.
-- Writing, sharing and asking for input as a response or comment can make costly meetings obsolete and opens the discussion up to a much wider audience. - Written communications provide a knowledge-base and record of decisions for the entire organisation.
+- Writing, sharing and asking for input as a response or comment can make costly meetings obsolete and opens the discussion up to a much wider audience.
+- Written communications provide a knowledge-base and record of decisions for the entire organisation.
 - You're not monopolising time
 
-You compliment writing with relevant meetings afterwards. They will re-enforce your message.
+You compliment writing with relevant meetings afterwards. They will re-enforce your message. You'll be surprised how little you need to do these follow-ups.
+
+## Good meetings
+
+Not all meetings are a waste of time.
+
+Regularly getting together for townhalls is great for alignment.
+
+Whiteboarding problems with peers generally leads to better solutions and running your project kick-offs in person is a wickedly effective method to start with an engaged team.
 
 Even the meetings you run in person are far more effective if you write appropriate material before and after.
 
 ## A note on giving feedback
 
-Any time you need to give feedback, do this backwards. _Give feedback in person first_ and maybe follow up with an email as a record and to clarify.
+Any time you need to give feedback, do it in person. _Give feedback in person first_ and maybe follow up with an email as a record and to clarify.
 
 ## So how do we write effectively?
 
