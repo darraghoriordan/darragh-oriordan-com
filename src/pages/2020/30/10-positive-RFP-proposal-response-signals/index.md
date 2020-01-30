@@ -2,7 +2,7 @@
 title: '10 RFP response signals to watch out for'
 category: 'development'
 cover: header.jpg
-date: '2020-01-26T17:12:33'
+date: '2020-01-30T17:12:33'
 ---
 
 When you're reviewing RFP (Request for proposal) responses you make sure that the provider has met all your specified requirements. A provider missing a requirement on the proposal is a bad signal. Then you weigh the response details against each other and finally the price gets calculated and you choose.
