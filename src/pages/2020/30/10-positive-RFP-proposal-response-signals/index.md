@@ -1,5 +1,5 @@
 ---
-title: '10 positive RFP proposal response signals to watch out for'
+title: '10 RFP response signals to watch out for'
 category: 'development'
 cover: header.jpg
 date: '2020-01-26T17:12:33'
