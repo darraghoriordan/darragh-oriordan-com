@@ -1,5 +1,5 @@
 ---
-title: 'Upgrading TSLint to ESlint'
+title: 'TSLint is deprecated: How to upgrade to ESlint'
 category: 'development'
 cover: header.jpg
 date: '2020-03-06T17:12:33'
@@ -44,14 +44,12 @@ Based on the output of the migration tool above you will know what rules to inst
 These are the rules I had on a fairly standard project. I also add the ESLint typescript parser. This is very important because ESLint needs to understand typescript.
 
 ```bash
-yarn add -D ESLint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-unicorn @typescript-eslint/parser @typescript-eslint/eslint-plugin
+yarn add -D eslint eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow eslint-plugin-unicorn @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 ## Create an ESLint configuration file(s)
 
-Here is a decent starting point for the rules above. Add `"the-rule":"off"` in the rules section of the configuration to turn off a rule.
-
-It's a good idea to be very specific about what you want to lint. You can achieve this by passing ESLint a specific tsconfig file describing just that. So create a `tsconfig.eslint.json` file and add
+First, it's a good idea to be very specific about what you want to lint. You can achieve this by passing ESLint a specific tsconfig file describing just that. So create a `tsconfig.eslint.json` file and add
 
 ```json
 {
@@ -68,7 +66,9 @@ It's a good idea to be very specific about what you want to lint. You can achiev
 }
 ```
 
-Next you will need to add the actual config. The file should be called `.eslintrc.js`. Here is a common one with an example of a rule override.
+Next you will need to add the actual config. The file should be called `.eslintrc.js`.
+
+Here is a decent starting point for the rules above. Add `"the-rule":"off"` in the rules section of the configuration to turn off a rule.
 
 ```js
 module.exports = {
