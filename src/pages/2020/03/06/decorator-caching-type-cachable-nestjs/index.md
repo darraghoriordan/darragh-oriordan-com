@@ -1,0 +1,147 @@
+---
+title: 'Decorator caching in NestJS with type-cacheable'
+category: 'development'
+cover: header.jpg
+date: '2020-03-06T17:12:33'
+---
+
+I needed to cache some data in a NestJS application. Nest provides an awesome module for caching responses from nest http or microservice responses from controllers. I integrated type-cacheable in to the project to get this functionality.
+
+<!-- end excerpt -->
+
+But this Nest caching module doesn't easily allow you to cache from any method using the decorators. So I wanted to add type-cacheable to my project to get decorator caching on anything I wanted.
+
+## Have a redis instance
+
+There are many ways to setup redis locally or on the cloud. Search Google for more info. Once you have a redis instance running you can continue. On a mac try
+
+```bash
+brew install redis
+```
+
+## Add the packages we need
+
+You need to add a redis client, ioredis works well for this. Add type-cachable and then add the types for ioredis because we're using typescript.
+
+```bash
+yarn add ioredis type-cacheable
+yarn add -D @types/ioredis
+```
+
+## Creating the caching module
+
+You can add the functionality where ever you like but it is useful as a separate module where you can add it to your main module imports so it gets set up on application startup.
+
+Otherwise I would add it to the main application module directly.
+
+Here is the code Most of these classes or enums would be in their own files.
+
+```typescript
+/*
+This enum just makes it easy to set cache ttls. Type cacheable uses
+seconds.
+*/
+export enum CacheTtlSeconds {
+  ONE_MINUTE = 60,
+  ONE_HOUR = 60 * 60,
+  ONE_DAY = 60 * 60 * 24,
+  ONE_WEEK = 7 * 24 * 60 * 60,
+}
+/*
+This is just a generic exception we can throw and easily detect later in our app, in logs or other systems.
+*/
+export class NotCacheableException<T> extends Error {
+  public constructor(message: string) {
+    super(message)
+  }
+}
+/*
+This class maps env variables to a redis io config object
+*/
+@Injectable()
+export class RedisCacheConfigurationMapper {
+  public static map(): IORedis.RedisOptions {
+    return {
+      lazyConnect: true,
+      host: process.env.REDIS_HOST,
+      port: Number(process.env.REDIS_PORT),
+      password: process.env.REDIS_PASSWORD,
+      connectTimeout: Number(process.env.REDIS_TIMEOUT),
+      tls: process.env.REDIS_USETLS === 'true' ? {} : undefined,
+    }
+  }
+}
+
+/*
+This is where we setup the typecacheable store. We use Nest's OnModuleInit interface to have the setup run immediately. This allows us to stop application start if there is a problem configuring our redis instance.
+*/
+@Injectable()
+export class RedisCacheService implements OnModuleInit {
+  private redisInstance: IORedis.Redis | undefined
+
+  public async onModuleInit(): Promise<void> {
+    try {
+      if (this.isAlreadyConfigured()) {
+        return
+      }
+
+      this.redisInstance = new IORedis(RedisCacheConfigurationMapper.map())
+      // we set up a watch for this
+      this.redisInstance.on('error', (e: Error) => {
+        this.handleError(e)
+        throw new Error('Cannot connect to the Redis Cache!')
+      })
+      // This is where we configure type cachable to use this redis instance
+      useIoRedisAdapter(this.redisInstance)
+      // and open the connection
+      await this.redisInstance?.connect()
+    } catch (e) {
+      this.handleError(e as Error)
+    }
+  }
+
+  private handleError(e: Error): void {
+    console.error('Could not connect to Redis cache instance', e)
+  }
+
+  private isAlreadyConfigured(): boolean {
+    return this.redisInstance !== undefined
+  }
+}
+```
+
+## How to use the decorators
+
+You just add them to your method! It's super easy and promotes having clean methods for the models you are caching. See below for an example of a common CRUD repository.
+
+```typescript
+class MyService {
+	@Cacheable((args: any[]) => args[0], ttl:TtlSeconds.ONE_MINUTE)
+	public get(id:number): SomeModel{
+	}
+
+	@CacheClear((args: any[]) => (args[0] as SomeModel).id)
+	public update(model:SomeModel): void{
+
+	}
+
+	@CacheClear((args: any[]) => args[0])
+	public delete(id:number): void{
+
+	}
+}
+```
+
+## Using Nest CACHE_MANAGER
+
+If you use Nest caching for http then you don't really need to configure a second redis instance. You can just ask the dependency injection container for an instance of the internal cache manager and use that.
+
+```typescript
+export class RedisCacheService implements OnModuleInit {
+	public constructor(@Inject(CACHE_MANAGER) private readonly cache: 	ICacheManager){}
+
+	...
+	 useIoRedisAdapter(cache.store);
+	 ...
+ }
+```
