@@ -1,8 +1,8 @@
-import { graphql, Link } from "gatsby"
-import * as React from "react"
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import SEOConfiguration from "../components/SEOConfiguration"
+import { graphql, Link } from 'gatsby'
+import * as React from 'react'
+import Layout from '../components/Layout'
+import SEOConfiguration from '../components/SEOConfiguration'
+import ArticleHeader from '../components/ArticleHeader'
 
 class BlogPostTemplate extends React.Component<any, any> {
   public render() {
@@ -17,33 +17,31 @@ class BlogPostTemplate extends React.Component<any, any> {
           title={post.frontmatter.title}
           //   image={post.frontmatter.cover.publicURL}
         />
-
         <h1 className="title is-1">{post.frontmatter.title}</h1>
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
-        <Bio />
-
+        <ArticleHeader />
         <ul
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            listStyle: "none",
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            listStyle: 'none',
             padding: 0,
           }}
         >
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                ← BACK TO: {previous.frontmatter.title}
               </Link>
             )}
-          </li>{" "}
+          </li>{' '}
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                FORWARD TO: {next.frontmatter.title} →
               </Link>
             )}
           </li>
