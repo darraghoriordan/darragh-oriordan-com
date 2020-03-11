@@ -9,6 +9,7 @@ I needed to cache some data in a NestJS application. Nest provides an awesome mo
 
 ```typescript
 class MyService {
+  // I wanted this: Cache whatever the output of the method is based on the key (id in this case)
 	@Cacheable((args: any[]) => args[0], ttl:TtlSeconds.ONE_MINUTE)
 	public get(id:number): SomeModel{
   }
