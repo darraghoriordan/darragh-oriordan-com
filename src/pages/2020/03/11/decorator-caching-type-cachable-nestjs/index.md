@@ -1,5 +1,5 @@
 ---
-title: 'Decorator caching in NestJS with type-cacheable'
+title: '@Decorator caching in NestJS with type-cacheable'
 category: 'development'
 cover: header.jpg
 date: '2020-03-11T17:12:33'
@@ -7,17 +7,27 @@ date: '2020-03-11T17:12:33'
 
 I needed to cache some data in a NestJS application. Nest provides an awesome module for caching responses from nest http or microservice responses from controllers. I integrated type-cacheable in to the project to get this functionality.
 
+```typescript
+class MyService {
+	@Cacheable((args: any[]) => args[0], ttl:TtlSeconds.ONE_MINUTE)
+	public get(id:number): SomeModel{
+  }
+}
+```
+
 <!-- end excerpt -->
 
 But this Nest caching module doesn't easily allow you to cache from any method using the decorators. So I wanted to add type-cacheable to my project to get decorator caching on anything I wanted.
 
-## Have a redis instance
+## Create a redis instance
 
 There are many ways to setup redis locally or on the cloud. Search Google for more info. Once you have a redis instance running you can continue. On a mac try
 
 ```bash
 brew install redis
 ```
+
+Add the connection parameters to your environment. I use REDIS_HOST, REDIS_PORT etc in this example. See the code below for more.
 
 ## Add the packages we need
 
