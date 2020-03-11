@@ -5,7 +5,7 @@ cover: header.jpg
 date: '2020-03-11T17:12:33'
 ---
 
-I needed to cache some data in a NestJS application. Nest provides an awesome module for caching responses from nest http or microservice responses from controllers. I integrated type-cacheable in to the project to get this functionality.
+I needed to cache some data in a NestJS application. Nest provides an awesome module for caching responses from nest http or microservice responses from controllers. But this Nest caching module doesn't easily allow you to cache from any method using the decorators.
 
 ```typescript
 class MyService {
@@ -17,7 +17,7 @@ class MyService {
 
 <!-- end excerpt -->
 
-But this Nest caching module doesn't easily allow you to cache from any method using the decorators. So I wanted to add type-cacheable to my project to get decorator caching on anything I wanted.
+I integrated type-cacheable in to the project to get this functionality.
 
 ## Create a redis instance
 
