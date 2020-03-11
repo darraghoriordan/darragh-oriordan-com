@@ -48,7 +48,8 @@ export enum CacheTtlSeconds {
   ONE_WEEK = 7 * 24 * 60 * 60,
 }
 /*
-This is just a generic exception we can throw and easily detect later in our app, in logs or other systems.
+This is just a generic exception we can throw and easily detect later in our app,
+ in logs or other systems.
 */
 export class NotCacheableException<T> extends Error {
   public constructor(message: string) {
@@ -73,7 +74,10 @@ export class RedisCacheConfigurationMapper {
 }
 
 /*
-This is where we setup the typecacheable store. We use Nest's OnModuleInit interface to have the setup run immediately. This allows us to stop application start if there is a problem configuring our redis instance.
+This is where we setup the typecacheable store. We use Nest's OnModuleInit
+interface to have the setup run immediately.
+This allows us to stop application start if there is a problem
+configuring our redis instance.
 */
 @Injectable()
 export class RedisCacheService implements OnModuleInit {
@@ -86,14 +90,16 @@ export class RedisCacheService implements OnModuleInit {
       }
 
       this.redisInstance = new IORedis(RedisCacheConfigurationMapper.map())
-      // we set up a watch for this
+      // we set up error events. Note that we don't want to
+      // stop the application on connection errors. We don't want the lack
+      // of a working cache to break our application. You need to think
+      // about if this is the correct approach for your application.
       this.redisInstance.on('error', (e: Error) => {
         this.handleError(e)
-        throw new Error('Cannot connect to the Redis Cache!')
       })
       // This is where we configure type cachable to use this redis instance
       useIoRedisAdapter(this.redisInstance)
-      // and open the connection
+      // and finally we open the connection
       await this.redisInstance?.connect()
     } catch (e) {
       this.handleError(e as Error)
@@ -134,7 +140,7 @@ class MyService {
 
 ## Using Nest CACHE_MANAGER
 
-If you use Nest caching for http then you don't really need to configure a second redis instance. You can just ask the dependency injection container for an instance of the internal cache manager and use that.
+If you use Nest caching for http responses then you don't really need to configure a second redis instance. You can just ask the dependency injection container for an instance of the internal cache manager and use that.
 
 ```typescript
 export class RedisCacheService implements OnModuleInit {
