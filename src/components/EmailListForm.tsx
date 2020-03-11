@@ -139,7 +139,7 @@ const EmailListForm: React.SFC<{}> = () => {
             Yes sign me up for the newsletter, I accept the{' '}
             <a href="/privacy-policy">privacy policy</a>.
           </EmailFormCheckbox>
-          <EmailFormButton type="submit">Get Access</EmailFormButton>
+          <EmailFormButton type="submit">Sign me Up!</EmailFormButton>
         </Form>
       </Formik>
     </FormContainer>
