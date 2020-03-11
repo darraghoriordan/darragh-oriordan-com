@@ -18,7 +18,7 @@ class MyService {
 
 <!-- end excerpt -->
 
-I integrated type-cacheable in to the project to get this functionality.
+I integrated type-cacheable in to the project to get this functionality. Here are the steps...
 
 ## Create a redis instance
 
@@ -41,11 +41,11 @@ yarn add -D @types/ioredis
 
 ## Creating the caching module
 
-You can add the functionality where ever you like but it is useful as a separate module where you can add it to your main module imports so it gets set up on application startup.
+You can add the functionality where ever you like but it is useful as a separate module where you can add it to your main module imports or a sub module so it gets set up on application startup or when needed.
 
-Otherwise I would add it to the main application module directly.
+Otherwise I would add the code to the main application module directly.
 
-Here is the code Most of these classes or enums would be in their own files.
+Here is the code. Most of these classes or enums would be in their own files.
 
 ```typescript
 /*
@@ -151,7 +151,7 @@ class MyService {
 
 ## Using Nest CACHE_MANAGER
 
-If you use Nest caching for http responses then you don't really need to configure a second redis instance. You can just ask the dependency injection container for an instance of the internal cache manager and use that.
+If you use Nest caching for http responses then you don't really need to configure a second redis instance. You would have configured a connection for that module already. In this case you can just ask the dependency injection container for an instance of the internal cache manager used by nest caching and use that to configure type-cacheable.
 
 ```typescript
 export class RedisCacheService implements OnModuleInit {
