@@ -1,5 +1,5 @@
 ---
-title: 'Adding Amazon openApi/swagger extensions to specification with nest js'
+title: 'Add Amazon OpenApi extensions to your Swagger specification on NestJS'
 category: 'development'
 cover: header.jpg
 date: '2020-03-19T17:12:33'
@@ -44,7 +44,7 @@ Your specification needs to have this property e.g.
 
 Just recently there was support added to the nest swagger tool to allow declarative open api extensions by using the following decorator on your controller methods...
 
-```
+```typescript
 @ApiExtension(<extensionName>, <extensionPropertyObject>)
 ```
 
@@ -56,7 +56,7 @@ My other requirement was that I didn't need to host the swagger specification as
 
 You will need to install two packages. One for swagger on nest and the other for yaml formatting
 
-```
+```shell
 yarn add @nestjs/swagger yaml
 ```
 
@@ -189,7 +189,3 @@ This is a somewhat hacky way of adding an extension to you swagger spec.
 The extension decorator method mentioned above is cleaner and more nest-like. But it would result in lots of duplication of definition for this specific extension. So it's arguably cleaner to do it this way for this extension.
 
 Because the swagger plugin exposes a simple object we can inject whatever we want before working with it!
-
-```
-
-```
