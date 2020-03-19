@@ -1,11 +1,11 @@
 ---
-title: 'Add Amazon OpenApi extensions to your Swagger specification on NestJS'
+title: 'Add AWS OpenApi extensions to your Swagger specification on NestJS'
 category: 'development'
 cover: header.jpg
 date: '2020-03-19T17:12:33'
 ---
 
-I recently had to add open api extensions for an amazon gateway to the output of Nest's swagger/openAPI tool. This is how I did it and what I learned.
+I recently had to add open api extensions for an AWS gateway to the output of Nest's swagger/openAPI tool. This is how I did it and what I learned.
 
 <!-- end excerpt -->
 
