@@ -5,7 +5,7 @@ cover: header.jpg
 date: '2020-07-04T17:12:33'
 ---
 
-I was implementing a search rest API and was thinking about the no results status. There are a couple of options that are somewhat valid. There is no perfectly "right" answer and the discussion exposes care for API design, knowledge of http and care for developers who will be consuming the api.
+I was implementing a search REST API and was thinking about the no results status. There are a couple of options that are somewhat valid. There is no perfectly "right" answer and the discussion exposes care for API design, knowledge of http and care for developers who will be consuming the api.
 
 <!-- end excerpt -->
 
