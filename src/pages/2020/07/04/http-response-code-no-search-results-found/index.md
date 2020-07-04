@@ -1,5 +1,5 @@
 ---
-title: 'Which http status code to use for no search results found'
+title: 'Which http status code to use for no search results found?'
 category: 'development'
 cover: header.jpg
 date: '2020-07-04T17:12:33'

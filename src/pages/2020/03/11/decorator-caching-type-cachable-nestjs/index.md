@@ -20,6 +20,8 @@ class MyService {
 
 I integrated type-cacheable in to the project to get this functionality. Here are the steps...
 
+Update: type cacheable libraries have been updated. See package @type-cacheable/core.
+
 ## Create a redis instance
 
 There are many ways to setup redis locally or on the cloud. Search Google for more info. Once you have a redis instance running you can continue. On a mac try
