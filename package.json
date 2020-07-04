@@ -7,9 +7,6 @@
   "bugs": {
     "url": "https://darraghoriordan.com"
   },
-  "engines": {
-    "node": ">=12"
-  },
   "dependencies": {
     "bulma": "^0.7.5",
     "formik": "^2.1.4",
