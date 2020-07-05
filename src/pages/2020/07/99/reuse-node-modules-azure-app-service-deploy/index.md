@@ -1,46 +1,42 @@
 ---
-title: 'Which http status code to use for no search results found?'
+title: 'Azure App Service reuse node modules on host for speed'
 category: 'development'
 cover: header.jpg
-date: '2020-07-04T17:12:33'
+date: '2020-99-04T17:12:33'
 ---
 
-I was implementing a search REST API and was thinking about the no results status. There are a couple of options that are somewhat valid. There is no perfectly "right" answer and the discussion exposes care for API design, knowledge of http and care for developers who will be consuming the api.
+If you are deploying a node app to Azure App Services you can deploy the node_modules folder as part of the deploy, or you can reinstall the runtime node modules on the host each time. There are some advantages and disadvantages to taking either option.
 
 <!-- end excerpt -->
 
 ## The scenario
 
-Say we are searching some rest api for results `GET /api/collection?filter=value&filter=value`. What should the API return if there are no results?
+If you have a node app that builds in Azure DevOps Pipelines and you are deploying to Azure App Services you can ship the node_modules in the zip deploy, or install the node_modules on the host.
 
-The go-to response for a non-error is of course `200 OK` but I wanted to think it through instead of defaulting to `OK`. The analysis depends on HTTP code RFC interpretation and conventions around what is a REST response. It's subjective.
+If you ship the node modules then your build artefact is much larger and you have to make sure that the OS and the node version is the same on both the build agent and the App Service host.
 
-I still ended up preferring 200.
+If you chose to install the packages on the host you have to ensure that the rebuild doesn't take so long that the deploy fails from an `npm install` timeout.
 
-## 404 Not Found
+## Installing packages on the host
 
-Not Found sounds like an option that could work well but the 400 series of response codes are used to indicate that the user request was in error.
+If you try to install the NPM packages on App Services each time it takes a long time. The data transfer speed seems to be quite slow. It even fails some of the time for large installs. You can see a way around the NPM timeout failures [described here](https://www.darraghoriordan.com/2019/10/29/npm-timeout-deploying-node-app-azure-app-service/).
 
-This is valid in the case where a single entity requested by the user doesn't exist. The user asked for a resource that doesn't exist. They should change their request.
+You can also setup azure app service to not delete the node_modules folder for each deploy. Now you need to be careful here because setting this option means all existing files will be kept. You might not want this depending on your app. And it is likely not suitable for you production environment.
 
-But no search results is not a user error (depending on your api of course). No results is an expected response from a collection api like a search filter.
+The key is the `RemoveAdditonalFiles: false` option. This keeps the files that are already on the server. Including node_modules around! This will speed up your deploy by 5 to 10 minutes.
 
-In this endpoint the resource is the collection itself. The collection should exist. Using a 404 could also lead a developer to think that your endpoint/collection doesn't actually exist when in fact it's just that there is no data. This could waste a lot of time.
-
-For an issue where the developer tries to search a collection that doesn't exist. I would return a 404.
-
-## 204 No Content
-
-No content also sounds like something that might be appropriate. The search was successful but there are no results. This is semantically correct. However the RFC states that
-
-> The 204 response MUST NOT include a message-body, and thus is always terminated by the first empty line after the header fields.
-
-So I don't like this for the fact that a client has to handle no response body. It's not the worst choice but it feels wrong.
-
-## 200 OK
-
-This is a great option. It's straightforward. The request itself was successful.
-
-I feel that having a consistent array in the body is easier to work with and since we design APIs to be consumed as easily as possible.
-
-A `200 OK` is the way to go and I was just over thinking this!
+```yaml
+- task: AzureRmWebAppDeployment@4
+    inputs:
+      ConnectionType: 'AzureRM'
+      azureSubscription: '$(azureSubscription)'
+      appType: 'webAppLinux'
+      WebAppName: '$(appName)'
+      packageForLinux: '$(System.ArtifactsDirectory)/artefactDrop/$(Build.BuildId).zip'
+      RuntimeStack: 'NODE|10.16'
+      RemoveAdditionalFiles: false
+      StartupCommand: 'cd server && node dist/index.js'
+      ScriptType: 'Inline Script'
+      InlineScript: |
+        yarn install --production --network-timeout=30000
+```
