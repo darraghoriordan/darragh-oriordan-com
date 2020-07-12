@@ -1,5 +1,5 @@
 ---
-title: 'Sermantic versioning a node app on Azure DevOps CI'
+title: 'Semantic versioning a node app on Azure DevOps CI'
 category: 'development'
 cover: header.jpg
 date: '2020-07-12T17:12:33'
