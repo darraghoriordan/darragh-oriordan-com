@@ -5,23 +5,25 @@ cover: header.jpg
 date: '2020-07-12T17:12:33'
 ---
 
-Using semantic versioning automates the version process and by using a convention you can remove any arguments about versioning in your team. I specifically set up Azure DevOps here but this would work on any CI system.
+Using semantic versioning allows you to completely automate updating versions in package.json and remove any arguments in your team about versioning. Here is how I use it in my node apps.
 
 <!-- end excerpt -->
 
-## Versioning and SemVer
+## Versioning and semver
 
-If you deploy an application it's really useful to automatically increment a version so you know what code is running on a given environment. A really common version system is "semver" or semantic versioning. Semvers are used all over the javascript ecosystem. They are also widely used on other ecosystems.
+If you deploy an application it's really useful to know what version of the code is running on a given environment. A really common version system is "semver" or semantic versioning. Semver is used all over the javascript ecosystem.
 
 A semver looks like `2.45.1` where the parts are `[major].[minor].[patch]`. The major version gets updated when there is a breaking change. The minor version gets updated when there is a new feature and the patch version gets updated when there is a bugfix or similar.
 
-Package system can use this format to decide what version to upgrade automatically. It is assumed that major versions will break things so that needs a manually upgrade. But minor and patch versions can be updated safely.
+A package system can use this format to decide what version to upgrade automatically. It is assumed that major versions will break things so that needs a manually upgrade. But minor and patch versions can be updated safely by npm or yarn.
 
 ## Conventional commits
 
-if we want to automate setting the versionm, we need to be able to automatically detect the type of change in a commit. This is where conventional commits come in. This is a standard way of setting a commit message so that tools can read your commit messages and decide if you have added a `major` change, a `minor` change or a `patch`.
+If we want to automate setting the version then we need to be able to detect the type of change in a commit. This is where conventional commits come in.
 
-The way these are formatted is using a prefix. There are some well known prefixes that are understood by tools. `feat`, `fix`, `docs`, `chore` are usually understood. And your libraries will list the ones it understands. I find it easier to use only 3-4 in my day to day work though.
+If we use a convention when setting a commit message, tools can read the commit messages and decide if you have added a `major` change, a `minor` change or a `patch`.
+
+The convention is to use a prefix. There are some well known prefixes that are understood by tools. `feat`, `fix`, `docs`, `chore` are common. Your libraries will list the ones it understands. I find it easier to use only 3-4 in my day to day work.
 
 Example commit messages: `feat: added the new menu item` or `fix: There was a typo on the menu button`.
 
@@ -31,7 +33,7 @@ In those cases the commits would be parsed as feat - minor version bump and fix 
 
 1. We make a change to the code. It goes in to PR and gets merged to master with a conventional commit message.
 2. Our CI system picks up the change and builds it
-3. The build works so we set the version in package.json based on the previous version and the commit message
+3. The build completes without errors so we set the version in package.json based on the previous version and the commit message
 4. We also tag git with the new version
 
 ## Enforcing conventional commits
@@ -40,7 +42,7 @@ To enforce commit format we will use a few libraries. Husky in particular is gre
 
 `yarn add -D husky @commitlint/cli @commitlint/config-conventional`
 
-husky lets us add hooks when we work with git. Commitlint checks the commit message.
+Husky lets us add hooks when we work with git. Commitlint checks the commit message.
 
 We need to configure the libraries. In your projects package.json file you can add
 
@@ -63,7 +65,11 @@ We need to configure the libraries. In your projects package.json file you can a
 
 This tells commit lint to use the conventional commit rule set as a base. And then tells husky to use commit lint whenever we submit a commit.
 
-There are many settings available. Check out the commitlint cli documentation. Here I turn off any subject case requirements. By default it requires lowercase for everything but I sometimes use pascal case to start sentences out of habit. I also set the header length to be a bit longer than the default.
+There are many linting rules available. Check out the commitlint cli documentation for more.
+
+I use rules that turn off any subject case requirements. By default commitlint requires lowercase for everything but I sometimes use pascal case to start sentences out of habit.
+
+I also set the header length to be a bit longer than the default.
 
 `-E HUSKY_GIT_PARAMS` - husky puts all the variables that we passed to git in the variable `HUSKY_GIT_PARAMS` so that tools like commit lint can see and use them.
 
@@ -124,6 +130,8 @@ After we have successfully built the change and tested it, basically when we kno
 
 We run the release command we just configured. This will do the steps described above.
 
+Note: We don't push the updated package.json or other version changes to git on CI because it would cause another commit. So the version is only on the git tag. If we want to have the version anywhere else on CI we have to manually set it.
+
 In the second command in this script we copy the version from the package.json file and put it in our front end project as a simple txt file.
 
 This step has a condition that only runs for commits to master. We don't want to version feature branches.
@@ -136,6 +144,6 @@ This step has a condition that only runs for commits to master. We don't want to
   displayName: 'Bump release version'
 ```
 
-![Git versions](./git-versions.png 'The different versions applied by the script')
+The result on our repository looks like
 
-Note: We don't push the updated package.json to git on CI because it would cause another commit. So the version is only on the git tag. If we want to have the version anywhere else on CI we have to manually set it.
+![Git versions](./git-versions.png 'The different versions applied by the script')
