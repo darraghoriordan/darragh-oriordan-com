@@ -2,7 +2,7 @@
 title: 'Sermantic versioning a node app on Azure DevOps CI'
 category: 'development'
 cover: header.jpg
-date: '2020-10-04T17:12:33'
+date: '2020-07-12T17:12:33'
 ---
 
 Using semantic versioning automates the version process and by using a convention you can remove any arguments about versioning in your team. I specifically set up Azure DevOps here but this would work on any CI system.
