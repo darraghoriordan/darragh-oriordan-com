@@ -136,4 +136,6 @@ This step has a condition that only runs for commits to master. We don't want to
   displayName: 'Bump release version'
 ```
 
+![Git versions](./git-versions.png 'The different versions applied by the script')
+
 Note: We don't push the updated package.json to git on CI because it would cause another commit. So the version is only on the git tag. If we want to have the version anywhere else on CI we have to manually set it.
