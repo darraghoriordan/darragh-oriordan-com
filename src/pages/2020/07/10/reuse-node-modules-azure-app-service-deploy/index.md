@@ -2,7 +2,7 @@
 title: 'Azure App Service reuse node modules on host for speed'
 category: 'development'
 cover: header.jpg
-date: '2020-10-04T17:12:33'
+date: '2020-07-10T17:12:33'
 ---
 
 If you are deploying a node app to Azure App Services you can deploy the node_modules folder as part of the deploy, or you can reinstall the runtime node modules on the host each time. There are some advantages and disadvantages to taking either option.
