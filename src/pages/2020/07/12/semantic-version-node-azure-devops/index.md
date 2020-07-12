@@ -77,7 +77,7 @@ What will happen here is that every time a commit is attempted, it will get lint
 
 ## Bumping versions based on commit message
 
-When your CI tool builds a new change you can have it set the version before you package the code artifacts. For this we use a package called `semantic-version` in our CI step.
+When your CI tool builds a new change you can have it set the version before you package the code artifacts. For this we use a package called `semantic-release` in our CI step.
 
 This setup means installing the following libraries
 
