@@ -51,6 +51,7 @@
     "@types/react-helmet": "^5.0.16",
     "@types/styled-components": "^4.4.3",
     "babel-plugin-styled-components": "^1.10.7",
+    "gatsby-cli": "^2.12.90",
     "node-sass": "^4.14.1",
     "styled-components": "^4.4.1",
     "tslint": "^5.20.1",
