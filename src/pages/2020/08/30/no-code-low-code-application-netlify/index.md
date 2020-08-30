@@ -1,5 +1,5 @@
 ---
-title: 'Using no code airtable and Netlify to build a logging application'
+title: 'Using no-code airtable and Netlify to quickly build a machine log application'
 category: 'development'
 cover: header.jpg
 date: '2020-08-30T17:12:33'
