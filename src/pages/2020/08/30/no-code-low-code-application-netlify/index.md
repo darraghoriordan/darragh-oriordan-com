@@ -11,8 +11,6 @@ I wanted to see if i could build the tool using no-code or similar. I got it bui
 
 <!-- end excerpt -->
 
-## The brief
-
 ## The solution steps
 
 - Setup an airtable account
