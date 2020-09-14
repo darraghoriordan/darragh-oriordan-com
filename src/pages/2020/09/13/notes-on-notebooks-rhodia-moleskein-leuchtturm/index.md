@@ -232,6 +232,8 @@ Get the Leuchtturm 1917 if you journal in a laboratory or bullet journal.
 
 Get the Rhodia if you want a really nice notebook for archiving and you don't care about the extras in the Leuchtturm.
 
-Ultimately the cheap notebook does the same thing for just 7% the cost of the others.
+Ultimately the cheap notebook does the same thing for way less cost than the others.
 
-You could have 17 cheap notebooks for the same price as a Rhodia. They just don't feel like something I would like to archive.
+You could have 11 cheap notebooks for the same price as a Rhodia!
+
+They just don't feel like something I would like to archive in comparison to the others.
