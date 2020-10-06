@@ -19,6 +19,12 @@ You need to install the library
 yarn add applicationinsights
 ```
 
+Add the env var with your connection string. You get the app insights connection string from the overview page on App insights in Azure.
+
+```sh
+APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=a-guid-key;IngestionEndpoint=https:/in.applicationinsights.azure.com/
+```
+
 Then import the library REALLY EARLY. You should import it as the first thing you import in the entire application. That's usually the index.js for the app.
 
 ```typescript
