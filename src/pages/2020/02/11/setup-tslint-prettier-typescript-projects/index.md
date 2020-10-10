@@ -5,6 +5,12 @@ cover: header.jpg
 date: '2020-02-11T17:12:33'
 ---
 
+---
+
+_UPDATE 10/10/2020: Tslint is being deprecated. You should consider changing to Eslint. I have a guide for that here: [TSLint is deprecated: How to upgrade to ESlint](/2020/03/06/upgrade-tslint-deprecated-to-eslint/)._
+
+---
+
 TSLint will help us identify potential issues in our code by examining how we use language features.
 
 Prettier will format code consistently but needs some configuration to work with TSLint.
