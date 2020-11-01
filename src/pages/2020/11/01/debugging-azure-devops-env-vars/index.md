@@ -1,5 +1,5 @@
 ---
-title: 'Setting and debugging azure devops yaml env vars'
+title: 'Setting and debugging Azure Devops yaml env vars'
 category: 'other'
 cover: header.jpg
 date: '2020-11-01T17:12:33'
@@ -27,7 +27,7 @@ variables:
     value: '333333'
 ```
 
-Using env
+Using env (Azure Devops will hide the variable contents where possible)
 
 ```yaml
 script: |
@@ -95,20 +95,27 @@ If you're building on a linux build agent you can use the `printenv` command to 
 You can also use `set` to get all the environment information. This will also work on windows build agents.
 
 ```yaml
-finally, to see what Azure is actually doing you could try in running `printenv` in a script - script: |
+- script: |
     set
     npm install
     npm run build
 
   displayName: 'npm install and build'
   env:
-    REACT_APP_APIBaseUrl: "test"
-    REACT_APP_Client_ID: "333333"
+    REACT_APP_APIBaseUrl: 'test'
+    REACT_APP_Client_ID: '333333'
 ```
 
-## You can also debug the entire pipeline
+You would see the following output in your logs
 
-If you set the variable `System.Debug` to `true` you will get a full debug stream in the pipeline logs. This includes available environment variables.
+```
+REACT_APP_APIBASEURL=test
+REACT_APP_CLIENT_ID=333333
+```
+
+## You can also debug a step or the entire pipeline
+
+If you set the variable `System.Debug` to `true` you will get a full debug stream in the pipeline logs. This includes available environment variables. You can set this at the highest level in your yaml file to debug every step. Or you can add it to the step.
 
 ```yaml
 variables:
