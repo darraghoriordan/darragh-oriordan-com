@@ -88,6 +88,10 @@ For create-react-app apps then you should prepend relevant environment variables
 
 Each library has their own configuration! You should read and understand the library documentation. For example if you're using gatsby you have to prepend with `GATSBY_`.
 
+## Make sure that the file you are adding variable to is processed by webpack
+
+The environment variables get processed by webpack. In create react app none of the files you place in `/public` are processed by webpack so the environment variables will not get replaced! You can add variables to index.html and to any of your componenets in the src folder because they are processed by webpack.
+
 ## Finally, you can debug if the variables are available as expected
 
 If you're building on a linux build agent you can use the `printenv` command to get a list of all the environment variables in the devops script.
