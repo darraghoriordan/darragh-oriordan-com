@@ -92,6 +92,12 @@ Each library has their own configuration! You should read and understand the lib
 
 The environment variables get processed by webpack. In create react app none of the files you place in `/public` are processed by webpack so the environment variables will not get replaced! You can add variables to index.html and to any of your componenets in the src folder because they are processed by webpack.
 
+If you need to set a variable in a file in `/public` you would have to use Azure Devops to replace the value. Something like this would replace the value in the file.
+
+```
+npm run build && sed -i 's/$%REACT_APP_ClientId%/$${the.variable.value.inazure.devops.script}/' ./build/public/temp.html
+```
+
 ## Finally, you can debug if the variables are available as expected
 
 If you're building on a linux build agent you can use the `printenv` command to get a list of all the environment variables in the devops script.
