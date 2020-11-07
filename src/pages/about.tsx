@@ -33,8 +33,10 @@ class AboutPage extends React.Component<any, any> {
           I grew a bit tired of the long winter after four years in Ontario. I
           traveled for a while – I cycled through Africa, visited friends in
           Europe and drove across Canada and drove a motorcycle up to the Arctic
-          Circle. I eventually landed in New Zealand and I've been living in
-          Auckland ever since.
+          Circle. I eventually landed in New Zealand and lived in Auckland for 6 years.
+        </p>
+        <p>
+          I moved to Sydney, Australia in March 2020 to help build an app for a customer and I'm looking forward to exploring another beautiful country!
         </p>
         <p>
           I love to try new things, learn new topics and skills. I'm always

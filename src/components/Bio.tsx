@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import profilePic from './profile-pic.png'
+import profilePic from './profile-pic.jpg' // test
 
 const BioContainer = styled.div`
   display: flex;
   margin-bottom: 2em;
 `
 const BioImage = styled.img`
-  height: 3em;
+  height: 9em;
   margin-bottom: 0;
   margin-right: 1em;
-  width: 3em;
+  width: 9em;
 `
 class Bio extends React.Component<any, any> {
   public render() {
@@ -22,7 +22,7 @@ class Bio extends React.Component<any, any> {
             Hi! I'm <strong>Darragh ORiordan</strong>.{' '}
           </p>
           <p>
-            I live and work in Auckland, New Zealand enjoying the mountains and
+            I live and work in Sydney, Australia enjoying the mountains and
             the ocean.
           </p>{' '}
           <p>
