@@ -31,11 +31,13 @@ const SEOConfiguration = (props: IProps) => (
         description:
           props.description ||
           queryResponse.site.siteMetadata.defaultDescription,
-        image: `${queryResponse.site.siteMetadata.siteUrl}${props.image ||
-          queryResponse.site.siteMetadata.defaultImage}`,
+        image: `${queryResponse.site.siteMetadata.siteUrl}${
+          props.image || queryResponse.site.siteMetadata.defaultImage
+        }`,
         title: props.title || queryResponse.site.siteMetadata.defaultTitle,
-        url: `${queryResponse.site.siteMetadata.siteUrl}${props.pathname ||
-          '/'}`,
+        url: `${queryResponse.site.siteMetadata.siteUrl}${
+          props.pathname || '/'
+        }`,
       }
 
       return (
@@ -53,6 +55,9 @@ const SEOConfiguration = (props: IProps) => (
               content={valuesToSet.description}
             />
           )}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@darraghor" />
+          <meta name="twitter:creator" content="@darraghor" />
           {valuesToSet.description && (
             <meta property="og:description" content={valuesToSet.description} />
           )}
