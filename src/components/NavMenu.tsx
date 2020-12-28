@@ -60,7 +60,7 @@ class NavMenu extends React.Component<any, any> {
             <NavAnchor to={'/about'}>About</NavAnchor>
           </NavElement>
           <NavElement>
-            <NavAnchor to={'/portfolio'}>Portfolio</NavAnchor>
+            <NavAnchor to={'/portfolio'}>Work</NavAnchor>
           </NavElement>
           <NavElement>
             <NavAnchor to={'/contact'}>Contact</NavAnchor>
