@@ -32,9 +32,9 @@ class BlogIndex extends React.Component<any, any> {
                 </Link>
               </h3>
               <h4 className="title is-6">{node.frontmatter.date}</h4>
-              <p
+              <div
                 dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
+                  __html: node.htmlExcerpt,
                 }}
               />
               <Link to={node.fields.slug}>read more...</Link>

@@ -7,6 +7,15 @@ date: '2020-12-30T17:12:33'
 
 <!-- end excerpt -->
 
+How to process so much software product develpment thought leadership
+The importance of principals in software product development
+
+There are 50,000 management and leadership books on Amazon. of books, blogs and podcasts containing tactical implementations for handling all aspects of software product development.
+
+Thought leaders and other organisations have packaged up their solution into a $50 book and a $1000 course to sell you a better version of yourself, your product or your team.
+
+But your team and culture depend on you defining your own patterns and techniques for resolving issues with teams, engineering and product. Don't blindly copy what worked for another organisation, or take a piece of another organisations technique and
+
 ## Estimations
 
 ## aligning motivations
@@ -33,17 +42,15 @@ for decisions - you probably had very short time to make decisions so you had me
 
 ## Meetings
 
-
 Running good meetings
 Send out an agenda. make sure there is a specific problem to be addressed. limit the scope of the meeting.
 Limit mandatory invitations to the right people, optional for others
 Actively facilitate - make sure no one is left out and that no one dominates. Ensure the agenda gets resolved. This is vital. Take notes.
 Send out a summary - private if applicable otherwise share widely for feedback and communication. In our case this would be slack
 
-
 Backlog grooming
 Retrospective
 Sprint planning
-Backr internal demo *2
+Backr internal demo \*2
 Backr sprint demo
 Standup x 10
