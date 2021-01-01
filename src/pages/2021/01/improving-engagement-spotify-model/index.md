@@ -68,7 +68,9 @@ Being able to change the methodology being used confidently is a great way for t
 
 ### 4. Trust
 
-There will always be something to work on here but it will be specific to your team so I won't talk about it too much. Consider trust between team members and between your team and the other teams or stakeholders too!
+There will always be something to work on here but it will be specific to your team so I won't talk about it too much. Always be trying to improve trust in the team!
+
+Consider trust between team members and between your team and the other teams or stakeholders too!
 
 ## Feedback and Autonomy
 
