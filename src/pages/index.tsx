@@ -21,7 +21,7 @@ class BlogIndex extends React.Component<any, any> {
           title={'I help you build awesome web applications and happy teams'}
         />
         <ArticleHeader />
-        <h2>Articles</h2>
+        <h2>Writing</h2>
         {posts.map(({ node }: any) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (

@@ -60,8 +60,9 @@ interface IEmailFormValues {
   email: string
   acceptedTerms: boolean
 }
-const EmailFormTextInput: SFC<IEmailFormTextInputProps &
-  React.HTMLProps<HTMLInputElement>> = ({ label, ...props }) => {
+const EmailFormTextInput: SFC<
+  IEmailFormTextInputProps & React.HTMLProps<HTMLInputElement>
+> = ({ label, ...props }) => {
   const [field, meta] = useField(props)
   return (
     <FormElementContainer>
@@ -77,8 +78,9 @@ const EmailFormTextInput: SFC<IEmailFormTextInputProps &
 interface IEmailFormCheckboxProps {
   label: string
 }
-const EmailFormCheckbox: SFC<IEmailFormCheckboxProps &
-  React.HTMLProps<HTMLInputElement>> = ({ children, ...props }) => {
+const EmailFormCheckbox: SFC<
+  IEmailFormCheckboxProps & React.HTMLProps<HTMLInputElement>
+> = ({ children, ...props }) => {
   const [field, meta] = useField({ ...props, type: 'checkbox' })
   return (
     <FormElementContainer>
@@ -101,7 +103,7 @@ const EmailListForm: React.SFC<{}> = () => {
   return (
     <FormContainer>
       <EmailSignupHeaderText>
-        Get new posts, curated tech articles and coding tips!
+        Get new writings, curated tech articles and coding tips!
       </EmailSignupHeaderText>
       <Formik
         initialValues={{

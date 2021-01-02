@@ -54,7 +54,7 @@ class NavMenu extends React.Component<any, any> {
       <nav>
         <NavUl>
           <NavElement>
-            <NavAnchor to={'/'}>Posts</NavAnchor>
+            <NavAnchor to={'/'}>Writing</NavAnchor>
           </NavElement>
           <NavElement>
             <NavAnchor to={'/about'}>About</NavAnchor>
