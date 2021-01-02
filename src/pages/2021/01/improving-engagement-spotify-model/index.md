@@ -68,7 +68,15 @@ Being able to change the methodology being used confidently is a great way for t
 
 ### 4. Trust
 
-There will always be something to work on here but it will be specific to your team so I won't talk about it too much. Always be trying to improve trust in the team!
+Trusting the team means when you have the first three items above dialled in, you can just let them off without checking in every day. This can be difficult for organizations more used to top down management or close supervision. You have to know that almost everyone you work with is going to do their absolute best to solve problems they understand and care about. If you have done that bit then you don't need to worry about engagement.
+
+Issues usually arise from miscommunication. A common issues are that the team didn't understand the mission or the constraints. You really need to spend the time to ensure these are communicated and understood well. Get the team to play them back to you in a facilitated way to verify.
+
+Another common issue is that the team didn't have the competence to solve a problem but the culture in the org didn't allow them to ask for help, or they didn't know where to ask for help. To have a successful Spotify model you should make sure there is always help available and it's encouraged to learn from others and to share knowledge across teams (This is what the chapters and guilds are for).
+
+Trusting the team also means supporting them through perceived failures. Make sure they are focusing on the lessons that were learned.
+
+There will always be something to work on here but it will be specific to your team so I won't talk about it too much. Always be trying to improve trust in the team.
 
 Consider trust between team members and between your team and the other teams or stakeholders too!
 
