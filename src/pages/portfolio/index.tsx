@@ -101,7 +101,7 @@ class PortfolioIndex extends React.Component<any, any> {
         <p>
           <Link to={'/portfolio/pulse/'}>More Details</Link>
         </p>
-        <p>More random stuff on repos</p>
+        <h2>More random stuff on repos</h2>
         <ul>
           <li>
             <a
@@ -120,6 +120,7 @@ class PortfolioIndex extends React.Component<any, any> {
             </a>
           </li>
         </ul>
+        <h2>Resume</h2>
         <p>
           You can see my resume here: <Link to={'/resume'}>Resume</Link>
         </p>
