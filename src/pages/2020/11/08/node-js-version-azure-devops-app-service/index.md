@@ -54,6 +54,6 @@ If you use Azure App Service for hosting you should tell it the correct version 
 
 ## Summary
 
-There can be difficult to find bugs in your npm packages caused by Azure upgrading the default version of Node.js in build agents and on any of there PaaS systems. You can mitigate it by specifying the exact versions your code is designed to work with.
+There can be difficult to find bugs in your npm packages caused by Azure upgrading the default version of Node.js in build agents and on any of their PaaS systems. You can mitigate it by specifying the exact versions your code is designed to work with.
 
 Hope that helps!
