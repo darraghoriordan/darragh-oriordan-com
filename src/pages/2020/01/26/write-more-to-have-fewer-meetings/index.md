@@ -1,25 +1,39 @@
 ---
-title: 'How to have fewer, more effective meetings'
+title: 'How to have fewer, more effective meetings (Resurrecting the memo)'
 category: 'development'
 cover: header.jpg
 date: '2020-01-26T17:12:33'
 ---
 
-According to research by Professor Steven Rogelberg 50% of meetings are seen as engaging, this means that 50% are not.
+According to research by Professor Steven Rogelberg 50% of meetings are seen as engaging - of course this means that 50% are not.
 
-From my own experience I would have to agree that most meetings are not very useful. So many meetings would be better as an email or a wiki document.
+From my own experience I would have to agree that many meetings are not very useful. There are too many organisations having meetings that would be better as an email or a wiki document.
 
 <!-- end excerpt -->
 
+## Good meetings
+
+Not all meetings are a waste of time. Regularly getting together in person is great for teams and for working through problems. These should be meetings where everyone needs to provide input.
+
+Whiteboarding problems with peers generally leads to better solutions and running things like project kick-offs in person is a wickedly effective method to start a piece of work with an engaged team.
+
+Some of the things I always do to run a productive in-person meeting:
+
+- Send out an agenda. make sure there is a specific problem to be addressed. Actively limit the scope of the meeting.
+- Limit mandatory invitations to the right people, make invitations optional for other people.
+- Actively facilitate - make sure no one is left out and that no one dominates.
+- Ensure the agenda gets resolved.
+- Take notes. Send out a summary - private if applicable otherwise share widely for feedback and communication. If potential attendees know that they will get a summary they can choose not to attend but still get all they need from the meeting.
+
 ## Wasteful meetings
 
-There are some common types of communications in organisations where the default mechanism is create a meeting.
+There are some common types of communications in organisations where the default mechanism is create a meeting but you might be just as effective by sending a written communication:
 
 - Status Updates
 - Information Sharing
 - Decision Making
 
-To handle these scenarios you should write a document (or email) and ask for feedback. Maybe afterwards you can organise a meeting to discuss feedback but start with a well researched and written document.
+To handle these scenarios you should instead write a document (or email) and ask for feedback. Maybe afterwards you can organise a meeting to discuss feedback but start with a well researched and written document. Even the meetings you run in person are far more effective if you write appropriate material before and after.
 
 - Writing encourages you to think through the problem before involving others.
 - Reading a written communication is asynchronous, allowing your consumers time to digest your message and do any exploration and investigations themselves.
@@ -29,25 +43,11 @@ To handle these scenarios you should write a document (or email) and ask for fee
 
 You compliment writing with relevant meetings afterwards. They will re-enforce your message. You'll be surprised how little you need to do these follow-ups.
 
-## Good meetings
-
-Not all meetings are a waste of time.
-
-Regularly getting together for townhalls is great for alignment.
-
-Whiteboarding problems with peers generally leads to better solutions and running your project kick-offs in person is a wickedly effective method to start with an engaged team.
-
-Even the meetings you run in person are far more effective if you write appropriate material before and after.
-
-## A note on giving feedback
-
-Any time you need to give feedback, do it in person. _Give feedback in person first_ and maybe follow up with an email as a record and to clarify.
-
-## So how do we write effectively?
+## Writing to replace meetings
 
 I use the following steps, systems and checklists to avoid meetings and write effectively .
 
-## Start at the end
+### Start at the end
 
 You need to start with writing down the specific outcome you want. Start at the end. What is the pain for the organisation that you're trying to relieve?
 
@@ -63,11 +63,11 @@ Think about what they are optimizing for and how you can help that. You should t
 
 If you're struggling to frame the content as benefits to the audience, you might be shouting something no one wants to hear. Reconsider sending the content.
 
-## Researching
+### Researching
 
 Researching is very specific to your content but I personally use [Trello](https://trello.com/) for all my notes. I've heard amazing things about [Roam Research](https://roamresearch.com/) for organising content.
 
-## Writing
+### The actual writing
 
 The writing is going to be very different for different organisations, topics and audiences.
 
@@ -77,26 +77,28 @@ For technical writing you should try to start with a summary that is easy to dig
 
 Here are some structures/systems for how to approach content.
 
-### AIDA - Attention, interest, desire, action or agreement
+#### AIDA - Attention, interest, desire, action or agreement
 
 Start by getting the readers attention. Then build their interest - what's in it for them if they continue to participate? Speak to their desires and finish by specifying the action they need to take next.
 
 Try to elicit the audiences' emotions, but never be manipulative.
 
-### Borden Approach
+#### Borden Approach
 
 Your audience will go through states as they consume your content. When you start they wont care much about what you're saying. Again you need to catch their attention, fill in the details and finally specify the call to action.
 
-Ho-hum: introduction, the audience is bored, get their attention
-Why bring that up? - build a bridge to get the audience to understand why it relates directly to them
-For instance: give the audience specific concrete facts and stories to get them thinking
-So what?: The call to action. what do you want them to do?
+- Ho-hum: introduction, the audience is bored, get their attention
+- Why bring that up? - build a bridge to get the audience to understand why it relates directly to them
+- For instance: give the audience specific concrete facts and stories to get them thinking
+- So what?: The call to action. what do you want them to do?
 
-### Past, present, future
+#### Past, present, future
 
-There was a time when, but today things have changed, as we look into the future....
+For this type of writing follow this pattern.
 
-## Reviewing
+"There was a time when, but today things have changed, as we look into the future...."
+
+### Reviewing
 
 Now that your piece is complete give your writing some time to settle. Do not write last minute.
 
