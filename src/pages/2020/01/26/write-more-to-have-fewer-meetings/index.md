@@ -1,5 +1,5 @@
 ---
-title: 'How to have fewer, more effective meetings (Resurrecting the memo)'
+title: 'How to have fewer, more effective meetings'
 category: 'development'
 cover: header.jpg
 date: '2020-01-26T17:12:33'
@@ -11,7 +11,7 @@ From my own experience I would have to agree that many meetings are not very use
 
 <!-- end excerpt -->
 
-## Good meetings
+## There are good meetings...
 
 Not all meetings are a waste of time. Regularly getting together in person is great for teams and for working through problems. These should be meetings where everyone needs to provide input.
 
@@ -25,7 +25,7 @@ Some of the things I always do to run a productive in-person meeting:
 - Ensure the agenda gets resolved.
 - Take notes. Send out a summary - private if applicable otherwise share widely for feedback and communication. If potential attendees know that they will get a summary they can choose not to attend but still get all they need from the meeting.
 
-## Wasteful meetings
+## And wasteful meetings...
 
 There are some common types of communications in organisations where the default mechanism is create a meeting but you might be just as effective by sending a written communication:
 
@@ -63,7 +63,7 @@ Think about what they are optimizing for and how you can help that. You should t
 
 If you're struggling to frame the content as benefits to the audience, you might be shouting something no one wants to hear. Reconsider sending the content.
 
-### Researching
+### Research notes
 
 Researching is very specific to your content but I personally need a storage system. I've tried microsoft one note, evernote and notion in the past but I keep going back to [Trello](https://trello.com/) for all my notes. It's just simple, fast and it works.
 
@@ -100,7 +100,7 @@ For this type of writing follow this pattern.
 
 "There was a time when, but today things have changed, as we look into the future...."
 
-### Reviewing
+### Review your message before publishing
 
 Now that your piece is complete give your writing some time to settle. Do not write last minute because you want to review before publishing.
 
