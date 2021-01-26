@@ -65,7 +65,9 @@ If you're struggling to frame the content as benefits to the audience, you might
 
 ### Researching
 
-Researching is very specific to your content but I personally use [Trello](https://trello.com/) for all my notes. I've heard amazing things about [Roam Research](https://roamresearch.com/) for organising content.
+Researching is very specific to your content but I personally need a storage system. I've tried microsoft one note, evernote and notion in the past but I keep going back to [Trello](https://trello.com/) for all my notes. It's just simple, fast and it works.
+
+I've heard amazing things about [Roam Research](https://roamresearch.com/) for organising content recently but I've been too cheap to buy it for now.
 
 ### The actual writing
 
@@ -75,7 +77,7 @@ I've taken some amazing lessons from the book [On Writing Well by William Zinsse
 
 For technical writing you should try to start with a summary that is easy to digest. Present a single piece of interesting information. After presenting the audience with one piece of new information think about what question they will have. Answer that question in your following paragraph and provide another nugget. Repeat.
 
-Here are some structures/systems for how to approach content.
+Here are some other structures/systems for how to approach content.
 
 #### AIDA - Attention, interest, desire, action or agreement
 
@@ -100,7 +102,7 @@ For this type of writing follow this pattern.
 
 ### Reviewing
 
-Now that your piece is complete give your writing some time to settle. Do not write last minute.
+Now that your piece is complete give your writing some time to settle. Do not write last minute because you want to review before publishing.
 
 - Do at least 2 passes to simplify the writing.
 - Get a peer review.
