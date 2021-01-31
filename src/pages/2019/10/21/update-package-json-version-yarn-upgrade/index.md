@@ -30,3 +30,11 @@ If you use the interactive upgrade it will also upgrade the package.json for you
 ```shell
 yarn upgrade-interactive --latest
 ```
+
+## Specify use an exact version --exact
+
+It's a good idea to specify a specific version of the package so that deploying on CI will have the exact same versions as on your dev env. Your lock file will help with this too but being specific with versions is a good idea.
+
+```shell
+yarn upgrade @graphql-codegen/cli --latest  --exact
+```
