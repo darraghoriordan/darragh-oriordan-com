@@ -15,7 +15,7 @@ First you need to get the cert out of Azure keyvault. There is an export/downloa
 
 Once you have the file you will need openssl.
 
-```sh
+```shell
 openssl pkcs12 -in myappservicecertificate.pfx -out tmpmycert.pem -nodes
 ```
 
@@ -23,7 +23,7 @@ It might prompt you for a password here which is blank. Just hit enter.
 
 ## Convert the passwordless pem to a new pfx file with password
 
-```sh
+```shell
 openssl pkcs12 -export -out mypasswordedcert.pfx -in tmpmycert.pem
 ```
 

@@ -15,13 +15,13 @@ However If you want to use the performance measurement api you have to actually 
 
 You need to install the library
 
-```sh
+```shell
 yarn add applicationinsights
 ```
 
 Add the env var with your connection string. You get the app insights connection string from the overview page on App insights in Azure.
 
-```sh
+```shell
 APPLICATIONINSIGHTS_CONNECTION_STRING=InstrumentationKey=a-guid-key;IngestionEndpoint=https:/in.applicationinsights.azure.com/
 ```
 

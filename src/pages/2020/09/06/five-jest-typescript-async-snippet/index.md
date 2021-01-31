@@ -13,7 +13,7 @@ I've been working with jest every day for the past month or so. I had to learn a
 
 Jest has a decent mocking system but the creation and typing can be made a bit easier by using a helper library. I have used `jest-create-mock-instance` for the past couple of months and it works really well.
 
-```sh
+```shell
 # You should install the library in your project
 yarn add -D jest-create-mocked-instance
 ```

@@ -15,7 +15,7 @@ It's well worth checking out this tool.
 
 Gource is free! So you just need to install using a package manager. On Mac you can use this.
 
-```sh
+```shell
 brew install gource
 ```
 
@@ -25,7 +25,7 @@ You need to change to root of the git repository and then run the command. The g
 
 For showing everyone's impact over time for a 6 month project with 10 team members I found that this command worked best for me
 
-```sh
+```shell
 gource --highlight-users -s 1 -f --hide filenames
 ```
 
