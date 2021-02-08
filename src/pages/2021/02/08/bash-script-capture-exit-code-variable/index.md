@@ -2,7 +2,7 @@
 title: 'How to save an exit code to a variable in bash script'
 category: 'other'
 cover: header.jpg
-date: '2021-02-07T17:12:33'
+date: '2021-02-08T17:12:33'
 ---
 
 I haven't used bash scripts too often in my work so when I had to do this recently I spent some time looking up syntax.
