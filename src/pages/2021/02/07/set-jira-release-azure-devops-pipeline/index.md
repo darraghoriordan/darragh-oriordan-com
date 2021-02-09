@@ -82,6 +82,14 @@ const base64String = Buffer.from(
 console.log(base64String)
 ```
 
+You can test your key by using curl
+
+```shell
+curl -v https://myorganisation.atlassian.net -H "Authorization: Basic BASE64_ENCODED_KEY"
+```
+
+This should not return a 401
+
 ## Inject JIRA_AUTH pipeline variable
 
 Ok so this will depend on how you set up your pipeline but it will be somewhere in the "Library" on Azure Devops most likely. I called mine `JiraAuthToken`.
