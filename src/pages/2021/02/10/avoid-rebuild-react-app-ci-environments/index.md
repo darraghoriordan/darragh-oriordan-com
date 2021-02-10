@@ -9,7 +9,7 @@ If you have a react app you can use env vars like `REACT_APP_MY_ENV_VAR` in your
 
 This is very useful but if you have variables that change for each environment and your application build takes a long time, you might want to avoid building unnecessarily in CI. For example you might have a QA environment and a Staging environment that have different configuration.
 
-We type-check our code on build and that was taking 5 minutes+ to build so we had to make it faster. We changed our app from using `REACT_APP` env vars to using a configuration file that we could quickly write to using CI.
+We type-check our code on each build and that was taking 5 minutes+ to build each environment so we had to make it faster. We changed our app from using `REACT_APP` env vars to using a configuration file that we could quickly write to using CI.
 
 Our CI system is Azure DevOops so the CI scripts here are specifically for Azure DevOps but they apply to most CI systems with small changes.
 
@@ -19,7 +19,7 @@ The real work happens in a node script that would work anywhere.
 
 ## Add the script to write env vars to file
 
-Here we have a script that will take all the environment variables that we have mapped in the mapping configuration and write them to a javascript file that will attach our configuration to the window when run.
+Here we have a script that will take all the environment variables that we have mapped in the mapping configuration and will write them to a javascript file. The we will attach our configuration to the window when the script is run.
 
 This script runs in a couple of seconds in comparison to 5-10 minutes for a build with type checking.
 
@@ -72,7 +72,7 @@ fs.writeFileSync(providedFilePath, runtimeConfigFileAsLines.join(' '))
 
 ## Modify your app to use the config file
 
-In the head section of the index.html in your React application add a new script section
+Add a script tag in the head section of the index.html in your React application. We use the `%PUBLIC_URL%` variable here which will be replaced by react for us.
 
 ```html
 <head>
@@ -82,7 +82,7 @@ In the head section of the index.html in your React application add a new script
 
 This tells React to load our config file which will set the configuration object on the window object.
 
-Next wrap the object in an interface if using typescript
+Next wrap the configuration object in an interface if using typescript. You can skip some of this if using Javascript.
 
 ```typescript
 // These values will be sent to the client so do not add
@@ -96,7 +96,9 @@ export const runtimeConfig: RuntimeConfig = window.runtimeConfig
 export default runtimeConfig
 ```
 
-Now you can access the configuration object anywhere that you used to use a `REACT_APP_` variable before. We write the access so we try to use the configuration file but if it doesn't exist then we will look for the old environment variable.
+Now you can access the configuration object anywhere that you used to use a `REACT_APP_` variable before.
+
+In our variable access statement we try to use the configuration file but if it doesn't exist then we will look for the old environment variable. This works in a backwards compatible way with environment variables.
 
 ```typescript
 myThingThatDependsOnEnvironmentVariable(
@@ -106,7 +108,9 @@ myThingThatDependsOnEnvironmentVariable(
 
 ## Add a CI step to generate the environment specific configuration file
 
-We run the file in our infrastructure folder. We have to `chmod` it runnable first.
+We add a CI step to run the configuration file generator in our infrastructure folder.
+
+We have to `chmod` it runnable first.
 
 ```yaml
 - script: |
@@ -137,9 +141,15 @@ module.exports = {
 }
 ```
 
+## Configure other tools
+
+Any tool that uses React components will need to have the configuration injected. The Jest way is mentioned above. Each too will have it's own injection method. For example if you use react storybook you will need to add the script to the header using the storybook method described [here](https://storybook.js.org/docs/react/configure/story-rendering#adding-to-head).
+
+Add a file `.storybook/preview-head.html` and pop the header script from above in there.
+
 ## Add a local configuration file (if you like)
 
-This should just go in your `app/private` folder if you're using `create-react-app`.
+This should just go in your `<<app>>/private` folder if you're using `create-react-app`.
 
 ```javascript
 window['backrRuntimeConfig'] = {
@@ -152,7 +162,9 @@ You can put your development settings in here.
 
 ## Git ignore the local config file
 
-Just like a .env file you would want to git ignore your local copy of the configuration
+Just like a .env file you will want to `.gitignore` your local copy of the configuration.
+
+Add to `.gitignore`
 
 ```shell
 runtime-config.js
