@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -48,6 +52,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       options: {
+        // trackingId: 'UA-88937812-1', //process.env.GOOGLE_ANALYTICS_ID,
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
       resolve: `gatsby-plugin-google-analytics`,
@@ -89,7 +94,7 @@ module.exports = {
               }
             `,
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                   date: edge.node.frontmatter.date,
